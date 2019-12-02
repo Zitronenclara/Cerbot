@@ -1,0 +1,126 @@
+{
+    "syn": [{
+            "get": ["ms", "hi"],
+            "set": "ping"
+        },
+        {
+            "get": ["adv", "exp", "expedition", "advenutre", "abenteuer"],
+            "set": "adventure"
+        },
+        {
+            "get": ["bshop", "bsp", "kampfshop"],
+            "set": "battleshop"
+        },
+        {
+            "get": ["bs", "bstats", "bstat"],
+            "set": "battlestats"
+        },
+        {
+            "get": ["changes", "chlog", "cl", "changel", "versions", "version", "clog"],
+            "set": "changelog"
+        },
+        {
+            "get": ["h", "hilfe", "hülfe", "ichnixwissen", "bittehelfensiemir"],
+            "set": "help"
+        },
+        {
+            "get": ["profile", "prof", "stat", "p"],
+            "set": "profil"
+        },
+        {
+            "get": ["s", "b", "bal", "souls"],
+            "set": "seelen"
+        },
+        {
+            "get": ["infos", "info"],
+            "set": "userinfo"
+        },
+        {
+            "get": ["lvl", "l", "rank", "lev"],
+            "set": "level"
+        },
+        {
+            "get": ["al", "syn", "synonym", "synonyms"],
+            "set": "alias"
+        },
+        {
+            "get": ["battle", "duel", "attack"],
+            "set": "fight"
+        },
+        {
+            "get": ["lvltop", "ltop", "levtop", "ranking", "levelt", "lvlt"],
+            "set": "leveltop"
+        },
+        {
+            "get": ["soultop", "stop", "baltop", "soult", "seelent"],
+            "set": "seelentop"
+        },
+        {
+            "get": ["transf", "gift", "give"],
+            "set": "transfer"
+        },
+        {
+            "get": ["dg", "lower"],
+            "set": "downgrade"
+        }, {
+            "get": ["idea", "ideas", "idee"],
+            "set": "ideen"
+        },
+        {
+            "get": ["owot"],
+            "set": "owotop"
+        },
+        {
+            "get": ["uwut"],
+            "set": "uwutop"
+        },
+        {
+            "get": ["xdt"],
+            "set": "xdtop"
+        },
+        {
+            "get": ["verkackt, verkacktop, verkackttop"],
+            "set": "losetop"
+        },
+        {
+            "get": ["setdescription", "description", "beschreibung", "setbeschreibung"],
+            "set": "setdesc"
+        },
+        {
+            "get": ["setbirthday", "birthday", "geburtstag", "setgeburtstag"],
+            "set": "setbd"
+        },
+        {
+            "get": ["setfavouritecolor", "favouritecolor", "setfavcolor", "favcolor", "favcol", "color", "setcolor", "lieblingsfarbe", "setlieblingsfarbe"],
+            "set": "setfavcol"
+        },
+        {
+            "get": ["gender", "geschlecht", "setgeschlecht"],
+            "set": "setgender"
+        },
+        {
+            "get": ["sethobby", "hobbys", "hobby"],
+            "set": "sethobbys"
+        },
+        {
+            "get": ["nickname", "setspitzname", "spitzname"],
+            "set": "setnickname"
+        },
+        {
+            "get": ["realname", "name", "setname"],
+            "set": "setrealname"
+        },
+        {
+            "get": ["size", "height", "setheight", "größe", "setgröße"],
+            "set": "setsize"
+        },
+        {
+            "get": ["serverstats"],
+            "set": "stats"
+        },
+        {
+            "get": ["winner", "beschter"],
+            "set": "wintop"
+        }
+    ]
+}
