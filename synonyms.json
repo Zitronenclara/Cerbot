@@ -115,11 +115,11 @@
             "set": "setsize"
         },
         {
-            "get": ["serverstats"],
+            "get": ["serverstats", "serverst"],
             "set": "stats"
         },
         {
-            "get": ["winner", "beschter"],
+            "get": ["winner", "beschter", "wint"],
             "set": "wintop"
         }
     ]
