@@ -2,6 +2,7 @@ const fs = require('fs');
 const Discord = require('discord.js')
 var mysql = require('mysql');
 var synonym = require('./synonyms.json')
+var stringSimilarity = require('string-similarity');
 const con = require('./db.js')
 const config = require('./config.json')
 const synonyms = JSON.parse(JSON.stringify(synonym))
@@ -110,14 +111,62 @@ function processCommand(receivedMessage) {
 	let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
 	console.log("Command received>>> " + primaryCommand + "(args: " + arguments + ") from " + receivedMessage.author.username + " [ID: " + receivedMessage.author.id + "]")
-	var syncom = synonyms.syn.find(({
+	/*var syncom = synonyms.syn.find(({
 		get
-	}) => get.includes("" + primaryCommand + ""))
+	}) => var test = stringSimilarity.findBestMatch(primaryCommand, get))
 
 	if (syncom !== undefined) {
 		primaryCommand = syncom.set
+	}*/
+	var simila = [];
+	for (i = 0; i < synonyms.syn.length; i++) {
+		simila[i] = [synonyms.syn[i].set, stringSimilarity.compareTwoStrings(primaryCommand, synonyms.syn[i].set)]
 	}
-	
+	simila.sort(function (a, b) {
+		return b[1] - a[1]
+	})
+
+	var similb = [];
+	for (i = 0; i < synonyms.syn.length; i++) {
+		var simi = stringSimilarity.findBestMatch(primaryCommand, synonyms.syn[i].get)
+		similb[i] = [synonyms.syn[i].set, simi.bestMatch.target, simi.bestMatch.rating]
+	}
+	similb.sort(function (a, b) {
+		return b[2] - a[2]
+	})
+
+	var similarat = simila[0][1]
+	var similbrat = similb[0][2]
+	var similatarg = simila[0][0]
+	var similbtarg = similb[0][0]
+
+	if (similarat == 0 && similbrat == 0) {
+		receivedMessage.channel.send(receivedMessage.author + ", ich hab keine Ahnung, was du von mir willst xD Der Befehl ist extrem falsch geschrieben oder existiert nicht uwu Gib nochmal ``c!help`` ein, um eine Liste aller Befehle zu erhalten c:")
+		return
+	}
+
+	if (similarat >= similbrat) {
+		if (similarat == 1) {
+			primaryCommand = similatarg
+		}else if(similarat > 0.4){
+			primaryCommand = similatarg
+			receivedMessage.channel.send(receivedMessage.author + ", ich habe ``c!" + similatarg + "`` erkannt. (" + (Math.round(similarat * 100)) + "% Übereinstimmung)")
+		} else {
+			receivedMessage.channel.send(receivedMessage.author + ", meintest du ``c!" + similatarg + "``? (" + (Math.round(similarat * 100)) + "% Übereinstimmung)")
+			primaryCommand = "wwwww"
+		}
+	} else {
+		if (similbrat == 1) {
+			primaryCommand = similbtarg
+		}else if(similbrat > 0.4){
+			primaryCommand = similbtarg
+			receivedMessage.channel.send(receivedMessage.author + ", ich habe ``c!" + similbtarg + "`` erkannt. (" + (Math.round(similbrat * 100)) + "% Übereinstimmung)")
+		} else {
+			receivedMessage.channel.send(receivedMessage.author + ", meintest du ``c!" + similbtarg + "``? (" + (Math.round(similbrat * 100)) + "% Übereinstimmung)")
+			primaryCommand = "wwwww"
+		}
+	}
+
 	if (!client.commands.has(primaryCommand)) return;
 
 	try {
@@ -208,7 +257,7 @@ function gaincoins(usid) {
 	}
 }
 
-function gainxp(usid, ch, aut){
+function gainxp(usid, ch, aut) {
 	if (xpget.has(usid)) {
 
 	} else {
@@ -219,11 +268,11 @@ function gainxp(usid, ch, aut){
 			var rando = Math.floor(Math.random() * 15) + 1
 			var newxp = result[0].xp + rando
 			var forlevel = result[0].level + 1
-			if (newxp >= (5 * (forlevel * forlevel) + 50 * forlevel + 100)){
+			if (newxp >= (5 * (forlevel * forlevel) + 50 * forlevel + 100)) {
 				con.query("UPDATE `cerbotdb`.`userdata` SET `level`=" + (result[0].level + 1) + " WHERE  `id`=" + result[0].id + ";")
 				con.query("UPDATE `cerbotdb`.`userdata` SET `xp`=" + 0 + " WHERE  `id`=" + result[0].id + ";")
-				ch.send(aut+", dein inneres Äther ist am Überkochen. Damit du nicht explodierst wird dein Höllenlevel um eins erhöht. Du bist jetzt **Level "+(result[0].level + 1)+"**!")
-			}else{
+				ch.send(aut + ", dein inneres Äther ist am Überkochen. Damit du nicht explodierst wird dein Höllenlevel um eins erhöht. Du bist jetzt **Level " + (result[0].level + 1) + "**!")
+			} else {
 				con.query("UPDATE `cerbotdb`.`userdata` SET `xp`=" + newxp + " WHERE  `id`=" + result[0].id + ";")
 			}
 		});

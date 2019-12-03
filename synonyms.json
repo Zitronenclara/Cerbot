@@ -4,7 +4,7 @@
             "set": "ping"
         },
         {
-            "get": ["adv", "exp", "expedition", "advenutre", "abenteuer"],
+            "get": ["adv", "exp", "expedition", "advenutre", "abenteuer", "a"],
             "set": "adventure"
         },
         {
@@ -79,7 +79,7 @@
             "set": "xdtop"
         },
         {
-            "get": ["verkackt, verkacktop, verkackttop"],
+            "get": ["verkackt", "verkacktop", "verkackttop"],
             "set": "losetop"
         },
         {
