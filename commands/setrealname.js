@@ -11,7 +11,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was dein neuer Name sein soll.")
             return
         }
-        var newrealname = receivedMessage.content.substr(14)
+        var newrealname = receivedMessage.content.substr(14).replace(/\\n/g, "");
         if (newrealname.length > 50) {
             receivedMessage.reply("dein Name darf nicht länger als 50 Zeichen lang sein uwu Shit happens.")
             return
