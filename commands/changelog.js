@@ -3,11 +3,16 @@ const Discord = require('discord.js');
 var mysql = require('mysql');
 const con = require('./../db.js');
 var chlogs = require('./../changelog.json')
+const config = require('./../config.json')
 
 module.exports = {
 	name: 'changelog',
 	description: 'Changelog-Message',
 	execute(arguments, receivedMessage) {
+		var targetver = arguments[0]
+		if (targetver == "recent"){
+			targetver = config.version
+		}
 		var vers = ""
 		for (i = 0; i < chlogs.versions.length; i++) {
 			vers = vers + "``" + chlogs.versions[i].num + "`` "
@@ -18,9 +23,9 @@ module.exports = {
 		}
 		var chl = chlogs.versions.find(({
 			num
-		}) => num == arguments[0])
+		}) => num == targetver)
 		if (chl == undefined){
-			receivedMessage.reply("es wurde keine Changelog für die Version ``"+arguments[0]+"`` gefunden. Für diese Versionen gibt es Changelogs:\n" + vers)
+			receivedMessage.reply("es wurde keine Changelog für die Version ``"+targetver+"`` gefunden. Für diese Versionen gibt es Changelogs:\n" + vers)
 			return
 		}
 		const changelogmes = new Discord.RichEmbed()
