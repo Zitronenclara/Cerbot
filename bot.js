@@ -164,7 +164,7 @@ function processCommand(receivedMessage) {
 		console.log("command not found")
 		return
 	}
-
+	
 	try {
 		client.commands.get(primaryCommand).execute(arguments, receivedMessage);
 		console.log("tried to execute "+primaryCommand+" command")
