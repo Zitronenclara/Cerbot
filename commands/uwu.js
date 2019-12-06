@@ -13,6 +13,5 @@ module.exports = {
 			if (err) throw err;
 			receivedMessage.channel.send(""+ receivedMessage.author +" du hast bereits **"+result[0].uwucount+"** uwu's gesendet.")
 		});
-	    console.log("uwu command executed")
 	},
 };

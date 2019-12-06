@@ -38,6 +38,5 @@ module.exports = {
 		receivedMessage.author.send(changelogmes)
 			.catch(() => receivedMessage.channel.send("Du hast Server DM's leider ausgeschalten!"));
 		receivedMessage.channel.send("Der Changelog wurde dir per DM geschickt " + receivedMessage.author + ".")
-		console.log("changelog command executed")
 	},
 };

@@ -10,7 +10,6 @@ module.exports = {
     usage: '``c!ping``',
 	execute(arguments, receivedMessage) {
 		if (receivedMessage.author.id == "422716344228642828"){
-			receivedMessage.channel.send("Pong!")
-		    console.log("ping command executed")}
+			receivedMessage.channel.send("Pong!")}
 	},
 };

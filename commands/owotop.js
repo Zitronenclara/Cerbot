@@ -27,6 +27,5 @@ module.exports = {
 	    	.setTimestamp()
 	    	receivedMessage.channel.send(mestopmes);
 		});
-		console.log("owotop command executed")
 	},
 };

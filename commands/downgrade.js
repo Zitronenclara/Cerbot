@@ -23,6 +23,5 @@ module.exports = {
                 "verringert deine Verteidigungspunkte um ``[anzahl]`` (müssen nach downgrade mind. 0 sein)\n" +
                 "pro downgegradeter DEF-Punkt werden dir **450**❦ gutgeschrieben.\n")
         receivedMessage.channel.send(downgrademes)
-        console.log("downgrade command executed")
     },
 };

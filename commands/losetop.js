@@ -27,6 +27,5 @@ module.exports = {
 	    	.setTimestamp()
 	    	receivedMessage.channel.send(mestopmes);
 		});
-		console.log("losetop command executed")
 	},
 };

@@ -47,6 +47,5 @@ module.exports = {
 				.addField("**Verwendung**", befehl.usage);
 				receivedMessage.channel.send(helpembed)
 		}
-	    console.log("help command executed")
 	},
 };

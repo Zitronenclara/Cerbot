@@ -13,6 +13,5 @@ module.exports = {
 			if (err) throw err;
 			receivedMessage.channel.send(""+ receivedMessage.author +" du bist aktuell im Besitz von **"+result[0].coins+"**❦.")
 		});
-	    console.log("seelen command executed")
 	},
 };

@@ -40,6 +40,5 @@ module.exports = {
                 });
             }
         });
-        console.log("battlestats command executed")
     },
 };

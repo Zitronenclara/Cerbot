@@ -111,14 +111,7 @@ function processCommand(receivedMessage) {
 	let primaryCommand = splitCommand[0] // The first word directly after the exclamation is the command
 	let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
-	console.log("Command received>>> " + primaryCommand + "(args: " + arguments + ") from " + receivedMessage.author.username + " [ID: " + receivedMessage.author.id + "]")
-	/*var syncom = synonyms.syn.find(({
-		get
-	}) => var test = stringSimilarity.findBestMatch(primaryCommand, get))
-
-	if (syncom !== undefined) {
-		primaryCommand = syncom.set
-	}*/
+	console.log("Command received >>> " + primaryCommand + "(args: " + arguments + ") from " + receivedMessage.author.username + " [ID: " + receivedMessage.author.id + "]")
 	var simila = [];
 	for (i = 0; i < synonyms.syn.length; i++) {
 		simila[i] = [synonyms.syn[i].set, stringSimilarity.compareTwoStrings(primaryCommand, synonyms.syn[i].set)]
@@ -167,10 +160,14 @@ function processCommand(receivedMessage) {
 			primaryCommand = "wwwww"
 		}
 	}
-	if (!client.commands.has(primaryCommand)) return;
+	if (!client.commands.has(primaryCommand)){
+		console.log("command not found")
+		return
+	}
 
 	try {
 		client.commands.get(primaryCommand).execute(arguments, receivedMessage);
+		console.log("tried to execute "+primaryCommand+" command")
 	} catch (error) {
 		console.error(error);
 		receivedMessage.reply('Ein unerwarteter Fehler ist aufgetreten!');

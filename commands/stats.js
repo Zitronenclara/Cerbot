@@ -60,7 +60,6 @@ module.exports = {
 					                            "**"+servuwu+"** uwu's\n" +
 					                            "**"+servxd+"** xd's")
 			receivedMessage.channel.send(statmes)
-		    console.log("stats command executed")
 		});
 	},
 };

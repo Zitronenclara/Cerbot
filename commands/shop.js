@@ -26,6 +26,5 @@ module.exports = {
 		receivedMessage.author.send(shopmes)
 			.catch(() => receivedMessage.channel.send("Du hast Server DM's leider ausgeschalten!"));
 		receivedMessage.channel.send(receivedMessage.author +", dir wurde eine Liste aller Shop-Items per DM geschickt.")
-	    console.log("shop command executed")
 	},
 };

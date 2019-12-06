@@ -33,6 +33,5 @@ module.exports = {
 	    	.setTimestamp()
 	    	receivedMessage.channel.send(mestopmes);
 		});
-		console.log("transtop command executed")
 	},
 };
