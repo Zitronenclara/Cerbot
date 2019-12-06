@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setfavcol',
-    description: 'Sets your favourite color',
+    description: 'Damit kannst du deine Lieblingsfarbe auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setfavcol [lieblingsfarbe]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Lieblingsfarbe sein soll.")

@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'werttop',
-	description: 'shows the worth-toplist',
+	description: 'Zeigt dir die Top 10 User mit dem höchsten Gesamtwert in Seelen',
+	category: 'Stats',
+    usage: '``c!werttop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid, coins, coinsspent FROM userdata", function (err, result, fields) {
             if (err) throw err;

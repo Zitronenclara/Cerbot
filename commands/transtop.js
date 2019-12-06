@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'transtop',
-	description: 'shows the transfer-toplist',
+	description: 'Zeigt dir die Top 10 User mit den besten Transferbilanzen',
+	category: 'Stats',
+    usage: '``c!transtop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,coinstrans ,coinstransget FROM userdata", function (err, result, fields) {
             if (err) throw err;

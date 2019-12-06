@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'owo',
-	description: 'shows the owos of the target',
+	description: 'Zeigt dir die Anzahl deiner geschriebenen owos',
+	category: 'Stats',
+    usage: '``c!owo``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,owocount FROM userdata WHERE usrid = '"+receivedMessage.author.id+"'", function (err, result, fields) {
 			if (err) throw err;

@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setdesc',
-    description: 'Sets your desc',
+    description: 'Damit kannst du dein Beschreibung auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setdesc [beschreibung]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Beschreibung sein soll.")

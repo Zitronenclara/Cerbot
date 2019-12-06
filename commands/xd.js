@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'xd',
-	description: 'shows the xds of the target',
+	description: 'Zeigt dir deine insgesamt geschriebenen xDs',
+	category: 'Stats',
+    usage: '``c!xd``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,xdcount FROM userdata WHERE usrid = '"+receivedMessage.author.id+"'", function (err, result, fields) {
 			if (err) throw err;

@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'userinfo',
-	description: 'shows profil of target',
+    description: 'Zeigt dir dein oder den Steckbrief eines beliebigen Users',
+    category: 'Steckbriefe',
+    usage: '``c!userinfo``, ``c!userinfo @user``',
 	execute(arguments, receivedMessage) {
 		if (!receivedMessage.mentions.users.size) {
             var target = receivedMessage.member

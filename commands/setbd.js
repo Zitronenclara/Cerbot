@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setbd',
-    description: 'Sets your birthday',
+    description: 'Damit kannst du dein Geburtsdatum auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setbd [geburtstag]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein Geburtstag sein soll.")

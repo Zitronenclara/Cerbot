@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'shop',
-	description: 'Shop-Message',
+	description: 'Schickt dir eine Liste aller kaufbaren Rollen per DM',
+	category: 'Währung',
+    usage: '``c!shop``',
 	execute(arguments, receivedMessage) {
 		const shopmes = new Discord.RichEmbed()
 		.setTitle("**Shopnachricht**")

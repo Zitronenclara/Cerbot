@@ -22,6 +22,7 @@ for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
 	client.commands.set(command.name, command);
 }
+exports.commandObject = client.commands
 
 const ccget = new Set();
 const xpget = new Set();
@@ -166,7 +167,6 @@ function processCommand(receivedMessage) {
 			primaryCommand = "wwwww"
 		}
 	}
-
 	if (!client.commands.has(primaryCommand)) return;
 
 	try {

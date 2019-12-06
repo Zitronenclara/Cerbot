@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'uwu',
-	description: 'shows the uwus of the target',
+	description: 'Zeigt dir deine insgesamt gesendeten uwus',
+	category: 'Stats',
+    usage: '``c!uwu``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,uwucount FROM userdata WHERE usrid = '"+receivedMessage.author.id+"'", function (err, result, fields) {
 			if (err) throw err;

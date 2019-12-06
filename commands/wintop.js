@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'wintop',
-	description: 'shows the win-toplist',
+	description: 'Zeigt dir die Top 10 User die die meisten Kämpfe gewonnen haben',
+	category: 'Kampfsystem',
+    usage: '``c!wintop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,wins FROM userdata ORDER BY wins DESC LIMIT 10", function (err, result, fields) {
 			if (err) throw err;

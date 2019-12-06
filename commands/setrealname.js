@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setrealname',
-    description: 'Sets your real name',
+    description: 'Damit kannst du deinen echten Namen auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setrealname [name]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein neuer Name sein soll.")

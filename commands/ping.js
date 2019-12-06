@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'ping',
-	description: 'Ping!',
+	description: 'Pong!',
+	category: 'Admin',
+    usage: '``c!ping``',
 	execute(arguments, receivedMessage) {
 		if (receivedMessage.author.id == "422716344228642828"){
 			receivedMessage.channel.send("Pong!")

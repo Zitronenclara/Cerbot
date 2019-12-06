@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'battlestats',
-    description: 'shows battlestats of target',
+    description: 'Zeigt dir deine Kampfstatistiken oder die Kampfstatistiken eines ausgewählten Users',
+    category: 'Kampfsystem',
+    usage: '``c!battlestats``, ``c!battlestats @user``',
     execute(arguments, receivedMessage) {
         if (!receivedMessage.mentions.users.size) {
             var target = receivedMessage.member

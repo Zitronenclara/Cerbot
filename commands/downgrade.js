@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'downgrade',
-    description: 'Information about downgrading Battlestats!',
+    description: 'Gibt dir mehr Informationen über das Downgraden von Kampfstatistiken',
+    category: 'Kampfsystem',
+    usage: '``c!downgrade``',
     execute(arguments, receivedMessage) {
         const downgrademes = new Discord.RichEmbed()
             .setTitle("**Battlestats downgraden?**")

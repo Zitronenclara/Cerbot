@@ -7,7 +7,9 @@ const config = require('./../config.json')
 
 module.exports = {
 	name: 'changelog',
-	description: 'Changelog-Message',
+	description: 'Schickt dir den gewünschten Changelog per DM',	
+	category: 'Sonstiges',
+    usage: '``c!changelog``, ``c!changelog recent``, ``c!changelog [versionsnummer]``',
 	execute(arguments, receivedMessage) {
 		var targetver = arguments[0]
 		if (targetver == "recent"){

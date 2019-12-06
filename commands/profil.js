@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'profil',
-	description: 'shows profil of target',
+	description: 'Zeigt dir dein oder das Höllenprofil eines beliebigen Users',
+	category: 'Stats',
+    usage: '``c!profil``, ``c!profil @user``',
 	execute(arguments, receivedMessage) {
 		if (!receivedMessage.mentions.users.size) {
 			var target = receivedMessage.member

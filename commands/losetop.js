@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'losetop',
-	description: 'shows the lose-toplist',
+	description: 'Zeigt dir die Top 10 der Leute, die am meisten Niederlagen kassiert haben',
+	category: 'Kampfsystem',
+    usage: '``c!losetop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,loses FROM userdata ORDER BY loses DESC LIMIT 10", function (err, result, fields) {
 			if (err) throw err;

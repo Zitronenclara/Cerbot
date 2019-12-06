@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'stats',
-	description: 'Stat-Message',
+	description: 'Zeigt dir ein paar nützliche Server-Statistiken',
+	category: 'Stats',
+    usage: '``c!stats``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT * FROM userdata", function (err, result, fields) {
 			var umlaufc = 0;

@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'downhp',
-    description: 'to downgrade your hp-stats!',
+    description: 'Damit kannst du gekaufte HP-Punkte wieder gegen Seelen umtauschen',
+    category: 'Kampfsystem',
+    usage: '``c!downhp [anzahl]``',
     execute(arguments, receivedMessage) {
         var downing = parseFloat(arguments.find(arg => !/<@!?\d+>/g.test(arg)), 0);
         var downinga = arguments.find(arg => !/<@!?\d+>/g.test(arg))

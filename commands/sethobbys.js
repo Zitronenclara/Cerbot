@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'sethobbys',
-    description: 'Sets your hobbys',
+    description: 'Damit kannst du deine Hobbys auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!sethobbys [hobbys]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Hobbys sein sollen.")

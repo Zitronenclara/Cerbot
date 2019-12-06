@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'owotop',
-	description: 'shows the owo-toplist',
+	description: 'Zeigt dir eine Rangliste mit den Top 10 der Usern, die am häufigsten owo geschrieben haben',
+	category: 'Stats',
+    usage: '``c!owotop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,owocount FROM userdata ORDER BY owocount DESC LIMIT 10", function (err, result, fields) {
 			if (err) throw err;

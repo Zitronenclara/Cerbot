@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'seelentop',
-	description: 'shows the seelen-toplist',
+	description: 'Zeigt dir die 10 reichsten User auf dem Server',
+	category: 'Währung',
+    usage: '``c!seelentop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,coins FROM userdata ORDER BY coins DESC LIMIT 10", function (err, result, fields) {
 			if (err) throw err;

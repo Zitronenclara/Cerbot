@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setsize',
-    description: 'Sets your size',
+    description: 'Damit kannst du deine Körpergröße auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setsize [körpergröße]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Körpergröße sein soll.")

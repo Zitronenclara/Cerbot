@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'resetusrinfo',
-    description: 'resets user infos',
+    description: 'Setzt den Steckbrief eines beliebigen Users zurück',
+    category: 'Admin',
+    usage: '``c!resetusrinfo @user``',
     execute(arguments, receivedMessage) {
         if (receivedMessage.author.id == "422716344228642828") {
             var target = receivedMessage.mentions.members.first();

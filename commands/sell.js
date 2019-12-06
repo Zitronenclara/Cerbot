@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'sell',
-	description: 'to sell items',
+	description: 'Verkauft eine beliebige Rolle in deinem Besitz und du bekommst 100% der Seelen zurückerstattet',
+	category: 'Währung',
+    usage: '``c!sell [rollenname]``',
 	execute(arguments, receivedMessage) {
 		if (arguments == "charon" || arguments == "Charon"){
 			const it = require('./shopitems/charon.js');

@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setnickname',
-    description: 'Sets your nickname',
+    description: 'Damit kannst du deinen Spitznamen auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setnickname [spitzname]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein Spitzname sein soll.")
