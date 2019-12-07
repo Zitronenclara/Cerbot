@@ -112,62 +112,66 @@ function processCommand(receivedMessage) {
 	let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
 	console.log("Command received >>> " + primaryCommand + "(args: " + arguments + ") from " + receivedMessage.author.username + " [ID: " + receivedMessage.author.id + "]")
-	var simila = [];
-	for (i = 0; i < synonyms.syn.length; i++) {
-		simila[i] = [synonyms.syn[i].set, stringSimilarity.compareTwoStrings(primaryCommand, synonyms.syn[i].set)]
-	}
-	simila.sort(function (a, b) {
-		return b[1] - a[1]
-	})
 
-	var similb = [];
-	for (i = 0; i < synonyms.syn.length; i++) {
-		var simi = stringSimilarity.findBestMatch(primaryCommand, synonyms.syn[i].get)
-		similb[i] = [synonyms.syn[i].set, simi.bestMatch.target, simi.bestMatch.rating]
-	}
-	similb.sort(function (a, b) {
-		return b[2] - a[2]
-	})
-
-	var similarat = simila[0][1]
-	var similbrat = similb[0][2]
-	var similatarg = simila[0][0]
-	var similbtarg = similb[0][0]
-
-	if (similarat == 0 && similbrat == 0) {
-		receivedMessage.channel.send(receivedMessage.author + ", ich hab keine Ahnung, was du von mir willst xD Der Befehl ist extrem falsch geschrieben oder existiert nicht uwu Gib nochmal ``c!help`` ein, um eine Liste aller Befehle zu erhalten c:")
-		return
-	}
-
-	if (similarat >= similbrat) {
-		if (similarat == 1) {
-			primaryCommand = similatarg
-		}else if(similarat > 0.4){
-			primaryCommand = similatarg
-			receivedMessage.channel.send(receivedMessage.author + ", ich habe ``c!" + similatarg + "`` erkannt. (" + (Math.round(similarat * 100)) + "% Übereinstimmung)")
-		} else {
-			receivedMessage.channel.send(receivedMessage.author + ", meintest du ``c!" + similatarg + "``? (" + (Math.round(similarat * 100)) + "% Übereinstimmung)")
-			primaryCommand = "wwwww"
+	if (!client.commands.has(primaryCommand)) {
+		var simila = [];
+		for (i = 0; i < synonyms.syn.length; i++) {
+			simila[i] = [synonyms.syn[i].set, stringSimilarity.compareTwoStrings(primaryCommand, synonyms.syn[i].set)]
 		}
-	} else {
-		if (similbrat == 1) {
-			primaryCommand = similbtarg
-		}else if(similbrat > 0.4){
-			primaryCommand = similbtarg
-			receivedMessage.channel.send(receivedMessage.author + ", ich habe ``c!" + similbtarg + "`` erkannt. (" + (Math.round(similbrat * 100)) + "% Übereinstimmung)")
+		simila.sort(function (a, b) {
+			return b[1] - a[1]
+		})
+
+		var similb = [];
+		for (i = 0; i < synonyms.syn.length; i++) {
+			var simi = stringSimilarity.findBestMatch(primaryCommand, synonyms.syn[i].get)
+			similb[i] = [synonyms.syn[i].set, simi.bestMatch.target, simi.bestMatch.rating]
+		}
+		similb.sort(function (a, b) {
+			return b[2] - a[2]
+		})
+
+		var similarat = simila[0][1]
+		var similbrat = similb[0][2]
+		var similatarg = simila[0][0]
+		var similbtarg = similb[0][0]
+
+		if (similarat == 0 && similbrat == 0) {
+			receivedMessage.channel.send(receivedMessage.author + ", ich hab keine Ahnung, was du von mir willst xD Der Befehl ist extrem falsch geschrieben oder existiert nicht uwu Gib nochmal ``c!help`` ein, um eine Liste aller Befehle zu erhalten c:")
+			return
+		}
+
+		if (similarat >= similbrat) {
+			if (similarat == 1) {
+				primaryCommand = similatarg
+			} else if (similarat > 0.4) {
+				primaryCommand = similatarg
+				receivedMessage.channel.send(receivedMessage.author + ", ich habe ``c!" + similatarg + "`` erkannt. (" + (Math.round(similarat * 100)) + "% Übereinstimmung)")
+			} else {
+				receivedMessage.channel.send(receivedMessage.author + ", meintest du ``c!" + similatarg + "``? (" + (Math.round(similarat * 100)) + "% Übereinstimmung)")
+				primaryCommand = "wwwww"
+			}
 		} else {
-			receivedMessage.channel.send(receivedMessage.author + ", meintest du ``c!" + similbtarg + "``? (" + (Math.round(similbrat * 100)) + "% Übereinstimmung)")
-			primaryCommand = "wwwww"
+			if (similbrat == 1) {
+				primaryCommand = similbtarg
+			} else if (similbrat > 0.4) {
+				primaryCommand = similbtarg
+				receivedMessage.channel.send(receivedMessage.author + ", ich habe ``c!" + similbtarg + "`` erkannt. (" + (Math.round(similbrat * 100)) + "% Übereinstimmung)")
+			} else {
+				receivedMessage.channel.send(receivedMessage.author + ", meintest du ``c!" + similbtarg + "``? (" + (Math.round(similbrat * 100)) + "% Übereinstimmung)")
+				primaryCommand = "wwwww"
+			}
 		}
 	}
-	if (!client.commands.has(primaryCommand)){
+
+	if (!client.commands.has(primaryCommand)) {
 		console.log("command not found")
 		return
 	}
-	
+
 	try {
 		client.commands.get(primaryCommand).execute(arguments, receivedMessage);
-		console.log("tried to execute "+primaryCommand+" command")
+		console.log("tried to execute " + primaryCommand + " command")
 	} catch (error) {
 		console.error(error);
 		receivedMessage.reply('Ein unerwarteter Fehler ist aufgetreten!');
