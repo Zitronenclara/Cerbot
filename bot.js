@@ -24,6 +24,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 exports.commandObject = client.commands
+exports.clientThing = client
 
 const ccget = new Set();
 const xpget = new Set();

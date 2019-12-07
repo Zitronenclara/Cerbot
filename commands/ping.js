@@ -2,14 +2,15 @@ const fs = require('fs');
 const Discord = require('discord.js');
 var mysql = require('mysql');
 const con = require('./../db.js');
+const lt = require('./../bot.js');
 
 module.exports = {
 	name: 'ping',
-	description: 'Pong!',
-	category: 'Admin',
+	description: 'Testet die aktuelle Verbindung zum Bot',
+	category: 'Sonstiges',
     usage: '``c!ping``',
 	execute(arguments, receivedMessage) {
-		if (receivedMessage.author.id == "422716344228642828"){
-			receivedMessage.channel.send("Pong!")}
+			var clientThing = require('./../bot.js');
+			receivedMessage.channel.send("Pong! ``"+(clientThing.clientThing.ping).toFixed(2)+"ms``")
 	},
 };
