@@ -171,7 +171,7 @@ function processCommand(receivedMessage) {
 
 	try {
 		client.commands.get(primaryCommand).execute(arguments, receivedMessage);
-		console.log("tried to execute " + primaryCommand + " command")
+		console.log("executed " + primaryCommand + " command")
 	} catch (error) {
 		console.error(error);
 		receivedMessage.reply('Ein unerwarteter Fehler ist aufgetreten!');
