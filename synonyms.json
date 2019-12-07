@@ -69,6 +69,10 @@
             "set": "marry"
         },
         {
+            "get": ["minfo", "hochzeitsinfo", "relationship", "relinfo", "rel"],
+            "set": "marryinfo"
+        },
+        {
             "get": ["owo"],
             "set": "owo"
         },
