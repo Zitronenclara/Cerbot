@@ -39,6 +39,15 @@ module.exports = {
 		}else if (arguments == "hades" || arguments == "Hades"){
 			const it = require('./shopitems/hades.js');
 			it.sellhades(receivedMessage);
+		}else if (arguments == "zeus" || arguments == "Zeus"){
+			const it = require('./shopitems/zeus.js');
+			it.sellzeus(receivedMessage);
+		}else if (arguments == "kekselaos" || arguments == "Kekselaos"){
+			const it = require('./shopitems/kekselaos.js');
+			it.sellkekselaos(receivedMessage);
+		}else if (arguments == "halbluzifer" || arguments == "Halbluzifer"){
+			const it = require('./shopitems/halbluzifer.js');
+			it.sellhalbluzifer(receivedMessage);
 		}
 	},
 };
