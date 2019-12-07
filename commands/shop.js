@@ -13,7 +13,7 @@ module.exports = {
 		.setTitle("**Shopnachricht**")
 		.setColor("0x0000FF")
 		.setDescription("*Hier siehst du alle Shop-Items. Mit c!buy [itemnummer], kannst du dir das Item kaufen c: Natürlich ohne die [] schreiben uwu*")
-		.addField("**Rollen**", "**Halbluzifer** - *Luzis ehrenvolle Lakeien* [``250000❦``] No.12\n" +
+		.addField("**Rollen**", "**Halbluzifer** - *Luzis ehrenvolle Lakeien* [``250000❦``] No.13\n" +
 								"**Kekselaos** - *Gott der Kekse* [``150000❦``] No.12\n" +
 								"**Zeus** - *Oberster olympischer Gott* [``100000❦``] No.11\n" +
 								"**Hades** - *Herrscher der Unterwelt* [``60000❦``] No.10\n" +
