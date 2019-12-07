@@ -6,7 +6,7 @@ const lt = require('./../bot.js');
 
 module.exports = {
 	name: 'ping',
-	description: 'Testet die aktuelle Verbindung zum Bot',
+	description: 'Testet die aktuelle Verbindung vom Bot zum Server',
 	category: 'Sonstiges',
     usage: '``c!ping``',
 	execute(arguments, receivedMessage) {
