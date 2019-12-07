@@ -6,6 +6,7 @@ var stringSimilarity = require('string-similarity');
 const con = require('./db.js')
 const config = require('./config.json')
 const synonyms = JSON.parse(JSON.stringify(synonym))
+const games = require('./playings.json')
 
 con.connect(function (err) {
 	if (err) throw err;
@@ -38,6 +39,12 @@ client.on('ready', () => {
 	client.user.setActivity('gib c!help ein c:', {
 		type: 'PLAYING'
 	})
+	setInterval (function () {
+		var randogame = Math.floor(Math.random() * games.playings.length)
+		client.user.setActivity(games.playings[randogame], {
+			type: 'PLAYING'
+		})
+   }, 300000);
 })
 
 client.on('typingStart', (ch, us) => {
