@@ -29,6 +29,10 @@
             "set": "downatk"
         },
         {
+            "get": ["trennen", "schlussmachen", "musslos", "binnochaufarbeit"],
+            "set": "divorce"
+        },
+        {
             "get": ["dwdef", "ddef", "defdown"],
             "set": "downdef"
         },

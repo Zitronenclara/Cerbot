@@ -21,7 +21,7 @@ module.exports = {
                     receivedMessage.reply("du kannst dich nicht selbst heiraten xD Sei nicht traurig, irgendwann wird auch dein Moment kommen c:")
                     return
                 }
-                if (target.bot){
+                if (target.bot) {
                     receivedMessage.reply("du kannst keinen Bot heiraten.")
                     return
                 }
@@ -36,47 +36,51 @@ module.exports = {
                             console.log("User " + initid + " added to the Database");
                         });
                     }
+                });
+                con.query("SELECT marrystamp FROM userdata WHERE usrid = '" + target.id + "'", function (err, result, fields) {
                     if (result[0].marrystamp !== 0) {
                         receivedMessage.reply("leider ist " + target + " schon vergeben uwu")
                         vergeben.add(target.id)
                     }
                 });
-                if (!vergeben.has(target.id)) {
-                    vergeben.delete(target.id)
-                    return
-                }
-                receivedMessage.channel.send(":heart:" + target + ", willst du " + receivedMessage.author + " heiraten? :heart:")
-                    .then(message => {
-                        message.react('✅').then(() => message.react('❌'));
-                        const filter = (reaction, user) => {
-                            return ['✅', '❌'].includes(reaction.emoji.name) && user.id === target.id;
-                        };
-                        message.awaitReactions(filter, {
-                                max: 1,
-                                time: 30000,
-                                errors: ['time'],
-                            })
-                            .then((collected) => {
-                                if (collected.first().emoji.name === '✅') {
-                                    con.query("UPDATE `cerbotdb`.`userdata` SET `married`='" + target.id + "' WHERE  `id`=" + result[0].id + ";")
-                                    receivedMessage.channel.send(receivedMessage.author + " und " + target + ", ihr dürft euch jetzt :PandaKiss:").then(hmes => {
-                                        var time = hmes.createdTimestamp
-                                        con.query("UPDATE `cerbotdb`.`userdata` SET `marrystamp`=" + time + " WHERE  `id`=" + result[0].id + ";")
-                                        con.query("SELECT id ,coins, coinstransget FROM userdata WHERE usrid = '" + target.id + "'", function (err, result, fields) {
-                                            if (err) throw err;
-                                            con.query("UPDATE `cerbotdb`.`userdata` SET `married`='" + receivedMessage.author.id + "' WHERE  `id`=" + result[0].id + ";")
+                setTimeout(function () {
+                    if (vergeben.has(target.id)) {
+                        vergeben.delete(target.id)
+                        return
+                    }
+                    receivedMessage.channel.send(":heart:" + target + ", willst du " + receivedMessage.author + " heiraten? :heart:")
+                        .then(mes => {
+                            mes.react('✅').then(() => mes.react('❌'));
+                            const filter = (reaction, user) => {
+                                return ['✅', '❌'].includes(reaction.emoji.name) && user.id === target.id;
+                            };
+                            mes.awaitReactions(filter, {
+                                    max: 1,
+                                    time: 30000,
+                                    errors: ['time'],
+                                })
+                                .then((collected) => {
+                                    if (collected.first().emoji.name === '✅') {
+                                        con.query("UPDATE `cerbotdb`.`userdata` SET `married`='" + target.id + "' WHERE  `id`=" + result[0].id + ";")
+                                        receivedMessage.channel.send(receivedMessage.author + " und " + target + ", ihr dürft euch jetzt :PandaKiss:").then(hmes => {
+                                            var time = hmes.createdTimestamp
                                             con.query("UPDATE `cerbotdb`.`userdata` SET `marrystamp`=" + time + " WHERE  `id`=" + result[0].id + ";")
-                                        });
-                                    })
-                                } else if (collected.first().emoji.name === '❌') {
-                                    message.channel.send("Dein Heiratsantrag wurde abgelehnt :c");
-                                }
-                            })
-                            .catch((err) => {
-                                console.log(err)
-                                message.channel.send(`Keine Antwort uwu Auch irgendwie sad`);
-                            })
-                    })
+                                            con.query("SELECT id, married, marrystamp FROM userdata WHERE usrid = '" + target.id + "'", function (err, result, fields) {
+                                                if (err) throw err;
+                                                con.query("UPDATE `cerbotdb`.`userdata` SET `married`='" + receivedMessage.author.id + "' WHERE  `id`=" + result[0].id + ";")
+                                                con.query("UPDATE `cerbotdb`.`userdata` SET `marrystamp`=" + time + " WHERE  `id`=" + result[0].id + ";")
+                                            });
+                                        })
+                                    } else if (collected.first().emoji.name === '❌') {
+                                        mes.channel.send("Dein Heiratsantrag wurde abgelehnt :c");
+                                    }
+                                })
+                                .catch((err) => {
+                                    console.log(err)
+                                    mes.channel.send(`Keine Antwort uwu Auch irgendwie sad`);
+                                })
+                        })
+                }, 100);
             } else {
                 receivedMessage.reply("du bist bereits verheiratet.")
             }
