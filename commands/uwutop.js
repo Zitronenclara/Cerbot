@@ -5,9 +5,7 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'uwutop',
-	description: 'Zeigt dir eine Rangliste mit den Top 10 der Usern, die am häufigsten uwu geschrieben haben',
-	category: 'Stats',
-    usage: '``c!uwutop``',
+	description: 'shows the uwu-toplist',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,uwucount FROM userdata ORDER BY uwucount DESC LIMIT 10", function (err, result, fields) {
 			if (err) throw err;
@@ -27,5 +25,6 @@ module.exports = {
 	    	.setTimestamp()
 	    	receivedMessage.channel.send(mestopmes);
 		});
+		console.log("uwutop command executed")
 	},
 };

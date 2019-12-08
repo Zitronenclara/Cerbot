@@ -5,15 +5,13 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setnickname',
-    description: 'Damit kannst du deinen Spitznamen auf deinem Steckbrief anpassen',
-    category: 'Steckbriefe',
-    usage: '``c!setnickname [spitzname]``',
+    description: 'Sets your nickname',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein Spitzname sein soll.")
             return
         }
-        var newnickname = receivedMessage.content.substr(14).replace(/\\n/g, "");
+        var newnickname = receivedMessage.content.substr(14)
         if (newnickname.length > 50) {
             receivedMessage.reply("dein Spitzname darf nicht länger als 50 Zeichen lang sein uwu Shit happens.")
             return

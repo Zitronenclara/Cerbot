@@ -5,15 +5,13 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setfavcol',
-    description: 'Damit kannst du deine Lieblingsfarbe auf deinem Steckbrief anpassen',
-    category: 'Steckbriefe',
-    usage: '``c!setfavcol [lieblingsfarbe]``',
+    description: 'Sets your favourite color',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Lieblingsfarbe sein soll.")
             return
         }
-        var newfavcol = receivedMessage.content.substr(12).replace(/\\n/g, "");
+        var newfavcol = receivedMessage.content.substr(12)
         if (newfavcol.length > 50) {
             receivedMessage.reply("deine Lieblingsfarbe darf nicht länger als 50 Zeichen lang sein uwu Gibt es überhaupt Farben, die so einen langen Namen haben? xD.")
             return

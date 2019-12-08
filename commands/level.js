@@ -6,9 +6,7 @@ var Jimp = require('jimp');
 
 module.exports = {
     name: 'level',
-    description: 'Zeigt dir dein oder das Level eines beliebigen Users',
-    category: 'Stats',
-    usage: '``c!level``, ``c!level @user``',
+    description: 'shows the level of the target',
     execute(arguments, receivedMessage) {
         if (!receivedMessage.mentions.users.size) {
             var target = receivedMessage.member
@@ -77,7 +75,7 @@ module.exports = {
                 }
                 var platz = ranks.filter(item => item[0] == target.id)[0][3];
                 Jimp.read("./level-back.jpg").then(async background => {
-                    Jimp.loadFont('./font.fnt').then(async font => {
+                    Jimp.loadFont(Jimp.FONT_SANS_64_WHITE).then(async font => {
                         var hex = target.displayHexColor
                         var hexa = Jimp.cssColorToHex(hex);
                         var balken = new Jimp(anteil, 70, hexa);

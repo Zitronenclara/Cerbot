@@ -5,9 +5,7 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'gives',
-	description: 'Gibt einem beliebigen User eine beliebige Anzahl an Seelen',
-	category: 'Admin',
-    usage: '``c!gives @user [anzahl]``',
+	description: 'gives souls to user',
 	execute(arguments, receivedMessage) {
 		if (receivedMessage.author.id == "422716344228642828"){
 			var givec = parseFloat(arguments.find(arg => !/<@!?\d+>/g.test(arg)),0);

@@ -5,15 +5,13 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setsize',
-    description: 'Damit kannst du deine Körpergröße auf deinem Steckbrief anpassen',
-    category: 'Steckbriefe',
-    usage: '``c!setsize [körpergröße]``',
+    description: 'Sets your size',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Körpergröße sein soll.")
             return
         }
-        var newsize = receivedMessage.content.substr(10).replace(/\\n/g, "");
+        var newsize = receivedMessage.content.substr(10)
         if (newsize > 50) {
             receivedMessage.reply("deine Körpergröße darf nicht länger als 50 Zeichen lang sein xD.")
             return
