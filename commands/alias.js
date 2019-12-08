@@ -7,9 +7,7 @@ const synonyms = JSON.parse(JSON.stringify(synonym))
 
 module.exports = {
     name: 'alias',
-    description: 'Zeigt dir alle Synonyme für den angegebenen Befehl',
-    category: 'Sonstiges',
-    usage: '``c!alias [befehl]``',
+    description: 'shows alias of an command',
     execute(arguments, receivedMessage) {
         var search = arguments[0];
         if (!search){

@@ -5,9 +5,7 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'downdef',
-    description: 'Damit kannst du gekaufte Verteidigungspunkte wieder gegen Seelen umtauschen',
-    category: 'Kampfsystem',
-    usage: '``c!downdef [anzahl]``',
+    description: 'to downgrade your def-stats!',
     execute(arguments, receivedMessage) {
         var downing = parseFloat(arguments.find(arg => !/<@!?\d+>/g.test(arg)), 0);
         var downinga = arguments.find(arg => !/<@!?\d+>/g.test(arg))

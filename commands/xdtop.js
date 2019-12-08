@@ -5,9 +5,7 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'xdtop',
-	description: 'Zeigt dir eine Rangliste mit den Top 10 der Usern, die am häufigsten xD geschrieben haben',
-	category: 'Stats',
-    usage: '``c!xdtop``',
+	description: 'shows the xd-toplist',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,xdcount FROM userdata ORDER BY xdcount DESC LIMIT 10", function (err, result, fields) {
 			if (err) throw err;
@@ -27,5 +25,6 @@ module.exports = {
 	    	.setTimestamp()
 	    	receivedMessage.channel.send(mestopmes);
 		});
+		console.log("xdtop command executed")
 	},
 };

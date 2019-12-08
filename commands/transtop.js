@@ -5,9 +5,7 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'transtop',
-	description: 'Zeigt dir die Top 10 User mit den besten Transferbilanzen',
-	category: 'Stats',
-    usage: '``c!transtop``',
+	description: 'shows the transfer-toplist',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,coinstrans ,coinstransget FROM userdata", function (err, result, fields) {
             if (err) throw err;
@@ -33,5 +31,6 @@ module.exports = {
 	    	.setTimestamp()
 	    	receivedMessage.channel.send(mestopmes);
 		});
+		console.log("transtop command executed")
 	},
 };

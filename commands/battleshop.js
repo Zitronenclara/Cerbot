@@ -5,9 +5,7 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'battleshop',
-    description: 'Schickt dir eine Liste aller Items des Kampf-Shops per DM',
-    category: 'Kampfsystem',
-    usage: '``c!battleshop``',
+    description: 'Battleshop-Message',
     execute(arguments, receivedMessage) {
         const shopmes = new Discord.RichEmbed()
             .setTitle("**Kampfshopnachricht**")
@@ -25,5 +23,6 @@ module.exports = {
         receivedMessage.author.send(shopmes)
             .catch(() => receivedMessage.channel.send("Du hast Server DM's leider ausgeschalten!"));
         receivedMessage.channel.send(receivedMessage.author + ", dir wurde eine Liste aller Kampfshop-Items per DM geschickt.")
+        console.log("battleshop command executed")
     },
 };

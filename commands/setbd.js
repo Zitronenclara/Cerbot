@@ -5,15 +5,13 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setbd',
-    description: 'Damit kannst du dein Geburtsdatum auf deinem Steckbrief anpassen',
-    category: 'Steckbriefe',
-    usage: '``c!setbd [geburtstag]``',
+    description: 'Sets your birthday',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein Geburtstag sein soll.")
             return
         }
-        var newbd = receivedMessage.content.substr(8).replace(/\\n/g, "");
+        var newbd = receivedMessage.content.substr(8)
         if (newbd.length > 50) {
             receivedMessage.reply("dein Geburtstag darf nicht länger als 50 Zeichen lang sein uwu Warum auch xD.")
             return
