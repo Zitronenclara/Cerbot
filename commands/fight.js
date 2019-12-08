@@ -7,7 +7,9 @@ const busy = new Set();
 
 module.exports = {
     name: 'fight',
-    description: 'Fight!',
+    description: 'Damit forderst du einen beliebigen User zum Kampf heraus',
+    category: 'Kampfsystem',
+    usage: '``c!fight @user``',
     execute(arguments, message) {
         //checks if the username to fight is in the message
         let author1 = message.author.username;

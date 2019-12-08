@@ -5,13 +5,15 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setrealname',
-    description: 'Sets your real name',
+    description: 'Damit kannst du deinen echten Namen auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setrealname [name]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein neuer Name sein soll.")
             return
         }
-        var newrealname = receivedMessage.content.substr(14)
+        var newrealname = receivedMessage.content.substr(14).replace(/\\n/g, "");
         if (newrealname.length > 50) {
             receivedMessage.reply("dein Name darf nicht länger als 50 Zeichen lang sein uwu Shit happens.")
             return

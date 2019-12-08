@@ -1,11 +1,12 @@
 {
-    "syn": [{
-            "get": ["ms", "hi"],
-            "set": "ping"
+    "syn": [
+        {
+            "get": ["adv", "exp", "expedition", "advenutre", "abenteuer", "a"],
+            "set": "adventure"
         },
         {
-            "get": ["adv", "exp", "expedition", "advenutre", "abenteuer"],
-            "set": "adventure"
+            "get": ["al", "syn", "synonym", "synonyms"],
+            "set": "alias"
         },
         {
             "get": ["bshop", "bsp", "kampfshop"],
@@ -16,12 +17,76 @@
             "set": "battlestats"
         },
         {
+            "get": ["kauf", "kaufen"],
+            "set": "buy"
+        },
+        {
             "get": ["changes", "chlog", "cl", "changel", "versions", "version", "clog"],
             "set": "changelog"
         },
         {
+            "get": ["dwatk", "datk", "atkdown"],
+            "set": "downatk"
+        },
+        {
+            "get": ["trennen", "schlussmachen", "musslos", "binnochaufarbeit"],
+            "set": "divorce"
+        },
+        {
+            "get": ["dwdef", "ddef", "defdown"],
+            "set": "downdef"
+        },
+        {
+            "get": ["dg", "lower"],
+            "set": "downgrade"
+        },
+        {
+            "get": ["dwhp", "dhp", "hpdown"],
+            "set": "downhp"
+        },
+        {
+            "get": ["battle", "duel", "attack"],
+            "set": "fight"
+        },
+        {
             "get": ["h", "hilfe", "hülfe", "ichnixwissen", "bittehelfensiemir"],
             "set": "help"
+        },
+        {
+            "get": ["idea", "ideas", "idee"],
+            "set": "ideen"
+        },
+        {
+            "get": ["lvl", "l", "rank", "lev"],
+            "set": "level"
+        },
+        {
+            "get": ["lvltop", "ltop", "levtop", "ranking", "levelt", "lvlt"],
+            "set": "leveltop"
+        },
+        {
+            "get": ["verkackt", "verkacktop", "verkackttop"],
+            "set": "losetop"
+        },
+        {
+            "get": ["heirat", "heiraten", "antrag", "heiratsantrag"],
+            "set": "marry"
+        },
+        {
+            "get": ["minfo", "hochzeitsinfo", "relationship", "relinfo", "rel"],
+            "set": "marryinfo"
+        },
+        {
+            "get": ["owo"],
+            "set": "owo"
+        },
+        {
+            "get": ["owot"],
+            "set": "owotop"
+        },
+        {
+            "get": ["ms", "hi"],
+            "set": "ping"
         },
         {
             "get": ["profile", "prof", "stat", "p"],
@@ -32,63 +97,20 @@
             "set": "seelen"
         },
         {
-            "get": ["infos", "info"],
-            "set": "userinfo"
-        },
-        {
-            "get": ["lvl", "l", "rank", "lev"],
-            "set": "level"
-        },
-        {
-            "get": ["al", "syn", "synonym", "synonyms"],
-            "set": "alias"
-        },
-        {
-            "get": ["battle", "duel", "attack"],
-            "set": "fight"
-        },
-        {
-            "get": ["lvltop", "ltop", "levtop", "ranking", "levelt", "lvlt"],
-            "set": "leveltop"
-        },
-        {
             "get": ["soultop", "stop", "baltop", "soult", "seelent"],
             "set": "seelentop"
         },
         {
-            "get": ["transf", "gift", "give"],
-            "set": "transfer"
-        },
-        {
-            "get": ["dg", "lower"],
-            "set": "downgrade"
-        }, {
-            "get": ["idea", "ideas", "idee"],
-            "set": "ideen"
-        },
-        {
-            "get": ["owot"],
-            "set": "owotop"
-        },
-        {
-            "get": ["uwut"],
-            "set": "uwutop"
-        },
-        {
-            "get": ["xdt"],
-            "set": "xdtop"
-        },
-        {
-            "get": ["verkackt, verkacktop, verkackttop"],
-            "set": "losetop"
-        },
-        {
-            "get": ["setdescription", "description", "beschreibung", "setbeschreibung"],
-            "set": "setdesc"
+            "get": ["verkauf", "verkaufen"],
+            "set": "sell"
         },
         {
             "get": ["setbirthday", "birthday", "geburtstag", "setgeburtstag"],
             "set": "setbd"
+        },
+        {
+            "get": ["setdescription", "description", "beschreibung", "setbeschreibung"],
+            "set": "setdesc"
         },
         {
             "get": ["setfavouritecolor", "favouritecolor", "setfavcolor", "favcolor", "favcol", "color", "setcolor", "lieblingsfarbe", "setlieblingsfarbe"],
@@ -115,12 +137,48 @@
             "set": "setsize"
         },
         {
-            "get": ["serverstats"],
+            "get": ["laden", "markt"],
+            "set": "shop"
+        },
+        {
+            "get": ["serverstats", "serverst"],
             "set": "stats"
         },
         {
-            "get": ["winner", "beschter"],
+            "get": ["transf", "gift", "give"],
+            "set": "transfer"
+        },
+        {
+            "get": ["transt", "bilanztop"],
+            "set": "transtop"
+        },
+        {
+            "get": ["infos", "info"],
+            "set": "userinfo"
+        },
+        {
+            "get": ["uwu"],
+            "set": "uwu"
+        },
+        {
+            "get": ["uwut"],
+            "set": "uwutop"
+        },
+        {
+            "get": ["wertt"],
+            "set": "werttop"
+        },
+        {
+            "get": ["winner", "beschter", "wint"],
             "set": "wintop"
+        },
+        {
+            "get": ["xd"],
+            "set": "xd"
+        },
+        {
+            "get": ["xdt"],
+            "set": "xdtop"
         }
     ]
 }

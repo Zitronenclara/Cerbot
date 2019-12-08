@@ -5,13 +5,15 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'sethobbys',
-    description: 'Sets your hobbys',
+    description: 'Damit kannst du deine Hobbys auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!sethobbys [hobbys]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was deine Hobbys sein sollen.")
             return
         }
-        var newhobbys = receivedMessage.content.substr(12)
+        var newhobbys = receivedMessage.content.substr(12).replace(/\\n/g, "");
         if (newhobbys > 300) {
             receivedMessage.reply("deine Hobbys dürfen nicht länger als 300 Zeichen lang sein xD.")
             return

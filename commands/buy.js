@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'buy',
-	description: 'to buy items',
+	description: 'Damit kannst du Rollen und andere Items gegen Seelen eintauschen.',
+	category: 'Währung',
+    usage: '``c!buy [itemname/itemnummer]``',
 	execute(arguments, receivedMessage) {
 		if (arguments == "1") {
 			const it = require('./shopitems/charon.js');
@@ -37,6 +39,15 @@ module.exports = {
 		} else if (arguments == "10") {
 			const it = require('./shopitems/hades.js');
 			it.buyhades(receivedMessage);
+		} else if (arguments == "11") {
+			const it = require('./shopitems/zeus.js');
+			it.buyzeus(receivedMessage);
+		} else if (arguments == "12") {
+			const it = require('./shopitems/kekselaos.js');
+			it.buykekselaos(receivedMessage);
+		} else if (arguments == "13") {
+			const it = require('./shopitems/halbluzifer.js');
+			it.buyhalbluzifer(receivedMessage);
 		} else if (arguments == "calcium" || arguments == "Calcium") {
 			const it = require('./shopitems/calcium.js');
 			it.buycalcium(receivedMessage);

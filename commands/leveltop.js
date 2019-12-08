@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
 	name: 'leveltop',
-	description: 'shows the level-toplist',
+	description: 'Zeigt dir die serverweite Levelsystem-Rangliste',
+	category: 'Stats',
+    usage: '``c!leveltop``',
 	execute(arguments, receivedMessage) {
 		con.query("SELECT usrid ,level ,xp FROM userdata", function (err, result, fields) {
 			if (err) throw err;
@@ -44,6 +46,5 @@ module.exports = {
 				.setTimestamp()
 			receivedMessage.channel.send(mestopmes);
 		});
-		console.log("leveltop command executed")
 	},
 };

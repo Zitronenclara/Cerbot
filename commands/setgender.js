@@ -5,13 +5,15 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'setgender',
-    description: 'Sets your gender',
+    description: 'Damit kannst du dein Geschlecht auf deinem Steckbrief anpassen',
+    category: 'Steckbriefe',
+    usage: '``c!setgender [geschlecht]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0) {
             receivedMessage.reply("du musst schon sagen, was dein Geschlecht sein soll.")
             return
         }
-        var newgender = receivedMessage.content.substr(12)
+        var newgender = receivedMessage.content.substr(12).replace(/\\n/g, "");
         if (newgender > 50) {
             receivedMessage.reply("dein Geschlecht darf nicht länger als 50 Zeichen lang sein xD.")
             return

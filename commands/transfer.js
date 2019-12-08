@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'transfer',
-    description: 'transfers souls to other users!',
+    description: 'Damit kannst du einem beliebigen User eine beliebige Anzahl an Seelen überweisen',
+    category: 'Währung',
+    usage: '``c!transfer @user [betrag]``',
     execute(arguments, receivedMessage) {
         var transc = parseFloat(arguments.find(arg => !/<@!?\d+>/g.test(arg)), 0);
         var transb = arguments.find(arg => !/<@!?\d+>/g.test(arg));

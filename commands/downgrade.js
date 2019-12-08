@@ -5,7 +5,9 @@ const con = require('./../db.js');
 
 module.exports = {
     name: 'downgrade',
-    description: 'Information about downgrading Battlestats!',
+    description: 'Gibt dir mehr Informationen über das Downgraden von Kampfstatistiken',
+    category: 'Kampfsystem',
+    usage: '``c!downgrade``',
     execute(arguments, receivedMessage) {
         const downgrademes = new Discord.RichEmbed()
             .setTitle("**Battlestats downgraden?**")
@@ -21,6 +23,5 @@ module.exports = {
                 "verringert deine Verteidigungspunkte um ``[anzahl]`` (müssen nach downgrade mind. 0 sein)\n" +
                 "pro downgegradeter DEF-Punkt werden dir **450**❦ gutgeschrieben.\n")
         receivedMessage.channel.send(downgrademes)
-        console.log("downgrade command executed")
     },
 };
