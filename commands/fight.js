@@ -71,21 +71,27 @@ module.exports = {
                     .then((collected) => {
                         if (collected.first().emoji.name === '✅') {
                             message.channel.send(`${challenged} hat die Herausforderung angenommen! ${message.author} mach dich bereit! FIGHT!`);
-                            con.query("SELECT id, maxhp, power, defense, wins, loses FROM userdata WHERE usrid = '" + message.author.id + "' or usrid = '" + user.id + "'", function (err, result, fields) {
+                            con.query("SELECT id, maxhp, power, defense, wins, loses, usrid FROM userdata WHERE usrid = '" + message.author.id + "' or usrid = '" + user.id + "'", function (err, result, fields) {
                                 if (err) throw err;
+                                var autres = result.find(({
+                                    usrid
+                                }) => usrid == message.author.id)
+                                var chalres = result.find(({
+                                    usrid
+                                }) => usrid == user.id)
                                 var autav = message.author.displayAvatarURL;
                                 var autnam = message.author.username;
-                                var autmaxhp = result[0].maxhp;
-                                var autatk = result[0].power;
-                                var autdef = result[0].defense;
-                                var autid = result[0].id;
+                                var autmaxhp = autres.maxhp;
+                                var autatk = autres.power;
+                                var autdef = autres.defense;
+                                var autid = autres.id;
                                 var authp = autmaxhp;
                                 var chalav = user.displayAvatarURL;
                                 var chalnam = user.username;
-                                var chalmaxhp = result[1].maxhp;
-                                var chalatk = result[1].power;
-                                var chaldef = result[1].defense;
-                                var chalid = result[1].id;
+                                var chalmaxhp = chalres.maxhp;
+                                var chalatk = chalres.power;
+                                var chaldef = chalres.defense;
+                                var chalid = chalres.id;
                                 var chalhp = chalmaxhp;
                                 Jimp.read("./fight-back.jpg").then(async background => {
                                     var autp = await Jimp.read(autav);
