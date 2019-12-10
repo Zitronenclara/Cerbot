@@ -10,7 +10,11 @@ module.exports = {
 	category: 'Sonstiges',
     usage: '``c!ping``',
 	execute(arguments, receivedMessage) {
-			var clientThing = require('./../bot.js');
-			receivedMessage.channel.send("Pong! ``"+(clientThing.clientThing.ping).toFixed(2)+"ms``")
+			receivedMessage.channel.send("Pong!").then(mes => {
+				var first = receivedMessage.createdTimestamp
+				var second = mes.createdTimestamp
+				var pingy = second - first
+				mes.edit("Pong! ``"+pingy+"ms``")
+			})
 	},
 };
