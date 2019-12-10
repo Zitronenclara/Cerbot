@@ -13,7 +13,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was deine Körpergröße sein soll.")
             return
         }
-        var newsize = receivedMessage.content.substr(10).replace(/\\n/g, "");
+        var newsize = receivedMessage.content.substr(10).replace(/\\n/g, "").replace(/\\r/g, "");
         if (newsize > 50) {
             receivedMessage.reply("deine Körpergröße darf nicht länger als 50 Zeichen lang sein xD.")
             return

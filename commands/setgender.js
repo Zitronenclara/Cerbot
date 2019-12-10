@@ -13,7 +13,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was dein Geschlecht sein soll.")
             return
         }
-        var newgender = receivedMessage.content.substr(12).replace(/\\n/g, "");
+        var newgender = receivedMessage.content.substr(12).replace(/\\n/g, "").replace(/\\r/g, "");
         if (newgender > 50) {
             receivedMessage.reply("dein Geschlecht darf nicht länger als 50 Zeichen lang sein xD.")
             return

@@ -13,7 +13,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was dein Geburtstag sein soll.")
             return
         }
-        var newbd = receivedMessage.content.substr(8).replace(/\\n/g, "");
+        var newbd = receivedMessage.content.substr(8).replace(/\\n/g, "").replace(/\\r/g, "");
         if (newbd.length > 50) {
             receivedMessage.reply("dein Geburtstag darf nicht länger als 50 Zeichen lang sein uwu Warum auch xD.")
             return

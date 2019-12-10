@@ -13,7 +13,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was dein Spitzname sein soll.")
             return
         }
-        var newnickname = receivedMessage.content.substr(14).replace(/\\n/g, "");
+        var newnickname = receivedMessage.content.substr(14).replace(/\\n/g, "").replace(/\\r/g, "");
         if (newnickname.length > 50) {
             receivedMessage.reply("dein Spitzname darf nicht länger als 50 Zeichen lang sein uwu Shit happens.")
             return

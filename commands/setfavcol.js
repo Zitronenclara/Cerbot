@@ -13,7 +13,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was deine Lieblingsfarbe sein soll.")
             return
         }
-        var newfavcol = receivedMessage.content.substr(12).replace(/\\n/g, "");
+        var newfavcol = receivedMessage.content.substr(12).replace(/\\n/g, "").replace(/\\r/g, "");
         if (newfavcol.length > 50) {
             receivedMessage.reply("deine Lieblingsfarbe darf nicht länger als 50 Zeichen lang sein uwu Gibt es überhaupt Farben, die so einen langen Namen haben? xD.")
             return

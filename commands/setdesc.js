@@ -13,7 +13,7 @@ module.exports = {
             receivedMessage.reply("du musst schon sagen, was deine Beschreibung sein soll.")
             return
         }
-        var newdesc = receivedMessage.content.substr(10).replace(/\\n/g, "");
+        var newdesc = receivedMessage.content.substr(10).replace(/\\n/g, "").replace(/\\r/g, "");
         if (newdesc > 300) {
             receivedMessage.reply("deine Beschreibung darf nicht länger als 300 Zeichen lang sein xD.")
             return
