@@ -1,4 +1,4 @@
-//Cerbot v1.6 by Clara
+//Cerbot v1.7 by Clara
 const fs = require('fs');
 const Discord = require('discord.js')
 var mysql = require('mysql');
