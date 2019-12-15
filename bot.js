@@ -334,7 +334,7 @@ let dailygain = function (us, ch, usid, tstamp) {
 exports.dailygain = dailygain;
 
 let logging = function (color, tit, desc, ftit, fdesc) {
-	const logch = client.channels.get("634011755021991961")
+	const logch = client.channels.get("633308005630476308")
 	const logmes = new Discord.RichEmbed()
 		.setColor(color)
 		.setTitle(tit)

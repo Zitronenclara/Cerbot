@@ -26,6 +26,6 @@
     }, {
         "desc": "Cerbot V1.7 [15.12.2019]",
         "num": "1.7",
-        "changes": "❥ Rechtschreibfehler wurden behoben\n❥ Der ``c!ping``-Befehl wurde optimiert\n❥ Ein fataler Steckbrief Bug wurde behoben\n❥ Es würden mehr ``c!marryinfo``-Zeiteinheiten hinzugefügt c:\n❥ Ein paar wichtige Admin-Befehle wurden hinzugefügt\n❥ Der ``c!fight`` Befehl läuft nun endlich ohne Fehler\n❥ Es wurden 30 neue ``c!adventure``-Events hinzugefügt\n❥ Es wurden 50 neue Bot-Spiele hinzugefügt (insgesamt 100), die der Bot aller 5 Minuten zufällig ändert"
+        "changes": "❥ Rechtschreibfehler wurden behoben\n❥ Der ``c!ping``-Befehl wurde optimiert\n❥ Ein fataler Steckbrief Bug wurde behoben\n❥ Es wurden mehr ``c!marryinfo``-Zeiteinheiten hinzugefügt c:\n❥ Ein paar wichtige Admin-Befehle wurden hinzugefügt\n❥ Der ``c!fight`` Befehl läuft nun endlich ohne Fehler\n❥ Es wurden 30 neue ``c!adventure``-Events hinzugefügt\n❥ Es wurden 50 neue Bot-Spiele hinzugefügt (insgesamt 100), die der Bot aller 5 Minuten zufällig ändert"
     }]
 }
