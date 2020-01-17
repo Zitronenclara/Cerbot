@@ -34,6 +34,15 @@ module.exports = {
 					var get = result[0].coinsget
 					var trans = result[0].coinstrans
 					var transget = result[0].coinstransget
+					var birthday = result[0].birthdate
+					var nextbd = "Mit ``c!bdreminder`` kann man seinen Geburtstag setzen."
+					if(birthday !== null){
+						var nowdate = new Date(receivedMessage.createdTimestamp + 32400000)
+						var nowyear = nowdate.getFullYear()
+						var bday = birthday.getDate()
+						var bmonth = birthday.getMonth()
+						var nextbd = new Date("" + nowyear + "-" + (bmonth + 1) + "-" + bday)
+					}
 					if (err) throw err;
 					const profmes = new Discord.RichEmbed()
 						.setTitle("**Höllenprofil**")
@@ -54,6 +63,7 @@ module.exports = {
 						.addField("volle Tage auf diesem Server", Math.round((receivedMessage.createdTimestamp - target.joinedTimestamp) / 86400000))
 						.addField("Dem Server beigetreten am", target.joinedAt)
 						.addField("Account erstellt am", target.user.createdAt)
+						.addField("nächster Geburtstag", nextbd)
 						.setTimestamp()
 					receivedMessage.channel.send(profmes)
 				});

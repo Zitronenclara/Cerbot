@@ -11,7 +11,7 @@ module.exports = {
 	execute(arguments, receivedMessage) {
 		const categories = ["Stats", "Währung", "Sonstiges", "Kampfsystem", "Steckbriefe", "Admin"]
 		var commandObject = require('./../bot.js');
-		//console.log(commandObject.commandObject.filter(o => o.category == 'Kampfsystem').keys())
+
 		if (arguments.length == 0){
 			receivedMessage.reply("gib ``c!help [befehl]`` ein oder suche Befehle nach Kategorien. Es gibt folgende Kategorien:\n``Stats`` ``Währung`` ``Sonstiges`` ``Kampfsystem`` ``Steckbriefe``")
 			return

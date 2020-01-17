@@ -17,6 +17,10 @@
             "set": "battlestats"
         },
         {
+            "get": ["bdrem", "birthdayrem", "birthdayreminder"],
+            "set": "bdreminder"
+        },
+        {
             "get": ["kauf", "kaufen"],
             "set": "buy"
         },
@@ -75,6 +79,10 @@
         {
             "get": ["minfo", "hochzeitsinfo", "relationship", "relinfo", "rel"],
             "set": "marryinfo"
+        },
+        {
+            "get": ["nextbd"],
+            "set": "nextbd"
         },
         {
             "get": ["owo"],
