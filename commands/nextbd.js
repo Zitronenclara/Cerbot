@@ -11,7 +11,6 @@ module.exports = {
     execute(arguments, receivedMessage) {
         con.query("SELECT id, usrid, birthdate FROM userdata WHERE birthdate IS NOT NULL;", function (err, result, fields) {
             if (err) throw err;
-            console.log(result)
             var a = new Date(receivedMessage.createdTimestamp + 32400000)
             bds = [];
             for(i=0; i < result.length; i++){
@@ -26,8 +25,6 @@ module.exports = {
                     day = "0"+day
                 }
                 bdate = new Date("" + year + "-" + month + "-" + day)
-                console.log(bdate)
-                console.log(a)
                 timeleft = bdate - a + 86400000
                 if (timeleft < -86400000){
                     timeleft = timeleft + 31536000000
@@ -37,9 +34,7 @@ module.exports = {
                 alter = year - bd.getFullYear()
                 bds[i] = [result[i].usrid, "``"+day+"."+month+"."+year+"``", timeleft, tage, alter]
             }
-            console.log(bds)
             bds.sort(function(a, b){return a[2]-b[2]})
-            console.log(bds)
             const nextbdembed = new Discord.RichEmbed()
                 .setTitle("**Die nächsten Geburtstage...**")
                 .setColor("0xFFFFFF");

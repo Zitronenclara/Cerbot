@@ -18,7 +18,6 @@ module.exports = {
             return
         }
         var bdate = new Date("" + arguments[2] + "-" + arguments[1] + "-" + arguments[0] + " 01:00")
-        console.log(bdate)
         if (isNaN(bdate)) {
             receivedMessage.reply("das eingegebene Datum ist nicht gültig.\nBitte benutze den Befehl wie folgt: ``c!bdreminder [tag] [monat] [jahr]``. Schreibe die [] nicht mit uwu")
             return

@@ -13,7 +13,7 @@ module.exports = {
 			var target = receivedMessage.mentions.users.first();
 			con.query("SELECT id ,birthdate FROM userdata WHERE usrid = '"+target.id+"'", function (err, result, fields) {
 				if (err) throw err;
-				con.query("UPDATE `cerbotdb`.`userdata` SET `birthdate`= NULL WHERE  `id`="+result[0].id+";")
+				con.query("UPDATE `cerbotdb`.`userdata` SET `birthdate`= NULL WHERE `id`="+result[0].id+";")
 				receivedMessage.channel.send("Der Geburtstag von "+target+" wurde zurückgesetzt.")
 				const lt = require('./../bot.js');
 				lt.logging("0x0000FF", "Geburtstagssystem", "Ein Logeintrag zum Geburtstagssystem", "Geburtstag wurde zurückgesetzt", 
