@@ -9,7 +9,7 @@ module.exports = {
 	category: 'Sonstiges',
     usage: '``c!help``',
 	execute(arguments, receivedMessage) {
-		const categories = ["Stats", "Währung", "Sonstiges", "Kampfsystem", "Steckbriefe", "Admin"]
+		const categories = ["Stats", "Währung", "Sonstiges", "Kampfsystem", "Steckbriefe", "Admin", "Space"]
 		var commandObject = require('./../bot.js');
 
 		if (arguments.length == 0){

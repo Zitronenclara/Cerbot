@@ -61,6 +61,10 @@
             "set": "ideen"
         },
         {
+            "get": ["jump", "Jump"],
+            "set": "jump"
+        },
+        {
             "get": ["lvl", "l", "rank", "lev"],
             "set": "level"
         },
