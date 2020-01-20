@@ -12,35 +12,35 @@ module.exports = {
     category: 'Space',
     usage: '``c!jump``',
     execute(arguments, receivedMessage) {
-        /*receivedMessage.channel.send("Sprung wird vorbereitet").then(mes => {
+        receivedMessage.channel.send("Sprung wird vorbereitet").then(mes => {
             setTimeout(() => {
                 mes.edit("Sprung wird vorbereitet.")
-            }, 1000);
+            }, 100);
             setTimeout(() => {
                 mes.edit("Sprung wird vorbereitet..")
-            }, 2000);
+            }, 200);
             setTimeout(() => {
                 mes.edit("Sprung wird vorbereitet...")
-            }, 3000);
+            }, 300);
             setTimeout(() => {
                 mes.edit("Heisenberg-Quantenantrieb aufgeladen")
-            }, 5000);
+            }, 500);
             setTimeout(() => {
                 mes.edit("Initialisiere Sprung")
-            }, 7000);
+            }, 700);
             setTimeout(() => {
                 mes.edit("Initialisiere Sprung.")
-            }, 8000);
+            }, 800);
             setTimeout(() => {
                 mes.edit("Initialisiere Sprung..")
-            }, 9000);
+            }, 900);
             setTimeout(() => {
                 mes.edit("Initialisiere Sprung...")
-            }, 10000);
+            }, 1000);
             setTimeout(() => {
                 mes.delete()
-            }, 11000);
-        })*/
+            }, 1100);
+        })
         var foundbodyname = randomizer.randname()
         var props = randomizer.randsize()
         var size = props.size
@@ -67,7 +67,7 @@ module.exports = {
         //holt sich die ID des neuen Körpers
         con.query("SELECT id, fountid FROM spacebodies WHERE fountid = '" + receivedMessage.author.id + "' ORDER BY id DESC LIMIT 1", function (err, result, fields) {
             if (err) throw err;
-            var neworbit = result[0].id
+            neworbit = result[0].id
             store.add(neworbit)
         });
 
@@ -77,8 +77,14 @@ module.exports = {
             con.query("UPDATE `cerbotdb`.`userdata` SET `orbitid`=" + (store.values().next().value) + " WHERE  `id`=" + result[0].id + ";");
             store.delete(store.values().next().value)
         });
-        console.log(foundbodyname)
-        //setTimeout(() => {
+        console.log("==={"+foundbodyname+" added to spacebodies database}===")
+
+        //erstellt das Embed zum senden
+        setTimeout(() => {
+            randomizer.jumpembedgenerator(receivedMessage.author.id, neworbit, receivedMessage.channel, receivedMessage.author.displayAvatarURL)
+        }, 100);
+
+        /*setTimeout(() => {
         con.query("SELECT * FROM spacebodies WHERE fountid = '" + receivedMessage.author.id + "' ORDER BY id DESC LIMIT 1;", function (err, result, fields) {
             var erdwert = Math.round((result[0].atmrate - 1) * 100)
             if (erdwert < 0){
@@ -104,6 +110,6 @@ module.exports = {
                 .setFooter("ID: #"+result[0].id+"")
             receivedMessage.channel.send(bodyembed)
         });
-        //}, 12000)
+        }, 1200)*/
     },
 };
