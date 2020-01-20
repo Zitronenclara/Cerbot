@@ -1,4 +1,10 @@
 const res = require('./resrates.json')
+const preano = require('./commands/bodyanomalies/preanomaly.json')
+const sufano = require('./commands/bodyanomalies/sufanomaly.json')
+const anosolid = require('./commands/bodyanomalies/solidbodies.json')
+const anoatmo = require('./commands/bodyanomalies/atmobodies.json')
+const anogas = require('./commands/bodyanomalies/gasbodies.json')
+const anostar = require('./commands/bodyanomalies/starbodies.json')
 
 let randname = function () {
     var result = '';
@@ -652,3 +658,54 @@ let rottime = function (type, size) {
     return {"hours": hours, "hourstext": hourstext};
 }
 exports.rottime = rottime
+
+let anomaly = function (type, comp, atm) {
+    var ano;
+    var anowert = 0;
+    var noano = Math.floor(Math.random() * 10) + 1
+
+    if (noano <= 7){
+        ano = "keine Anomalien"
+    }else{
+        var prenum = (Math.floor(Math.random() * (preano.pre.length)) + 1) - 1
+        var sufnum = (Math.floor(Math.random() * (sufano.suf.length)) + 1) - 1
+
+        if (type == 1 && atm <= 1.2 || type == 2 && atm <= 1.2 || type == 3 && atm <= 1.2){
+            var midnum = (Math.floor(Math.random() * (anosolid.mid.length)) + 1) - 1
+            var ano = preano.pre[prenum].name+" "+anosolid.mid[midnum].name+""+sufano.suf[sufnum].name
+
+
+        }else if(type == 1 && atm > 1.2 || type == 2 && atm > 1.2 || type == 3 && atm > 1.2){
+            var midnum = (Math.floor(Math.random() * (anoatmo.mid.length)) + 1) - 1
+            var ano = preano.pre[prenum].name+" "+anoatmo.mid[midnum].name+""+sufano.suf[sufnum].name
+
+
+        }else if(type == 4){
+            var midnum = (Math.floor(Math.random() * (anogas.mid.length)) + 1) - 1
+            var ano = preano.pre[prenum].name+" "+anogas.mid[midnum].name+""+sufano.suf[sufnum].name
+
+            
+        }else if(type == 5){
+            var midnum = (Math.floor(Math.random() * (anostar.mid.length)) + 1) - 1
+            var ano = preano.pre[prenum].name+" "+anostar.mid[midnum].name+""+sufano.suf[sufnum].name
+
+
+        }
+    }
+
+    //berechnet Wert der Anomalie
+    var anorandom = Math.floor(Math.random() * 2500) + 1
+    var anorandoma = Math.round(Math.sqrt(anorandom)) - 49
+
+    if (anorandoma < 0){
+        anorandoma = anorandoma * (- 1)
+    }
+
+    var anowert = anorandoma * 10
+    if (ano == "keine Anomalien"){
+        anowert = 0
+    }
+
+    return {"name": ano, "wert": anowert};
+}
+exports.anomaly = anomaly

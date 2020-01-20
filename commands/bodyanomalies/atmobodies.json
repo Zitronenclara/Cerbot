@@ -30,16 +30,31 @@
         "name": "Terrain",
         "num": 10
     }, {
-        "name": "Gravitations",
+        "name": "Flora",
         "num": 11
     }, {
-        "name": "Farbspektrums",
+        "name": "Fauna",
         "num": 12
     }, {
-        "name": "Bewegungs",
+        "name": "Wasser",
         "num": 13
     }, {
-        "name": "Massen",
+        "name": "Ökosystems",
         "num": 14
+    }, {
+        "name": "Wetter",
+        "num": 15
+    }, {
+        "name": "Gravitations",
+        "num": 16
+    }, {
+        "name": "Farbspektrums",
+        "num": 17
+    }, {
+        "name": "Bewegungs",
+        "num": 18
+    }, {
+        "name": "Massen",
+        "num": 19
     }]
 }

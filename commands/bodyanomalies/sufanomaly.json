@@ -1,0 +1,33 @@
+{
+    "suf": [{
+        "name": "daten",
+        "num": 1
+    }, {
+        "name": "signale",
+        "num": 2
+    }, {
+        "name": "signaturen",
+        "num": 3
+    }, {
+        "name": "asynchronitäten",
+        "num": 4
+    }, {
+        "name": "integritäten",
+        "num": 5
+    }, {
+        "name": "bewegungen",
+        "num": 6
+    }, {
+        "name": "emissionen",
+        "num": 7
+    }, {
+        "name": "magnetsignaturen",
+        "num": 8
+    }, {
+        "name": "interferenzen",
+        "num": 9
+    }, {
+        "name": "asymmetrien",
+        "num": 10
+    }]
+}

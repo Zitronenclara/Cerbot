@@ -1,0 +1,42 @@
+{
+    "pre": [{
+        "name": "ungewöhnliche",
+        "num": 1
+    }, {
+        "name": "seltene",
+        "num": 2
+    }, {
+        "name": "abnormale",
+        "num": 3
+    }, {
+        "name": "komische",
+        "num": 4
+    }, {
+        "name": "interessante",
+        "num": 5
+    }, {
+        "name": "unerwartete",
+        "num": 6
+    }, {
+        "name": "überaschende",
+        "num": 7
+    }, {
+        "name": "außergewöhnliche",
+        "num": 8
+    }, {
+        "name": "unglaubliche",
+        "num": 9
+    }, {
+        "name": "sehr ungewöhnliche",
+        "num": 10
+    }, {
+        "name": "exotische",
+        "num": 11
+    }, {
+        "name": "fehlerhafte",
+        "num": 12
+    }, {
+        "name": "sehr seltene",
+        "num": 13
+    }]
+}

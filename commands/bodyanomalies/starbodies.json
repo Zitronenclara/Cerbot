@@ -1,0 +1,42 @@
+{
+    "mid": [{
+        "name": "Zusammensetzungs",
+        "num": 1
+    }, {
+        "name": "Kern",
+        "num": 2
+    }, {
+        "name": "Gravitations",
+        "num": 3
+    }, {
+        "name": "Gas",
+        "num": 4
+    }, {
+        "name": "Edelgas",
+        "num": 5
+    }, {
+        "name": "Sphären",
+        "num": 6
+    }, {
+        "name": "Farbspektrums",
+        "num": 7
+    }, {
+        "name": "Gasbewegungs",
+        "num": 8
+    }, {
+        "name": "Bewegungs",
+        "num": 9
+    }, {
+        "name": "Protoparanz",
+        "num": 10
+    }, {
+        "name": "Kernfusions",
+        "num": 11
+    }, {
+        "name": "Alters",
+        "num": 12
+    }, {
+        "name": "Massen",
+        "num": 13
+    }]
+}

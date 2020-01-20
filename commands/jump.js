@@ -57,8 +57,9 @@ module.exports = {
         var esi = randomizer.esicalc(type, grav, temps.temp, atmo.arate, temps.water, temps.waterart, size, magnetfield.magnet)
         var wert = randomizer.wertcomputing(type, res[0].amount, res[1].amount, res[0].place, res[1].place, esi)
         var time = randomizer.rottime(type, size)
+        var anomaly = randomizer.anomaly(type, comparate, atmo.arate)
         //speichert den neu erstellen Körper in die Datenbank
-        var sql = "INSERT INTO spacebodies (fountid, name, type, art, comp, size, comprate, resaname, resbname, resaamount, resbamount, resaid, resbid, resakons, resbkons, resarar, resbrar, wert, atmrate, atmart, temp, tempart, grav, water, waterart, esi, habitability, magnet, magnetart, rothours, rottext) VALUES (" + receivedMessage.author.id + ", '" + foundbodyname + "', " + type + ", '" + art + "', '" + comp + "', " + size + ", " + comparate + ", '" + res[0].name + "', '" + res[1].name + "', " + res[0].amount + ", " + res[1].amount + ", " + res[0].place + ", " + res[1].place + ", '" + res[0].kons + "', '" + res[1].kons + "', '"+res[0].rarity+"', '"+res[1].rarity+"', "+wert+", "+atmo.arate+", '"+atmo.aart+"', "+temps.temp+", '"+temps.tempart+"', "+grav+", "+temps.water+", '"+temps.waterart+"', "+esi+", '"+habit+"', "+magnetfield.magnet+", '"+magnetfield.magnetart+"', "+time.hours+", '"+time.hourstext+"')";
+        var sql = "INSERT INTO spacebodies (fountid, name, type, art, comp, size, comprate, resaname, resbname, resaamount, resbamount, resaid, resbid, resakons, resbkons, resarar, resbrar, wert, atmrate, atmart, temp, tempart, grav, water, waterart, esi, habitability, magnet, magnetart, rothours, rottext, anomaly, anowert) VALUES (" + receivedMessage.author.id + ", '" + foundbodyname + "', " + type + ", '" + art + "', '" + comp + "', " + size + ", " + comparate + ", '" + res[0].name + "', '" + res[1].name + "', " + res[0].amount + ", " + res[1].amount + ", " + res[0].place + ", " + res[1].place + ", '" + res[0].kons + "', '" + res[1].kons + "', '"+res[0].rarity+"', '"+res[1].rarity+"', "+wert+", "+atmo.arate+", '"+atmo.aart+"', "+temps.temp+", '"+temps.tempart+"', "+grav+", "+temps.water+", '"+temps.waterart+"', "+esi+", '"+habit+"', "+magnetfield.magnet+", '"+magnetfield.magnetart+"', "+time.hours+", '"+time.hourstext+"', '"+anomaly.name+"', "+anomaly.wert+")";
         con.query(sql, function (err, result) {
             if (err) throw err;
         });
@@ -99,6 +100,7 @@ module.exports = {
                 .addField("**Erdähnlichkeit**", "**"+result[0].esi+"%**")
                 .addField("**Wert**", "**"+result[0].wert+"⍟**")
                 .addField("**Bewohnbarkeit**", result[0].habitability)
+                .addField("**Anomalien**", "**[** ***"+result[0].anomaly+"*** **]** ``"+result[0].anowert+"FP``")
                 .setFooter("ID: #"+result[0].id+"")
             receivedMessage.channel.send(bodyembed)
         });
