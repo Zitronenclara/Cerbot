@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 var mysql = require('mysql');
 const con = require('./../db.js');
 const randomizer = require('./../planetrandomizer.js')
-const store = new Set();
 const rrates = require('./../resrates.json')
 
 module.exports = {
@@ -58,8 +57,9 @@ module.exports = {
         var wert = randomizer.wertcomputing(type, res[0].amount, res[1].amount, res[0].place, res[1].place, esi)
         var time = randomizer.rottime(type, size)
         var anomaly = randomizer.anomaly(type, comparate, atmo.arate)
+
         //speichert den neu erstellen Körper in die Datenbank
-        var sql = "INSERT INTO spacebodies (fountid, name, type, art, comp, size, comprate, resaname, resbname, resaamount, resbamount, resaid, resbid, resakons, resbkons, resarar, resbrar, wert, atmrate, atmart, temp, tempart, grav, water, waterart, esi, habitability, magnet, magnetart, rothours, rottext, anomaly, anowert) VALUES (" + receivedMessage.author.id + ", '" + foundbodyname + "', " + type + ", '" + art + "', '" + comp + "', " + size + ", " + comparate + ", '" + res[0].name + "', '" + res[1].name + "', " + res[0].amount + ", " + res[1].amount + ", " + res[0].place + ", " + res[1].place + ", '" + res[0].kons + "', '" + res[1].kons + "', '"+res[0].rarity+"', '"+res[1].rarity+"', "+wert+", "+atmo.arate+", '"+atmo.aart+"', "+temps.temp+", '"+temps.tempart+"', "+grav+", "+temps.water+", '"+temps.waterart+"', "+esi+", '"+habit+"', "+magnetfield.magnet+", '"+magnetfield.magnetart+"', "+time.hours+", '"+time.hourstext+"', '"+anomaly.name+"', "+anomaly.wert+")";
+        var sql = "INSERT INTO spacebodies (fountid, name, type, art, comp, size, comprate, resaname, resbname, resaamount, resbamount, resaid, resbid, resakons, resbkons, resarar, resbrar, wert, atmrate, atmart, temp, tempart, grav, water, waterart, esi, habitability, magnet, magnetart, rothours, rottext, anomaly, anowert) VALUES (" + receivedMessage.author.id + ", '" + foundbodyname + "', " + type + ", '" + art + "', '" + comp + "', " + size + ", " + comparate + ", '" + res[0].name + "', '" + res[1].name + "', " + res[0].amount + ", " + res[1].amount + ", " + res[0].place + ", " + res[1].place + ", '" + res[0].kons + "', '" + res[1].kons + "', '" + res[0].rarity + "', '" + res[1].rarity + "', " + wert + ", " + atmo.arate + ", '" + atmo.aart + "', " + temps.temp + ", '" + temps.tempart + "', " + grav + ", " + temps.water + ", '" + temps.waterart + "', " + esi + ", '" + habit + "', " + magnetfield.magnet + ", '" + magnetfield.magnetart + "', " + time.hours + ", '" + time.hourstext + "', '" + anomaly.name + "', " + anomaly.wert + ")";
         con.query(sql, function (err, result) {
             if (err) throw err;
         });
@@ -68,21 +68,21 @@ module.exports = {
         con.query("SELECT id, fountid FROM spacebodies WHERE fountid = '" + receivedMessage.author.id + "' ORDER BY id DESC LIMIT 1", function (err, result, fields) {
             if (err) throw err;
             neworbit = result[0].id
-            store.add(neworbit)
         });
 
         //setzt den User in den Orbit vom neuen Körper
-        con.query("SELECT id, usrid, orbitid FROM userdata WHERE usrid = '" + receivedMessage.author.id + "'", function (err, result, fields) {
-            if (err) throw err;
-            con.query("UPDATE `cerbotdb`.`userdata` SET `orbitid`=" + (store.values().next().value) + " WHERE  `id`=" + result[0].id + ";");
-            store.delete(store.values().next().value)
-        });
-        console.log("==={"+foundbodyname+" added to spacebodies database}===")
+        setTimeout(() => {
+            con.query("SELECT id, userid, orbitid FROM htsinv WHERE userid = '" + receivedMessage.author.id + "'", function (err, result, fields) {
+                if (err) throw err;
+                con.query("UPDATE `cerbotdb`.`htsinv` SET `orbitid`=" + neworbit + " WHERE  `id`=" + result[0].id + ";");
+            });
+            console.log("==={" + foundbodyname + " added to spacebodies database}===")
+        }, 200);
 
         //erstellt das Embed zum senden
         setTimeout(() => {
             randomizer.jumpembedgenerator(receivedMessage.author.id, neworbit, receivedMessage.channel, receivedMessage.author.displayAvatarURL)
-        }, 100);
+        }, 200);
 
         /*setTimeout(() => {
         con.query("SELECT * FROM spacebodies WHERE fountid = '" + receivedMessage.author.id + "' ORDER BY id DESC LIMIT 1;", function (err, result, fields) {

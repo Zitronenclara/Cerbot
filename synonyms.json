@@ -149,6 +149,10 @@
             "set": "setsize"
         },
         {
+            "get": ["spaceinfo"],
+            "set": "shipinfo"
+        },
+        {
             "get": ["laden", "markt"],
             "set": "shop"
         },

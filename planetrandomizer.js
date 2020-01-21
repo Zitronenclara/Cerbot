@@ -37,6 +37,19 @@ let randname = function () {
 }
 exports.randname = randname
 
+let shitstring = function (length) {
+    var result = "";
+    var characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ß?======)(/&%%%%%%%%%%$$$$$$§!!!!!##################################';
+    var charlength = characters.length
+
+    for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charlength));
+    }
+
+    return result;
+}
+exports.shitstring = shitstring
+
 let randsize = function () {
     var type = Math.floor(Math.random() * 5) + 1
     var size;
@@ -239,7 +252,7 @@ exports.randres = randres
 
 let wertcomputing = function (type, resaamount, resbamount, resaid, resbid, esi) {
     var typewert = type * 10
-    var reswert = (((resaamount * typewert) * 10) * ((resaid + 1) ** 1.8) * typewert) + (((resbamount * typewert) * 10) * ((resbid + 1) ** 1.8) * typewert)
+    var reswert = (((resaamount * typewert) * 2) * ((resaid + 1) ** 1.8) * typewert) + (((resbamount * typewert) * 2) * ((resbid + 1) ** 1.8) * typewert) / 10
 
     //teurere Exoplaneten
     if (esi >= 65) {
@@ -747,14 +760,14 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //definiert die Wahrscheinlichkeit das Ressourcen erkannt werden, je höher das Level desto höher die Scan Chance
-        var resaname = "Scan Fehlgeschlagen";
-        var resaamount = "N/A";
-        var resakons = "unbekannte Konsistenz";
-        var resbname = "Scan Fehlgeschlagen";
-        var resbamount = "N/A";
-        var resbkons = "unbekannte Konsistenz";
-        var resachance = usinfo.ressclvl * 20
-        var resbchance = (usinfo.ressclvl * 20) - 20
+        var resaname = shitstring(20);
+        var resaamount = shitstring(5);
+        var resakons = shitstring(10);
+        var resbname = shitstring(20);
+        var resbamount = shitstring(5);
+        var resbkons = shitstring(10);
+        var resachance = usinfo.ressclvl * 10
+        var resbchance = (usinfo.ressclvl * 10) - 10
 
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= resachance){
@@ -793,16 +806,16 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //definiert Wahrscheinlichkeit für Gravitationsscan
-        var grav = "``Scan Fehlgeschlagen`` ";
-        var gravchance = usinfo.gravsclvl * 20
+        var grav = "``"+shitstring(10)+"`` ";
+        var gravchance = usinfo.gravsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= gravchance){
             grav = bodyinfo.grav
         }
 
         //definiert Wahrscheinlichkeit für Atmosphärenscan
-        var atmorate = "N/A"
-        var atmochance = usinfo.atmosclvl * 20
+        var atmorate = shitstring(5)
+        var atmochance = usinfo.atmosclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= atmochance){
             atmorate = Math.round((bodyinfo.atmrate - 1) * 100)
@@ -818,16 +831,16 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //definiert Wahrscheinlichkeit für Rotationsdauererfassung
-        var rotdauer = "``Scan Fehlgeschlagen``"
-        var rotchance = usinfo.rotsclvl * 20
+        var rotdauer = "``"+shitstring(20)+"``"
+        var rotchance = usinfo.rotsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= rotchance){
             rotdauer = bodyinfo.rottext
         }
 
         //definiert Wahrscheinlichkeit für Wasserscan
-        var wassergehalt = "Scan Fehlgeschlagen "
-        var wasserchance = usinfo.watersclvl * 20
+        var wassergehalt = shitstring(20)+" "
+        var wasserchance = usinfo.watersclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= wasserchance){
             wassergehalt = bodyinfo.water
@@ -840,8 +853,8 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //definiert Wahrscheinlichkeit für Temperaturscan
-        var temperatur = "``Scan Fehlgeschlagen`` "
-        var temperaturchance = usinfo.tempsclvl * 20
+        var temperatur = "``"+shitstring(20)+"`` "
+        var temperaturchance = usinfo.tempsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= temperaturchance){
             temperatur = bodyinfo.temp
@@ -854,8 +867,8 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //definiert Wahrscheinlichkeit für Magnetfeldscan
-        var magnetfeld = "Scan Fehlgeschlagen"
-        var magnetfeldchance = usinfo.magnetsclvl * 20
+        var magnetfeld = shitstring(20)
+        var magnetfeldchance = usinfo.magnetsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= magnetfeldchance){
             magnetfeld = bodyinfo.magnet
@@ -880,13 +893,21 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //definiert Wahrscheinlichkeit für Anomalienscan
-        var anomalie = "Scan Fehlgeschlagen"
-        var anomaliewert = "N/A "
-        var anomaliechance = usinfo.anomalysclvl * 20
+        var anomalie = shitstring(20)
+        var anomaliewert = ""+shitstring(5)+" "
+        var anomaliechance = usinfo.anomalysclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
         if (random <= anomaliechance){
             anomalie = bodyinfo.anomaly
             anomaliewert = bodyinfo.anowert
+        }
+
+        //definiert den Besitz
+        var owner;
+        if (!bodyinfo.ownerid){
+            owner = "niemandem"
+        }else{
+            owner = "<@"+bodyinfo.ownerid+">"
         }
 
         const bodyembed = new Discord.RichEmbed()
@@ -894,6 +915,7 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
             .setDescription("<@" + usid + ">*, du bist in einem Orbit um " + bodyinfo.name + " eingeschwenkt.*")
             .setThumbnail(avatarurl)
             .setColor("0x000000")
+            .addField("**Ansprüche**", "entdeckt von <@"+bodyinfo.fountid+"> & beansprucht von "+owner)
             .addField("**Durchmesser**", "" + bodyinfo.size + "km (*" + sizebewertung + "*)")
             .addField("**Ressourcen**", "**" + resaname + "** *(" + resaamount + "%)* - ``" + resakons + "`` Seltenheit: **" + resarar + "**\n**" + resbname + "** *(" + resbamount + "%)* - ``" + resbkons + "`` Seltenheit: **" + resbrar + "**")
             .addField("**Gravitation**", ""+grav+"G")
@@ -913,13 +935,17 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
 exports.jumpembedgenerator = jumpembedgenerator
 
 let htsinit = function (us, memb) {
-    if (!memb.roles.find(r => r.name === "Commander")) {
-        var sql = "INSERT INTO htsinv (userid, ressclvl, gravsclvl, atmsclvl, rotsclvl, watersclvl, tempsclvl, magnetsclvl, sizebewert, resbewert, atmbewert, waterbewert, tempbewert, magnetbewert, esirechner, habitbewert, anomalysclvl) VALUES ('" + us.id + "', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1)";
+    con.query("SELECT * FROM htsinv WHERE userid = '" + us.id + "'", function (err, result, fields) {
+        if (err) throw err;
+        var udat = result
+        if (udat = undefined || udat.length == 0) {
+        var sql = "INSERT INTO htsinv (userid, ressclvl, gravsclvl, atmsclvl, rotsclvl, watersclvl, tempsclvl, magnetsclvl, sizebewert, resbewert, atmbewert, waterbewert, tempbewert, magnetbewert, esirechner, habitbewert, anomalysclvl) VALUES ('" + us.id + "', 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1)";
         con.query(sql, function (err, result) {
             if (err) throw err;
         });
         memb.addRole("668857932745670689")
         console.log("created Hell to Space inventory for " + us.id)
-    }
+        }
+    });
 }
 exports.htsinit = htsinit
