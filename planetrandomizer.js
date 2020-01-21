@@ -796,12 +796,10 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //testet nach Ressourcenbewerter
-        var resarar = "{+Ressourcenbewerter Stufe 1 erforderlich}";
-        var resbrar = "{+Ressourcenbewerter Stufe 2 erforderlich}";
-        if (usinfo.resbewert >= 1){
+        var resarar = "{+Ressourcenbewerter erforderlich}";
+        var resbrar = "{+Ressourcenbewerter erforderlich}";
+        if (usinfo.resbewert != 0){
             resarar = bodyinfo.resarar
-        }
-        if (usinfo.resbewert == 2){
             resbrar = bodyinfo.resbrar
         }
 
@@ -887,7 +885,7 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         }
 
         //testet nach Bewohnbarkeitsbewerter
-        var habitability = "{+Bewohnbarkeitsbewerter erforderlich}"
+        var habitability = "{+Bewohnbarkeitsanalysator erforderlich}"
         if (usinfo.habitbewert != 0){
             habitability = bodyinfo.habitability
         }
