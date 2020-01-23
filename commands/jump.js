@@ -11,6 +11,10 @@ module.exports = {
     category: 'Space',
     usage: '``c!jump``',
     execute(arguments, receivedMessage) {
+        if (!receivedMessage.member.roles.find(r => r.name === "Commander")) {
+            receivedMessage.reply("du hast noch kein Raumschiff, kaufe dir eins mit ``c!starthts`` c:")
+            return
+        }
         receivedMessage.channel.send("Sprung wird vorbereitet").then(mes => {
             setTimeout(() => {
                 mes.edit("Sprung wird vorbereitet.")

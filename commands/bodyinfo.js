@@ -9,6 +9,10 @@ module.exports = {
     category: 'Space',
     usage: '``c!bodyinfo [id]``',
     execute(arguments, receivedMessage) {
+        if (!receivedMessage.member.roles.find(r => r.name === "Commander")) {
+            receivedMessage.reply("du hast noch kein Raumschiff, kaufe dir eins mit ``c!starthts`` c:")
+            return
+        }
         var targetid = parseFloat(arguments.find(arg => !/<@!?\d+>/g.test(arg)), 0);
         if (!targetid || isNaN(targetid)) {
             receivedMessage.reply("bitte gib eine gültige ID an. Die ID des Körpers findet man bei seiner Sprunginformation ganz unten in klein. c:")

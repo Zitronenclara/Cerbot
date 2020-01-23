@@ -9,6 +9,10 @@ module.exports = {
     category: 'Space',
     usage: '``c!shipinfo``, ``c!shipinfo @user``',
     execute(arguments, receivedMessage) {
+        if (!receivedMessage.member.roles.find(r => r.name === "Commander")) {
+            receivedMessage.reply("du hast noch kein Raumschiff, kaufe dir eins mit ``c!starthts`` c:")
+            return
+        }
         //setzt das Ziel zum erwähnten User oder zu einem selbst
         if (!receivedMessage.mentions.users.size) {
             var target = receivedMessage.member

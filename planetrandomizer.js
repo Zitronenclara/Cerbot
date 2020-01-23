@@ -753,10 +753,12 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         usinfo = result[0]
     });
     setTimeout(() => {
+        var orbitseed = "";
+
         //testet nach Größenbewerter
         var sizebewertung = "{+Größenbewerter erforderlich}";
         if (usinfo.sizebewert != 0) {
-            sizebewertung = bodyinfo.comp
+            var sizebewertung = bodyinfo.comp
         }
 
         //definiert die Wahrscheinlichkeit das Ressourcen erkannt werden, je höher das Level desto höher die Scan Chance
@@ -770,97 +772,106 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         var resbchance = (usinfo.ressclvl * 10) - 10
 
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= resachance){
+        if (random <= resachance) {
             resaname = bodyinfo.resaname
-        }
-        var random = Math.floor(Math.random() * 100) + 1
-        if (random <= resachance){
             resaamount = Math.round(bodyinfo.resaamount * 100)
-        }
-        var random = Math.floor(Math.random() * 100) + 1
-        if (random <= resachance){
             resakons = bodyinfo.resakons
+            orbitseed += "1" //#1. Stelle zu 1
+        } else {
+            orbitseed += "0" //#1. Stelle zu 0
         }
 
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= resbchance){
+        if (random <= resbchance) {
             resbname = bodyinfo.resbname
-        }
-        var random = Math.floor(Math.random() * 100) + 1
-        if (random <= resbchance){
             resbamount = Math.round(bodyinfo.resbamount * 100)
-        }
-        var random = Math.floor(Math.random() * 100) + 1
-        if (random <= resbchance){
             resbkons = bodyinfo.resbkons
+            orbitseed += "1" //#2. Stelle zu 1
+        } else {
+            orbitseed += "0" //#2. Stelle zu 0
         }
 
         //testet nach Ressourcenbewerter
         var resarar = "{+Ressourcenbewerter erforderlich}";
         var resbrar = "{+Ressourcenbewerter erforderlich}";
-        if (usinfo.resbewert != 0){
+        if (usinfo.resbewert != 0) {
             resarar = bodyinfo.resarar
             resbrar = bodyinfo.resbrar
         }
 
         //definiert Wahrscheinlichkeit für Gravitationsscan
-        var grav = "``"+shitstring(10)+"`` ";
+        var grav = "``" + shitstring(10) + "`` ";
         var gravchance = usinfo.gravsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= gravchance){
+        if (random <= gravchance) {
             grav = bodyinfo.grav
+            orbitseed += "1" //#3. Stelle zu 1
+        } else {
+            orbitseed += "0" //#3. Stelle zu 0
         }
 
         //definiert Wahrscheinlichkeit für Atmosphärenscan
         var atmorate = shitstring(5)
         var atmochance = usinfo.atmosclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= atmochance){
+        if (random <= atmochance) {
             atmorate = Math.round((bodyinfo.atmrate - 1) * 100)
-            if (atmorate < 0){
+            if (atmorate < 0) {
                 atmorate = 0
             }
+            orbitseed += "1" //#4. Stelle zu 1
+        } else {
+            orbitseed += "0" //#4. Stelle zu 0
         }
 
         //testet nach Atmosphärenbewerter
         var atmobewertung = "{+Atmosphärenbewerter erforderlich}"
-        if (usinfo.atmbewert != 0){
+        if (usinfo.atmbewert != 0) {
             atmobewertung = bodyinfo.atmart
         }
 
         //definiert Wahrscheinlichkeit für Rotationsdauererfassung
-        var rotdauer = "``"+shitstring(20)+"``"
+        var rotdauer = "``" + shitstring(20) + "``"
         var rotchance = usinfo.rotsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= rotchance){
+        if (random <= rotchance) {
             rotdauer = bodyinfo.rottext
+            orbitseed += "1" //#5. Stelle zu 1
+        } else {
+            orbitseed += "0" //#5. Stelle zu 0
         }
 
         //definiert Wahrscheinlichkeit für Wasserscan
-        var wassergehalt = shitstring(20)+" "
+        var wassergehalt = shitstring(20) + " "
         var wasserchance = usinfo.watersclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= wasserchance){
+        if (random <= wasserchance) {
             wassergehalt = bodyinfo.water
+            orbitseed += "1" //#6. Stelle zu 1
+        } else {
+            orbitseed += "0" //#6. Stelle zu 0
         }
 
         //testet nach Wasserbewerter
         var wasserbewertung = "{+Wasserbewerter erforderlich}"
-        if (usinfo.waterbewert != 0){
+        if (usinfo.waterbewert != 0) {
             wasserbewertung = bodyinfo.waterart
         }
 
         //definiert Wahrscheinlichkeit für Temperaturscan
-        var temperatur = "``"+shitstring(20)+"`` "
+        var temperatur = "``" + shitstring(20) + "`` "
         var temperaturchance = usinfo.tempsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= temperaturchance){
+        if (random <= temperaturchance) {
             temperatur = bodyinfo.temp
+            orbitseed += "1" //#7. Stelle zu 1
+        } else {
+            orbitseed += "0" //#7. Stelle zu 0
         }
 
         //testet nach Temperaturbewerter
         var temperaturbewertung = "{+Temperaturbewerter erforderlich}"
-        if (usinfo.tempbewert != 0){
+        if (usinfo.tempbewert != 0) {
             temperaturbewertung = bodyinfo.tempart
         }
 
@@ -868,44 +879,50 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
         var magnetfeld = shitstring(20)
         var magnetfeldchance = usinfo.magnetsclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= magnetfeldchance){
+        if (random <= magnetfeldchance) {
             magnetfeld = bodyinfo.magnet
+            orbitseed += "1" //#8. Stelle zu 1
+        } else {
+            orbitseed += "0" //#8. Stelle zu 0
         }
 
         //testet nach Magnetfeldbewerter
         var magnetfeldbewertung = "{+Magnetfeldbewerter erforderlich}"
-        if (usinfo.magnetbewert != 0){
+        if (usinfo.magnetbewert != 0) {
             magnetfeldbewertung = bodyinfo.magnetart
         }
 
         //testet nach Esirechner
         var esi = "{+ESI-Rechner erforderlich}"
-        if (usinfo.esirechner != 0){
+        if (usinfo.esirechner != 0) {
             esi = bodyinfo.esi
         }
 
         //testet nach Bewohnbarkeitsbewerter
         var habitability = "{+Bewohnbarkeitsanalysator erforderlich}"
-        if (usinfo.habitbewert != 0){
+        if (usinfo.habitbewert != 0) {
             habitability = bodyinfo.habitability
         }
 
         //definiert Wahrscheinlichkeit für Anomalienscan
         var anomalie = shitstring(20)
-        var anomaliewert = ""+shitstring(5)+" "
+        var anomaliewert = "" + shitstring(5) + " "
         var anomaliechance = usinfo.anomalysclvl * 10
         var random = Math.floor(Math.random() * 100) + 1
-        if (random <= anomaliechance){
+        if (random <= anomaliechance) {
             anomalie = bodyinfo.anomaly
             anomaliewert = bodyinfo.anowert
+            orbitseed += "1" //#9. Stelle zu 1
+        } else {
+            orbitseed += "0" //#9. Stelle zu 0
         }
 
         //definiert den Besitz
         var owner;
-        if (!bodyinfo.ownerid){
+        if (!bodyinfo.ownerid) {
             owner = "niemandem"
-        }else{
-            owner = "<@"+bodyinfo.ownerid+">"
+        } else {
+            owner = "<@" + bodyinfo.ownerid + ">"
         }
 
         const bodyembed = new Discord.RichEmbed()
@@ -913,21 +930,22 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
             .setDescription("<@" + usid + ">*, du bist in einem Orbit um " + bodyinfo.name + " eingeschwenkt.*")
             .setThumbnail(avatarurl)
             .setColor("0x000000")
-            .addField("**Ansprüche**", "entdeckt von <@"+bodyinfo.fountid+"> & beansprucht von "+owner)
+            .addField("**Ansprüche**", "entdeckt von <@" + bodyinfo.fountid + "> & beansprucht von " + owner)
             .addField("**Durchmesser**", "" + bodyinfo.size + "km (*" + sizebewertung + "*)")
             .addField("**Ressourcen**", "**" + resaname + "** *(" + resaamount + "%)* - ``" + resakons + "`` Seltenheit: **" + resarar + "**\n**" + resbname + "** *(" + resbamount + "%)* - ``" + resbkons + "`` Seltenheit: **" + resbrar + "**")
-            .addField("**Gravitation**", ""+grav+"G")
-            .addField("**Atmosphäre**", "``"+atmobewertung+"`` *("+atmorate+"%)*")
+            .addField("**Gravitation**", "" + grav + "G")
+            .addField("**Atmosphäre**", "``" + atmobewertung + "`` *(" + atmorate + "%)*")
             .addField("**Rotationsdauer**", rotdauer)
-            .addField("**Wassergehalt**", "``"+wassergehalt+"%`` *("+wasserbewertung+")*")
-            .addField("**Oberflächentemperatur**", ""+temperatur+"°C *("+temperaturbewertung+")*")
-            .addField("**Magnetfeld**", "effektive Stärke: **"+magnetfeld+"** *("+magnetfeldbewertung+")*")
-            .addField("**Erdähnlichkeit**", "**"+esi+"%**")
-            .addField("**Wert**", "**"+bodyinfo.wert+"⍟**")
+            .addField("**Wassergehalt**", "``" + wassergehalt + "%`` *(" + wasserbewertung + ")*")
+            .addField("**Oberflächentemperatur**", "" + temperatur + "°C *(" + temperaturbewertung + ")*")
+            .addField("**Magnetfeld**", "effektive Stärke: **" + magnetfeld + "** *(" + magnetfeldbewertung + ")*")
+            .addField("**Erdähnlichkeit**", "**" + esi + "%**")
+            .addField("**Wert**", "**" + bodyinfo.wert + "⍟**")
             .addField("**Bewohnbarkeit**", habitability)
-            .addField("**Anomalien**", "**[** ***"+anomalie+"*** **]** ``"+anomaliewert+"FP``")
+            .addField("**Anomalien**", "**[** ***" + anomalie + "*** **]** ``" + anomaliewert + "FP``")
             .setFooter("ID: #" + bodyinfo.id + "")
         ch.send(bodyembed)
+        saveorbitseed(usinfo.userid, orbitseed)
     }, 1200);
 }
 exports.jumpembedgenerator = jumpembedgenerator
@@ -937,13 +955,21 @@ let htsinit = function (us, memb) {
         if (err) throw err;
         var udat = result
         if (udat = undefined || udat.length == 0) {
-        var sql = "INSERT INTO htsinv (userid, ressclvl, gravsclvl, atmsclvl, rotsclvl, watersclvl, tempsclvl, magnetsclvl, sizebewert, resbewert, atmbewert, waterbewert, tempbewert, magnetbewert, esirechner, habitbewert, anomalysclvl) VALUES ('" + us.id + "', 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1)";
-        con.query(sql, function (err, result) {
-            if (err) throw err;
-        });
-        memb.addRole("668857932745670689")
-        console.log("created Hell to Space inventory for " + us.id)
+            var sql = "INSERT INTO htsinv (userid, ressclvl, gravsclvl, atmsclvl, rotsclvl, watersclvl, tempsclvl, magnetsclvl, sizebewert, resbewert, atmbewert, waterbewert, tempbewert, magnetbewert, esirechner, habitbewert, anomalysclvl) VALUES ('" + us.id + "', 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1)";
+            con.query(sql, function (err, result) {
+                if (err) throw err;
+            });
+            memb.addRole("668857932745670689")
+            console.log("created Hell to Space inventory for " + us.id)
         }
     });
 }
 exports.htsinit = htsinit
+
+let saveorbitseed = function (usid, seed) {
+    con.query("SELECT * FROM htsinv WHERE userid = '" + usid + "'", function (err, result, fields) {
+        if (err) throw err;
+        con.query("UPDATE `cerbotdb`.`htsinv` SET `orbitinfo`='" + seed + "' WHERE  `userid`='" + usid + "';")
+    });
+}
+exports.saveorbitseed = saveorbitseed
