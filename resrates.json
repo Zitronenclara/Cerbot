@@ -3,499 +3,665 @@
             "name": "Wasserstoff",
             "num": 83,
             "pse": 1,
-            "short": "H"
+            "short": "H",
+            "azonium": 1,
+            "quant": 1
         },
         {
             "name": "Helium",
             "num": 82,
             "pse": 2,
-            "short": "He"
+            "short": "He",
+            "azonium": 1,
+            "quant": 2
         },
         {
             "name": "Sauerstoff",
             "num": 81,
             "pse": 8,
-            "short": "O"
+            "short": "O",
+            "azonium": 1,
+            "quant": 3
         },
         {
             "name": "Kohlenstoff",
             "num": 80,
             "pse": 6,
-            "short": "C"
+            "short": "C",
+            "azonium": 1,
+            "quant": 4
         },
         {
             "name": "Stickstoff",
             "num": 79,
             "pse": 7,
-            "short": "N"
+            "short": "N",
+            "azonium": 1,
+            "quant": 5
         },
         {
             "name": "Neon",
             "num": 78,
             "pse": 10,
-            "short": "Ne"
+            "short": "Ne",
+            "azonium": 1,
+            "quant": 6
         },
         {
             "name": "Magnesium",
             "num": 77,
             "pse": 12,
-            "short": "Mg"
+            "short": "Mg",
+            "azonium": 1,
+            "quant": 7
         },
         {
             "name": "Silicium",
             "num": 76,
             "pse": 14,
-            "short": "Si"
+            "short": "Si",
+            "azonium": 1,
+            "quant": 8
         },
         {
             "name": "Eisen",
             "num": 75,
             "pse": 26,
-            "short": "Fe"
+            "short": "Fe",
+            "azonium": 2,
+            "quant": 1
         },
         {
             "name": "Schwefel",
             "num": 74,
             "pse": 16,
-            "short": "S"
+            "short": "S",
+            "azonium": 2,
+            "quant": 2
         },
         {
             "name": "Argon",
             "num": 73,
             "pse": 18,
-            "short": "Ar"
+            "short": "Ar",
+            "azonium": 2,
+            "quant": 3
         },
         {
             "name": "Aluminium",
             "num": 72,
             "pse": 13,
-            "short": "Al"
+            "short": "Al",
+            "azonium": 2,
+            "quant": 4
         },
         {
             "name": "Calcium",
             "num": 71,
             "pse": 20,
-            "short": "Ca"
+            "short": "Ca",
+            "azonium": 2,
+            "quant": 5
         },
         {
             "name": "Natrium",
             "num": 70,
             "pse": 11,
-            "short": "Na"
+            "short": "Na",
+            "azonium": 2,
+            "quant": 6
         },
         {
             "name": "Nickel",
             "num": 69,
             "pse": 28,
-            "short": "Ni"
+            "short": "Ni",
+            "azonium": 2,
+            "quant": 7
         },
         {
             "name": "Chrom",
             "num": 68,
             "pse": 24,
-            "short": "Cr"
+            "short": "Cr",
+            "azonium": 2,
+            "quant": 8
         },
         {
             "name": "Phosphor",
             "num": 67,
             "pse": 15,
-            "short": "P"
+            "short": "P",
+            "azonium": 3,
+            "quant": 1
         },
         {
             "name": "Mangan",
             "num": 66,
             "pse": 25,
-            "short": "Mn"
+            "short": "Mn",
+            "azonium": 3,
+            "quant": 2
         },
         {
             "name": "Chlor",
             "num": 65,
             "pse": 17,
-            "short": "Cl"
+            "short": "Cl",
+            "azonium": 3,
+            "quant": 3
         },
         {
             "name": "Kalium",
             "num": 64,
             "pse": 19,
-            "short": "K"
+            "short": "K",
+            "azonium": 3,
+            "quant": 4
         },
         {
             "name": "Titan",
             "num": 63,
             "pse": 22,
-            "short": "Ti"
+            "short": "Ti",
+            "azonium": 3,
+            "quant": 5
         },
         {
             "name": "Fluor",
             "num": 62,
             "pse": 9,
-            "short": "F"
+            "short": "F",
+            "azonium": 3,
+            "quant": 6
         },
         {
             "name": "Cobalt",
             "num": 61,
             "pse": 27,
-            "short": "Co"
+            "short": "Co",
+            "azonium": 3,
+            "quant": 7
         },
         {
             "name": "Zink",
             "num": 60,
             "pse": 30,
-            "short": "Zn"
+            "short": "Zn",
+            "azonium": 3,
+            "quant": 8
         },
         {
             "name": "Kupfer",
             "num": 59,
             "pse": 29,
-            "short": "Cu"
+            "short": "Cu",
+            "azonium": 4,
+            "quant": 1
         },
         {
             "name": "Bor",
             "num": 58,
             "pse": 5,
-            "short": "B"
+            "short": "B",
+            "azonium": 4,
+            "quant": 2
         },
         {
             "name": "Vanadium",
             "num": 57,
             "pse": 23,
-            "short": "V"
+            "short": "V",
+            "azonium": 4,
+            "quant": 3
         },
         {
             "name": "Germanium",
             "num": 56,
             "pse": 32,
-            "short": "Ge"
+            "short": "Ge",
+            "azonium": 4,
+            "quant": 4
         },
         {
             "name": "Selen",
             "num": 55,
             "pse": 34,
-            "short": "Se"
+            "short": "Se",
+            "azonium": 4,
+            "quant": 5
         },
         {
             "name": "Lithium",
             "num": 54,
             "pse": 3,
-            "short": "Li"
+            "short": "Li",
+            "azonium": 4,
+            "quant": 6
         },
         {
             "name": "Gallium",
             "num": 53,
             "pse": 31,
-            "short": "Ga"
+            "short": "Ga",
+            "azonium": 4,
+            "quant": 7
         },
         {
             "name": "Krypton",
             "num": 52,
             "pse": 36,
-            "short": "Kr"
+            "short": "Kr",
+            "azonium": 4,
+            "quant": 8
         },
         {
             "name": "Scandium",
             "num": 51,
             "pse": 21,
-            "short": "Sc"
+            "short": "Sc",
+            "azonium": 5,
+            "quant": 1
         },
         {
             "name": "Zitronium",
             "num": 50,
             "pse": 40,
-            "short": "Zr"
+            "short": "Zr",
+            "azonium": 5,
+            "quant": 2
         },
         {
             "name": "Strontium",
             "num": 49,
             "pse": 38,
-            "short": "Sr"
+            "short": "Sr",
+            "azonium": 5,
+            "quant": 3
         },
         {
             "name": "Brom",
             "num": 48,
             "pse": 35,
-            "short": "Br"
+            "short": "Br",
+            "azonium": 5,
+            "quant": 4
         },
         {
             "name": "Arsen",
             "num": 47,
             "pse": 33,
-            "short": "As"
+            "short": "As",
+            "azonium": 5,
+            "quant": 5
         },
         {
             "name": "Tellur",
             "num": 46,
             "pse": 52,
-            "short": "Te"
+            "short": "Te",
+            "azonium": 5,
+            "quant": 6
         },
         {
             "name": "Rubidium",
             "num": 45,
             "pse": 37,
-            "short": "Rb"
+            "short": "Rb",
+            "azonium": 5,
+            "quant": 7
         },
         {
             "name": "Xenon",
             "num": 44,
             "pse": 54,
-            "short": "Xe"
+            "short": "Xe",
+            "azonium": 5,
+            "quant": 8
         },
         {
             "name": "Yttrium",
             "num": 43,
             "pse": 39,
-            "short": "Y"
+            "short": "Y",
+            "azonium": 6,
+            "quant": 1
         },
         {
             "name": "Barium",
             "num": 42,
             "pse": 56,
-            "short": "Ba"
+            "short": "Ba",
+            "azonium": 6,
+            "quant": 2
         },
         {
             "name": "Molybdän",
             "num": 41,
             "pse": 42,
-            "short": "Mo"
+            "short": "Mo",
+            "azonium": 6,
+            "quant": 3
         },
         {
             "name": "Blei",
             "num": 40,
             "pse": 82,
-            "short": "Pb"
+            "short": "Pb",
+            "azonium": 6,
+            "quant": 4
         },
         {
             "name": "Zinn",
             "num": 39,
             "pse": 50,
-            "short": "Sn"
+            "short": "Sn",
+            "azonium": 6,
+            "quant": 5
         },
         {
             "name": "Ruthenium",
             "num": 38,
             "pse": 44,
-            "short": "Ru"
+            "short": "Ru",
+            "azonium": 6,
+            "quant": 6
         },
         {
             "name": "Cadmium",
             "num": 37,
             "pse": 48,
-            "short": "Cd"
+            "short": "Cd",
+            "azonium": 6,
+            "quant": 7
         },
         {
             "name": "Niob",
             "num": 36,
             "pse": 41,
-            "short": "Nb"
+            "short": "Nb",
+            "azonium": 6,
+            "quant": 8
         },
         {
             "name": "Platin",
             "num": 35,
             "pse": 78,
-            "short": "Pt"
+            "short": "Pt",
+            "azonium": 7,
+            "quant": 1
         },
         {
             "name": "Palladium",
             "num": 34,
             "pse": 46,
-            "short": "Pd"
+            "short": "Pd",
+            "azonium": 7,
+            "quant": 2
         },
         {
             "name": "Cer",
             "num": 33,
             "pse": 58,
-            "short": "Ce"
+            "short": "Ce",
+            "azonium": 7,
+            "quant": 3
         },
         {
             "name": "Iod",
             "num": 32,
             "pse": 53,
-            "short": "I"
+            "short": "I",
+            "azonium": 7,
+            "quant": 4
         },
         {
             "name": "Beryllium",
             "num": 31,
             "pse": 4,
-            "short": "Be"
+            "short": "Be",
+            "azonium": 7,
+            "quant": 5
         },
         {
             "name": "Neodym",
             "num": 30,
             "pse": 60,
-            "short": "Nd"
+            "short": "Nd",
+            "azonium": 7,
+            "quant": 6
         },
         {
             "name": "Osmium",
             "num": 29,
             "pse": 76,
-            "short": "Os"
+            "short": "Os",
+            "azonium": 7,
+            "quant": 7
         },
         {
             "name": "Iridium",
             "num": 28,
             "pse": 77,
-            "short": "Ir"
+            "short": "Ir",
+            "azonium": 7,
+            "quant": 8
         },
         {
             "name": "Silber",
             "num": 27,
             "pse": 47,
-            "short": "Ag"
+            "short": "Ag",
+            "azonium": 8,
+            "quant": 1
         },
         {
             "name": "Lanthan",
             "num": 26,
             "pse": 57,
-            "short": "La"
+            "short": "La",
+            "azonium": 8,
+            "quant": 2
         },
         {
             "name": "Rhodium",
             "num": 25,
             "pse": 45,
-            "short": "Rh"
+            "short": "Rh",
+            "azonium": 8,
+            "quant": 3
         },
         {
             "name": "Quecksilber",
             "num": 24,
             "pse": 80,
-            "short": "Hg"
+            "short": "Hg",
+            "azonium": 8,
+            "quant": 4
         },
         {
             "name": "Caesium",
             "num": 23,
             "pse": 55,
-            "short": "Cs"
+            "short": "Cs",
+            "azonium": 8,
+            "quant": 5
         },
         {
             "name": "Dysprosium",
             "num": 22,
             "pse": 66,
-            "short": "Dy"
+            "short": "Dy",
+            "azonium": 8,
+            "quant": 6
         },
         {
             "name": "Antimon",
             "num": 21,
             "pse": 51,
-            "short": "Sb"
+            "short": "Sb",
+            "azonium": 8,
+            "quant": 7
         },
         {
             "name": "Gadolinium",
             "num": 20,
             "pse": 64,
-            "short": "Gd"
+            "short": "Gd",
+            "azonium": 8,
+            "quant": 8
         },
         {
             "name": "Samarium",
             "num": 19,
             "pse": 62,
-            "short": "Sm"
+            "short": "Sm",
+            "azonium": 9,
+            "quant": 1
         },
         {
             "name": "Erbium",
             "num": 18,
             "pse": 68,
-            "short": "Er"
+            "short": "Er",
+            "azonium": 9,
+            "quant": 2
         },
         {
             "name": "Ytterbium",
             "num": 17,
             "pse": 70,
-            "short": "Yb"
+            "short": "Yb",
+            "azonium": 9,
+            "quant": 3
         },
         {
             "name": "Hafnium",
             "num": 16,
             "pse": 72,
-            "short": "Hf"
+            "short": "Hf",
+            "azonium": 9,
+            "quant": 4
         },
         {
             "name": "Gold",
             "num": 15,
             "pse": 79,
-            "short": "Au"
+            "short": "Au",
+            "azonium": 9,
+            "quant": 5
         },
         {
             "name": "Indium",
             "num": 14,
             "pse": 49,
-            "short": "In"
+            "short": "In",
+            "azonium": 9,
+            "quant": 6
         },
         {
             "name": "Thallium",
             "num": 13,
             "pse": 81,
-            "short": "Tl"
+            "short": "Tl",
+            "azonium": 9,
+            "quant": 7
         },
         {
             "name": "Wolfram",
             "num": 12,
             "pse": 74,
-            "short": "W"
+            "short": "W",
+            "azonium": 9,
+            "quant": 8
         },
         {
             "name": "Praseodym",
             "num": 11,
             "pse": 59,
-            "short": "Pr"
+            "short": "Pr",
+            "azonium": 10,
+            "quant": 1
         },
         {
             "name": "Bismut",
             "num": 10,
             "pse": 83,
-            "short": "Bi"
+            "short": "Bi",
+            "azonium": 10,
+            "quant": 2
         },
         {
             "name": "Europium",
             "num": 9,
             "pse": 63,
-            "short": "Eu"
+            "short": "Eu",
+            "azonium": 10,
+            "quant": 3
         },
         {
             "name": "Holmium",
             "num": 8,
             "pse": 67,
-            "short": "Ho"
+            "short": "Ho",
+            "azonium": 10,
+            "quant": 4
         },
         {
             "name": "Thorium",
             "num": 7,
             "pse": 90,
-            "short": "Th"
+            "short": "Th",
+            "azonium": 10,
+            "quant": 5
         },
         {
             "name": "Terbium",
             "num": 6,
             "pse": 65,
-            "short": "Tb"
+            "short": "Tb",
+            "azonium": 10,
+            "quant": 6
         },
         {
             "name": "Rhenium",
             "num": 5,
             "pse": 75,
-            "short": "Re"
+            "short": "Re",
+            "azonium": 10,
+            "quant": 7
         },
         {
             "name": "Lutetium",
             "num": 4,
             "pse": 71,
-            "short": "Lu"
+            "short": "Lu",
+            "azonium": 10,
+            "quant": 8
         },
         {
             "name": "Thulium",
             "num": 3,
             "pse": 69,
-            "short": "Tm"
+            "short": "Tm",
+            "azonium": 11,
+            "quant": 1
         },
         {
             "name": "Uran",
             "num": 2,
             "pse": 92,
-            "short": "U"
+            "short": "U",
+            "azonium": 11,
+            "quant": 2
         },
         {
             "name": "Tantal",
             "num": 1,
             "pse": 43,
-            "short": "Ta"
+            "short": "Ta",
+            "azonium": 11,
+            "quant": 3
         }
     ]
 }

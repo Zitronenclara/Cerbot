@@ -81,6 +81,8 @@ module.exports = {
                         "``Protonenmagnetometer`` - Stufe: **" + result[0].magnetsclvl + "** - Effizienz: **" + (result[0].magnetsclvl * 10) + "%**\n" +
                         "``Anomaliendifferenzierer`` - Stufe: **" + result[0].anomalysclvl + "** - Effizienz: **" + (result[0].anomalysclvl * 10) + "%**\n")
                     .addField("**diverse KIs**", "``Größenbewerter`` - **"+sizeb+"**\n``Ressourcenbewerter`` - **"+resb+"**\n``Atmosphärenbewerter`` - **"+atmb+"**\n``Wasserbewerter`` - **"+watb+"**\n``Temperaturbewerter`` - **"+tempb+"**\n``Magnetfeldbewerter`` - **"+magb+"**\n``Erdähnlichkeitsrechner`` - **"+esib+"**\n``Bewohnbarkeitsanalysator`` - **"+habb+"**\n")
+                    .addField("**Drohnensteuerungseinheiten**", "``Abbausteuerung`` - Stufe: **"+result[0].minerlvl+"** *(Drohnen: "+result[0].minerdrones+")*\n``Aufklärungssteuerung`` - Stufe: **"+result[0].resolvelvl+"** *(Drohnen: "+result[0].resolvedrones+")*")
+                    .addField("**Sonstige Module**", "``Raffinerie`` - Stufe: **"+result[0].refinelvl+"** - Abbaugeschwindigkeit: **"+(Math.round((1 ** 1.3) * (11 - result[0].refinelvl)))+" bis "+(Math.round((5 ** 1.3) * (11 - result[0].refinelvl)))+" Minuten**\n``Materialrefraktor`` - Stufe: **"+result[0].refraktlvl+"** - maximale Kapazität: **"+(result[0].refraktlvl * 50)+"**")
                 receivedMessage.channel.send(bodyembed)
             }
             //schickt Error Nachricht

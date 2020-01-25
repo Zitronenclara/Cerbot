@@ -8,6 +8,7 @@ const anostar = require('./commands/bodyanomalies/starbodies.json')
 var mysql = require('mysql');
 const con = require('./db.js');
 const Discord = require('discord.js')
+const hugeInt = require("big-integer");
 
 let randname = function () {
     var result = '';
@@ -944,9 +945,11 @@ let jumpembedgenerator = function (usid, bodyid, ch, avatarurl) {
             .addField("**Bewohnbarkeit**", habitability)
             .addField("**Anomalien**", "**[** ***" + anomalie + "*** **]** ``" + anomaliewert + "FP``")
             .setFooter("ID: #" + bodyinfo.id + "")
-        ch.send(bodyembed)
         saveorbitseed(usinfo.userid, orbitseed)
-    }, 1200);
+        setTimeout(() => {
+            ch.send(bodyembed)
+        }, 11500);
+    }, 500);
 }
 exports.jumpembedgenerator = jumpembedgenerator
 
@@ -955,7 +958,7 @@ let htsinit = function (us, memb) {
         if (err) throw err;
         var udat = result
         if (udat = undefined || udat.length == 0) {
-            var sql = "INSERT INTO htsinv (userid, ressclvl, gravsclvl, atmsclvl, rotsclvl, watersclvl, tempsclvl, magnetsclvl, sizebewert, resbewert, atmbewert, waterbewert, tempbewert, magnetbewert, esirechner, habitbewert, anomalysclvl) VALUES ('" + us.id + "', 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1)";
+            var sql = "INSERT INTO htsinv (userid, ressclvl, gravsclvl, atmsclvl, rotsclvl, watersclvl, tempsclvl, magnetsclvl, sizebewert, resbewert, atmbewert, waterbewert, tempbewert, magnetbewert, esirechner, habitbewert, anomalysclvl, minerlvl, minerdrones, resolvelvl, resolvedrones, metha, etha, propa, buta, penta, hexa, hepta, octa, nona, deca, ultra, miningstamp, refinelvl, refraktlvl) VALUES ('" + us.id + "', 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1)";
             con.query(sql, function (err, result) {
                 if (err) throw err;
             });
@@ -973,3 +976,129 @@ let saveorbitseed = function (usid, seed) {
     });
 }
 exports.saveorbitseed = saveorbitseed
+
+let computeminingstring = function (type, metaid, metapercent, metbid, metbpercent, refraktlvl) {
+    var multtype = Math.floor(type ** 1.7) + 1
+    var miningstring = ""
+    var azahl = 0;
+    var bzahl = 0;
+    var aanzahl = 0;
+    var banzahl = 0;
+    var aname = "unbekannt";
+    var bname = "unbekannt";
+    var aton = 0;
+    var bton = 0;
+    var awert = 0;
+    var bwert = 0;
+    var astoff = "unbekannt";
+    var bstoff = "unbekannt";
+    var maxaanzahl = 0;
+    var maxbanzahl = 0;
+
+    if (metapercent != 0) {
+        var awert = res.el[metaid].azonium
+        var astoff = res.el[metaid].name
+        aton = Math.round(metapercent * 10 * multtype)
+        aanzahl = Math.round(aton * (res.el[metaid].quant / 10) * (12 - awert))
+        maxaanzahl = aanzahl;
+        if (aanzahl > refraktlvl * 50){
+            aanzahl = refraktlvl * 50
+        }
+
+        var azahlstring = aanzahl.toString()
+        for (i = 0; i < (awert - 1) * 4; i++) {
+            azahlstring += 0
+        }
+        azahl = hugeInt(azahlstring)
+
+        if (azahl < 1) {
+            azahl = 1
+        }
+    }
+    if (metbpercent != 0) {
+        var bwert = res.el[metbid].azonium
+        var bstoff = res.el[metbid].name
+        bton = Math.round(metbpercent * 10 * multtype)
+        banzahl = Math.round(bton * (res.el[metbid].quant / 10) * (12 - bwert))
+        maxbanzahl = banzahl;
+        if (banzahl > refraktlvl * 50){
+            banzahl = refraktlvl * 50
+        }
+
+        var bzahlstring = banzahl.toString()
+        for (i = 0; i < (bwert - 1) * 4; i++) {
+            bzahlstring += 0
+        }
+        bzahl = hugeInt(bzahlstring)
+
+        if (bzahl < 1) {
+            bzahl = 1
+        }
+    }
+
+    if (awert == 1) {
+        aname = "Methazonium"
+    } else if (awert == 2) {
+        aname = "Ethazonium"
+    } else if (awert == 3) {
+        aname = "Propazonium"
+    } else if (awert == 4) {
+        aname = "Butazonium"
+    } else if (awert == 5) {
+        aname = "Pentazonium"
+    } else if (awert == 6) {
+        aname = "Hexazonium"
+    } else if (awert == 7) {
+        aname = "Heptazonium"
+    } else if (awert == 8) {
+        aname = "Octazonium"
+    } else if (awert == 9) {
+        aname = "Nonazonium"
+    } else if (awert == 10) {
+        aname = "Decazonium"
+    } else if (awert == 11) {
+        aname = "Ultrazonium"
+    }
+
+    if (bwert == 1) {
+        bname = "Methazonium"
+    } else if (bwert == 2) {
+        bname = "Ethazonium"
+    } else if (bwert == 3) {
+        bname = "Propazonium"
+    } else if (bwert == 4) {
+        bname = "Butazonium"
+    } else if (bwert == 5) {
+        bname = "Pentazonium"
+    } else if (bwert == 6) {
+        bname = "Hexazonium"
+    } else if (bwert == 7) {
+        bname = "Heptazonium"
+    } else if (bwert == 8) {
+        bname = "Octazonium"
+    } else if (bwert == 9) {
+        bname = "Nonazonium"
+    } else if (bwert == 10) {
+        bname = "Decazonium"
+    } else if (bwert == 11) {
+        bname = "Ultrazonium"
+    }
+
+    miningstring = hugeInt("100000000000000000000000000000000000000000000").add(azahl).add(bzahl).value
+    return {
+        "miningstring": miningstring.toString().substr(1),
+        "aton": aton,
+        "bton": bton,
+        "aanzahl": aanzahl,
+        "banzahl": banzahl,
+        "maxaanzahl": maxaanzahl,
+        "maxbanzahl": maxbanzahl,
+        "awert": awert,
+        "bwert": bwert,
+        "aname": aname,
+        "bname": bname,
+        "astoff": astoff,
+        "bstoff": bstoff
+    }
+}
+exports.computeminingstring = computeminingstring
