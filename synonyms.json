@@ -21,12 +21,20 @@
             "set": "bdreminder"
         },
         {
+            "get": ["bdinfo", "bodyin"],
+            "set": "bodyinfo"
+        },
+        {
             "get": ["kauf", "kaufen"],
             "set": "buy"
         },
         {
             "get": ["changes", "chlog", "cl", "changel", "versions", "version", "clog"],
             "set": "changelog"
+        },
+        {
+            "get": ["getres", "sammeln", "cc"],
+            "set": "collect"
         },
         {
             "get": ["dwatk", "datk", "atkdown"],
@@ -61,7 +69,11 @@
             "set": "ideen"
         },
         {
-            "get": ["jump", "Jump"],
+            "get": ["i", "inventar", "inv"],
+            "set": "inventory"
+        },
+        {
+            "get": ["j", "sprung"],
             "set": "jump"
         },
         {
@@ -85,8 +97,16 @@
             "set": "marryinfo"
         },
         {
-            "get": ["nextbd"],
+            "get": ["md", "miningd", "mined", "minedrone", "mdrone"],
+            "set": "miningdrone"
+        },
+        {
+            "get": ["nextbd", "nbd"],
             "set": "nextbd"
+        },
+        {
+            "get": ["oinfo", "orbit", "orbiti", "orbitinf"],
+            "set": "orbitinfo"
         },
         {
             "get": ["owo"],
@@ -149,12 +169,16 @@
             "set": "setsize"
         },
         {
-            "get": ["spaceinfo"],
+            "get": ["shi", "shipi", "sinfo", "si", "shinfo"],
             "set": "shipinfo"
         },
         {
             "get": ["laden", "markt"],
             "set": "shop"
+        },
+        {
+            "get": ["start", "hts", "buyship"],
+            "set": "starthts"
         },
         {
             "get": ["serverstats", "serverst"],

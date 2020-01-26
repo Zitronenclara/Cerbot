@@ -68,10 +68,10 @@ module.exports = {
                 }else{
                     habb = "verfügbar"
                 }
-                const bodyembed = new Discord.RichEmbed()
+                const shipinfoembed = new Discord.RichEmbed()
                     .setTitle("**Raumschiffinfo**")
                     .setDescription("Hier siehst du Infos über das Raumschiff von " + target)
-                    .setThumbnail(target.user.displayAvatarURL)
+                    .setThumbnail(receivedMessage.author.displayAvatarURL)
                     .addField("**Orbital-Analysegeräte**", "``Ressourcenscanner`` - Stufe: **" + result[0].ressclvl + "** - Effizienz: **" + (result[0].ressclvl * 10) + "%**\n" +
                         "``Beschleunigungssensor`` - Stufe: **" + result[0].gravsclvl + "** - Effizienz: **" + (result[0].gravsclvl * 10) + "%**\n" +
                         "``Atmosphärenanalysator`` - Stufe: **" + result[0].atmsclvl + "** - Effizienz: **" + (result[0].atmsclvl * 10) + "%**\n" +
@@ -83,7 +83,7 @@ module.exports = {
                     .addField("**diverse KIs**", "``Größenbewerter`` - **"+sizeb+"**\n``Ressourcenbewerter`` - **"+resb+"**\n``Atmosphärenbewerter`` - **"+atmb+"**\n``Wasserbewerter`` - **"+watb+"**\n``Temperaturbewerter`` - **"+tempb+"**\n``Magnetfeldbewerter`` - **"+magb+"**\n``Erdähnlichkeitsrechner`` - **"+esib+"**\n``Bewohnbarkeitsanalysator`` - **"+habb+"**\n")
                     .addField("**Drohnensteuerungseinheiten**", "``Abbausteuerung`` - Stufe: **"+result[0].minerlvl+"** *(Drohnen: "+result[0].minerdrones+")*\n``Aufklärungssteuerung`` - Stufe: **"+result[0].resolvelvl+"** *(Drohnen: "+result[0].resolvedrones+")*")
                     .addField("**Sonstige Module**", "``Raffinerie`` - Stufe: **"+result[0].refinelvl+"** - Abbaugeschwindigkeit: **"+(Math.round((1 ** 1.3) * (11 - result[0].refinelvl)))+" bis "+(Math.round((5 ** 1.3) * (11 - result[0].refinelvl)))+" Minuten**\n``Materialrefraktor`` - Stufe: **"+result[0].refraktlvl+"** - maximale Kapazität: **"+(result[0].refraktlvl * 50)+"**")
-                receivedMessage.channel.send(bodyembed)
+                receivedMessage.channel.send(shipinfoembed)
             }
             //schickt Error Nachricht
             if (iscommander == 1) {
