@@ -191,6 +191,7 @@ module.exports = {
                                 var timestampadd = Math.round(minutes * 60000)
                                 var newminingstamp = receivedMessage.createdTimestamp + timestampadd
                                 con.query("UPDATE `cerbotdb`.`htsinv` SET `miningstring`='" + mineres.miningstring + "' WHERE  `userid`='" + receivedMessage.author.id + "';")
+                                con.query("UPDATE `cerbotdb`.`htsinv` SET `minewegstring`='" + mineres.minewegstring + "' WHERE  `userid`='" + receivedMessage.author.id + "';")
                                 con.query("UPDATE `cerbotdb`.`htsinv` SET `minerdrones`=" + (usinfo.minerdrones - 1) + " WHERE  `userid`='" + receivedMessage.author.id + "';")
                                 con.query("UPDATE `cerbotdb`.`htsinv` SET `miningstamp`=" + newminingstamp + " WHERE  `userid`='" + receivedMessage.author.id + "';")
                                 con.query("UPDATE `cerbotdb`.`spacebodies` SET `mined`= 1 WHERE  `id`=" + bodyinfo.id + ";")

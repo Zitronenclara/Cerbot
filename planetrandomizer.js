@@ -980,6 +980,7 @@ exports.saveorbitseed = saveorbitseed
 let computeminingstring = function (type, metaid, metapercent, metbid, metbpercent, refraktlvl) {
     var multtype = Math.floor(type ** 1.7) + 1
     var miningstring = ""
+    var minewegstring = ""
     var azahl = 0;
     var bzahl = 0;
     var aanzahl = 0;
@@ -1014,7 +1015,13 @@ let computeminingstring = function (type, metaid, metapercent, metbid, metbperce
         if (azahl < 1) {
             azahl = 1
         }
+
+        var wega = Math.round(((aanzahl / maxaanzahl) * metapercent) * 100) * 1000
+
+    }else{
+        wega = 0
     }
+
     if (metbpercent != 0) {
         var bwert = res.el[metbid].azonium
         var bstoff = res.el[metbid].name
@@ -1034,7 +1041,14 @@ let computeminingstring = function (type, metaid, metapercent, metbid, metbperce
         if (bzahl < 1) {
             bzahl = 1
         }
+
+        var wegb = Math.round(((banzahl / maxbanzahl) * metbpercent) * 100)
+
+    }else{
+        wegb = 0
     }
+
+    minewegstring = (1000000 + wega + wegb).toString().substr(1)
 
     if (awert == 1) {
         aname = "Methazonium"
@@ -1087,6 +1101,7 @@ let computeminingstring = function (type, metaid, metapercent, metbid, metbperce
     miningstring = hugeInt("100000000000000000000000000000000000000000000").add(azahl).add(bzahl).value
     return {
         "miningstring": miningstring.toString().substr(1),
+        "minewegstring": minewegstring,
         "aton": aton,
         "bton": bton,
         "aanzahl": aanzahl,
