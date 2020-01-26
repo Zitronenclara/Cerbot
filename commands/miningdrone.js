@@ -169,10 +169,10 @@ module.exports = {
 
                 var mesu = receivedMessage.author + ", möchtest du:\n"
                 if (metarate != 0) {
-                    mesu += "``" + mineres.aton + " Tonnen`` **" + mineres.astoff + "** ➜ max. **" + metarate + "** von **" + mineres.maxaanzahl + "** ``" + mineres.aname + "``\n"
+                    mesu += "``" + mineres.aton + " Millionen Tonnen`` **" + mineres.astoff + "** ➜ max. **" + metarate + "** von **" + mineres.maxaanzahl + "** ``" + mineres.aname + "``\n"
                 }
                 if (metbrate != 0) {
-                    mesu += "``" + mineres.bton + " Tonnen`` **" + mineres.bstoff + "** ➜ max. **" + metbrate + "** von **" + mineres.maxbanzahl + "** ``" + mineres.bname + "``\n"
+                    mesu += "``" + mineres.bton + " Millionen Tonnen`` **" + mineres.bstoff + "** ➜ max. **" + metbrate + "** von **" + mineres.maxbanzahl + "** ``" + mineres.bname + "``\n"
                 }
                 mesu += "umwandeln? *(dauert ca. "+(Math.round((bodyinfo.type ** 1.3) * (11 - usinfo.refinelvl)))+" Minuten)*"
                 receivedMessage.channel.send(mesu).then(message => {

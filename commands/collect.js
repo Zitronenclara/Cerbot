@@ -34,18 +34,25 @@ module.exports = {
                 valid = 0
                 return
             }
-            if (receivedMessage.createdTimestamp < usinfo.miningstamp) {
-                var minutesleft = Math.round((usinfo.miningstamp - receivedMessage.createdTimestamp) / 60000)
-                receivedMessage.reply("du musst noch **" + minutesleft + " Minuten** warten, bevor du deine Ressourcen abholen kannst.")
-                valid = 0
-                return
-            }
             con.query("SELECT * FROM spacebodies WHERE id = " + usinfo.orbitid + "", function (err, result, fields) {
                 if (err) throw err;
                 bodyinfo = result[0]
             });
             setTimeout(() => {
                 if (valid == 1) {
+                    if (receivedMessage.createdTimestamp < usinfo.miningstamp) {
+                        var eigminutes = Math.round((bodyinfo.type ** 1.3) * (11 - usinfo.refinelvl))
+                        var minutesleft = (usinfo.miningstamp - receivedMessage.createdTimestamp) / 60000
+                        var progress = (((eigminutes - minutesleft) / eigminutes) * 100).toFixed(2)
+                        var sekleft = (minutesleft - Math.round(minutesleft)) * 60
+                        if (sekleft < 0) {
+                            sekleft = 60 + sekleft
+                        }
+                        receivedMessage.reply("du musst noch **" + Math.floor(minutesleft) + " Minuten** und **" + Math.round(sekleft) + " Sekunden** warten, bevor du deine Ressourcen abholen kannst. *(Fortschritt: " + progress + "%)*")
+                        valid = 0
+                        return
+                    }
+
                     var mesu = "";
                     var mets = usinfo.miningstring.match(/.{1,4}/g);
                     var methaget = parseInt(mets[10])
