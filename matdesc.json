@@ -1,0 +1,69 @@
+{
+    "mats": [{
+            "name": "Methazonium",
+            "desc": "",
+            "id": 1,
+            "raf": ""
+        },
+        {
+            "name": "Ethazonium",
+            "desc": "",
+            "id": 2,
+            "raf": ""
+        },
+        {
+            "name": "Propazonium",
+            "desc": "",
+            "id": 3,
+            "raf": ""
+        },
+        {
+            "name": "Butazonium",
+            "desc": "",
+            "id": 4,
+            "raf": ""
+        },
+        {
+            "name": "Pentazonium",
+            "desc": "",
+            "id": 5,
+            "raf": ""
+        },
+        {
+            "name": "Hexazonium",
+            "desc": "",
+            "id": 6,
+            "raf": ""
+        },
+        {
+            "name": "Heptazonium",
+            "desc": "",
+            "id": 7,
+            "raf": ""
+        },
+        {
+            "name": "Octazonium",
+            "desc": "",
+            "id": 8,
+            "raf": ""
+        },
+        {
+            "name": "Nonazonium",
+            "desc": "",
+            "id": 9,
+            "raf": ""
+        },
+        {
+            "name": "Decazonium",
+            "desc": "",
+            "id": 10,
+            "raf": ""
+        },
+        {
+            "name": "Ultrazonium",
+            "desc": "",
+            "id": 11,
+            "raf": ""
+        }
+    ]
+}

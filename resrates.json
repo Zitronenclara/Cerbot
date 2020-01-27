@@ -5,7 +5,9 @@
             "pse": 1,
             "short": "H",
             "azonium": 1,
-            "quant": 1
+            "quant": 1,
+            "id": 1,
+            "desc": "Wasserstoff ist ein chemisches Element mit dem Symbol H (für lateinisch hydrogenium „Wassererzeuger“; von altgriechisch ὕδωρ hydōr „Wasser“ und γίγνομαι gignomai „werden, entstehen“) und der Ordnungszahl 1. Im Periodensystem steht es in der 1. Periode und der 1. IUPAC-Gruppe. Wasserstoff ist das häufigste chemische Element im Universum, jedoch nicht in der Erdrinde. Er ist Bestandteil des Wassers und beinahe aller organischen Verbindungen. Somit kommt gebundener Wasserstoff in sämtlichen lebenden Organismen vor. Wasserstoff ist das chemische Element mit der geringsten Atommasse. Sein häufigstes Isotop, das auch als Protium bezeichnet wird, enthält kein Neutron, sondern besteht aus nur einem Proton und einem Elektron."
         },
         {
             "name": "Helium",
@@ -13,7 +15,9 @@
             "pse": 2,
             "short": "He",
             "azonium": 1,
-            "quant": 2
+            "quant": 2,
+            "id": 2,
+            "desc": "Helium (altgriechisch ἥλιος hélios, deutsch ‚Sonne‘) ist ein chemisches Element und hat die Ordnungszahl 2. Sein Elementsymbol ist He. Im Periodensystem steht es in der 18. IUPAC-Gruppe, der früheren VIII. Hauptgruppe, und zählt damit zu den Edelgasen. Es ist ein farbloses, geruchloses, geschmacksneutrales und ungiftiges Gas. Helium ist, nach Wasserstoff, das zweithäufigste Element im Universum. Nach anerkannter Theorie vereinigten sich zehn Sekunden nach dem Urknall Protonen und Neutronen durch Kernfusion zu ersten Atomkernen. Aus deren gesamter Masse bildeten sich dabei unter anderem 25 % 4He und 0,001 % Deuterium sowie Spuren von 3He. Somit ist der größte Teil Helium schon beim Urknall entstanden. Das im Inneren von Sternen durch Fusion von Wasserstoff entstandene Helium fusionierte zum größten Teil weiter zu schwereren Elementen."
         },
         {
             "name": "Sauerstoff",
@@ -21,7 +25,9 @@
             "pse": 8,
             "short": "O",
             "azonium": 1,
-            "quant": 3
+            "quant": 3,
+            "id": 3,
+            "desc": "Sauerstoff (auch Oxygenium genannt; von altgriechisch ὀξύς ‚oxys‘ „scharf, spitz, sauer“ und γεννάω ‚gen-‘ „erzeugen, gebären“, zusammen „Säure-Erzeuger“) ist ein chemisches Element mit dem Elementsymbol O. Entsprechend seiner Ordnungszahl 8 steht es an achter Stelle im Periodensystem und dort zusammen mit den Elementen Schwefel, Selen, Tellur, Polonium und Livermorium, die die Chalkogene bilden, in der sechsten Hauptgruppe, bzw. 16. IUPAC-Gruppe. Sauerstoff ist bezüglich seines Gewichts mit 48,9 % das häufigste Element der Erdkruste, das häufigste Element der Erdhülle und mit rund 30 % das zweithäufigste Element der Erde insgesamt (Eisen ist an 1. Stelle). Die metastabile, energiereiche und reaktive allotrope Form aus drei Sauerstoffatomen (O3) wird Ozon genannt."
         },
         {
             "name": "Kohlenstoff",
@@ -29,7 +35,9 @@
             "pse": 6,
             "short": "C",
             "azonium": 1,
-            "quant": 4
+            "quant": 4,
+            "id": 4,
+            "desc": "Kohlenstoff (von urgerm. kul-a-, kul-ō(n)- ,Kohle‘) oder Carbon (von lat. carbō ,Holzkohle‘, latinisiert Carboneum oder Carbonium) ist ein chemisches Element mit dem Elementsymbol C und der Ordnungszahl 6. Im Periodensystem steht es in der vierten Hauptgruppe, bzw. der 14. IUPAC-Gruppe oder Kohlenstoffgruppe sowie der zweiten Periode. Es kommt in der Natur sowohl in gediegener (reiner) Form (Diamant, Graphit, Chaoit) als auch chemisch gebunden (z. B. in Form von Carbiden, Carbonaten, Kohlenstoffdioxid, Erdöl, Erdgas und Kohle) vor. Aufgrund seiner besonderen Elektronenkonfiguration (halbgefüllte L-Schale) besitzt es die Fähigkeit zur Bildung komplexer Moleküle und weist von allen chemischen Elementen die größte Vielfalt an chemischen Verbindungen auf. Diese Eigenschaft macht Kohlenstoff und seine Verbindungen zur Grundlage des Lebens auf der Erde."
         },
         {
             "name": "Stickstoff",
@@ -37,7 +45,9 @@
             "pse": 7,
             "short": "N",
             "azonium": 1,
-            "quant": 5
+            "quant": 5,
+            "id": 5,
+            "desc": "Stickstoff (lateinisch Nitrogenium) ist ein chemisches Element mit der Ordnungszahl 7 und dem Elementsymbol N. Im Periodensystem steht es in der fünften Hauptgruppe bzw. der 15. IUPAC-Gruppe oder Stickstoffgruppe sowie der zweiten Periode. Das Symbol N leitet sich von der lateinischen Bezeichnung nitrogenium ab (von altgriech. νίτρον nitron „Laugensalz“ und γένος genos „Herkunft“). Die deutsche Bezeichnung Stickstoff erinnert daran, dass molekularer Stickstoff Flammen durch Verdrängen von Sauerstoff löscht („erstickt“) und dass in reinem Stickstoff Lebewesen ersticken, weil Sauerstoff fehlt. Ältere Bezeichnungen sind Azot, Azotum, Stickgas und Zoogenium. Elementar tritt Stickstoff nur in Form zweiatomiger Moleküle auf (molekularer Stickstoff, auch Distickstoff, Summenformel N2); er ist mit 78 % der Hauptbestandteil der Luft. In der Erdkruste kommt anorganisch gebundener Stickstoff selten vor; von Bedeutung ist er nur in Salpetervorkommen."
         },
         {
             "name": "Neon",
@@ -45,7 +55,9 @@
             "pse": 10,
             "short": "Ne",
             "azonium": 1,
-            "quant": 6
+            "quant": 6,
+            "id": 6,
+            "desc": "Neon (griechisch νέος néos, deutsch ‚neu‘) ist ein chemisches Element mit dem Symbol Ne und der Ordnungszahl 10. Im Periodensystem steht es in der 8. Hauptgruppe, bzw. der 18. IUPAC-Gruppe und zählt daher zu den Edelgasen. Wie die anderen Edelgase ist es ein farbloses, äußerst reaktionsträges, einatomiges Gas. In vielen Eigenschaften wie Schmelz- und Siedepunkt oder Dichte steht es zwischen dem leichteren Helium und dem schwereren Argon. Im Universum gehört Neon zu den häufigsten Elementen, auf der Erde ist es dagegen relativ selten, da wie bei Helium ein großer Teil des Gases in das Weltall entwichen ist. Vorwiegend ist es in der Erdatmosphäre zu finden, nur geringe Mengen sind in Gesteinen eingeschlossen. Wie Krypton und Xenon wurde auch Neon 1898 von William Ramsay und Morris William Travers durch fraktionierte Destillation von flüssiger Luft entdeckt."
         },
         {
             "name": "Magnesium",
@@ -53,7 +65,9 @@
             "pse": 12,
             "short": "Mg",
             "azonium": 1,
-            "quant": 7
+            "quant": 7,
+            "id": 7,
+            "desc": "Magnesium ist ein chemisches Element mit dem Elementsymbol Mg (Alchemie: ⚩) und der Ordnungszahl 12. Im Periodensystem der Elemente steht es in der zweiten Hauptgruppe bzw. der 2. IUPAC-Gruppe und gehört damit zu den Erdalkalimetallen. Magnesium ist eines der zehn häufigsten Elemente der Erdkruste. Es kommt in zahlreichen Mineralen sowie im Blattgrün der Pflanzen vor. Der schottische Physiker und Chemiker Joseph Black war der erste, der Magnesiumverbindungen im 18. Jahrhundert systematisch untersuchte."
         },
         {
             "name": "Silicium",
@@ -61,7 +75,9 @@
             "pse": 14,
             "short": "Si",
             "azonium": 1,
-            "quant": 8
+            "quant": 8,
+            "id": 8,
+            "desc": "Silicium, auch Silizium, ist ein chemisches Element mit dem Symbol Si und der Ordnungszahl 14. Es steht in der 4. Hauptgruppe (Kohlenstoffgruppe), bzw. der 14. IUPAC-Gruppe, und der 3. Periode des Periodensystems der Elemente. In der Erdhülle ist es, auf den Massenanteil (ppmw) bezogen, nach Sauerstoff das zweithäufigste Element. Silicium ist ein klassisches Halbmetall, weist daher sowohl Eigenschaften von Metallen als auch von Nichtmetallen auf und ist ein Elementhalbleiter. Reines, elementares Silicium besitzt eine grau-schwarze Farbe und weist einen typisch metallischen, oftmals bronzenen bis bläulichen Glanz auf. Silicium ist äußerst wichtig für die Elektronik und dient seit 2018 in isotopenreiner Form auch zur Definition des Kilogramms."
         },
         {
             "name": "Eisen",
@@ -69,7 +85,9 @@
             "pse": 26,
             "short": "Fe",
             "azonium": 2,
-            "quant": 1
+            "quant": 1,
+            "id": 9,
+            "desc": "Eisen ist ein chemisches Element mit dem Symbol Fe (lateinisch ferrum ‚Eisen‘) und der Ordnungszahl 26. Es gehört zu den Übergangsmetallen, die im Periodensystem die 8. Nebengruppe (Eisen-Platin-Gruppe), nach der neuen Zählung die Gruppe 8 (Eisengruppe) bilden. Eisen ist, auf den Massenanteil (ppmw) bezogen, nach Sauerstoff, Silicium und Aluminium das vierthäufigste Element in der Erdkruste und nach Aluminium das häufigste Metall. Moderne Eisenwerkstoffe mit einem Massenanteil des Kohlenstoffs von bis zu 2 % werden als Stahl bezeichnet, bei größerem Gehalt als Gusseisen. Die Unterscheidung beruht darauf, dass Gusseisen nicht plastisch verformbar, insbesondere nicht schmiedbar ist, während Stahl verformbar, also schmiedbar ist."
         },
         {
             "name": "Schwefel",
@@ -77,7 +95,9 @@
             "pse": 16,
             "short": "S",
             "azonium": 2,
-            "quant": 2
+            "quant": 2,
+            "id": 10,
+            "desc": "Schwefel (über mittelhochdeutsch swëbel von althochdeutsch swëbal; lateinisch sulpur und gräzisiert sulphur bzw. Sulfur, wie swëbal vermutlich von einer indogermanischen Wurzel suel- mit der Bedeutung ‚langsam verbrennen‘, woraus im Germanischen auch deutsch „schwelen“ entstand; die zur Benennung schwefelhaltiger Verbindungen verwendete Silbe „-thio-“ stammt vom griechischen Wort θεῖον theĩon „Schwefel“) ist ein chemisches Element mit dem Elementsymbol S und der Ordnungszahl 16. Er zählt zu den Chalkogenen, der sechsten Hauptgruppe des Periodensystems. In der Häufigkeit der in der Lithosphäre vorkommenden Elemente steht er an 16. Stelle. Schwefel ist ein gelber, nichtmetallischer Feststoff, der eine Vielzahl allotroper Modifikationen bildet."
         },
         {
             "name": "Argon",
@@ -85,7 +105,9 @@
             "pse": 18,
             "short": "Ar",
             "azonium": 2,
-            "quant": 3
+            "quant": 3,
+            "id": 11,
+            "desc": "Argon (griechisch αργό argó „träge“) ist ein chemisches Element mit dem Symbol Ar (bis 1957 nur A) und der Ordnungszahl 18. Im Periodensystem steht es in der 8. Hauptgruppe bzw. der 18. IUPAC-Gruppe und zählt daher zu den Edelgasen. Wie die anderen Edelgase ist es ein farbloses, äußerst reaktionsträges, einatomiges Gas. In vielen Eigenschaften wie Schmelz- und Siedepunkt oder Dichte steht es zwischen dem leichteren Neon und dem schwereren Krypton. Argon ist das häufigste auf der Erde vorkommende Edelgas, der Anteil an der Atmosphäre beträgt etwa 0,934 %. Damit ist Argon der dritthäufigste Bestandteil der Erdatmosphäre, nach Stickstoff und Sauerstoff. Dies ist großteils auf den Zerfall des Kaliumisotops 40K zurückzuführen, bei dem 40Ar entsteht."
         },
         {
             "name": "Aluminium",
@@ -93,7 +115,9 @@
             "pse": 13,
             "short": "Al",
             "azonium": 2,
-            "quant": 4
+            "quant": 4,
+            "id": 12,
+            "desc": "Aluminium (im angloamerikanischen Sprachraum vielfach auch Aluminum) ist ein chemisches Element mit dem Elementsymbol Al und der Ordnungszahl 13. Im Periodensystem gehört Aluminium zur dritten Hauptgruppe und zur 13. IUPAC-Gruppe, der Borgruppe, die früher als Gruppe der Erdmetalle bezeichnet wurde. Es gibt zahlreiche Aluminiumverbindungen. Aluminium ist ein silbrig-weißes Leichtmetall. In der Erdhülle ist es, nach Sauerstoff und Silicium, das dritthäufigste Element und in der Erdkruste das häufigste Metall. Entdeckt wurde Aluminium, das in der Natur fast ausschließlich in Form von chemischen Verbindungen vorkommt, im frühen 19. Jahrhundert. Im frühen 20. Jahrhundert setzte die industrielle Massenproduktion ein."
         },
         {
             "name": "Calcium",
@@ -101,7 +125,9 @@
             "pse": 20,
             "short": "Ca",
             "azonium": 2,
-            "quant": 5
+            "quant": 5,
+            "id": 13,
+            "desc": "Calcium (eingedeutscht Kalzium geschrieben) ist ein chemisches Element mit dem Elementsymbol Ca und der Ordnungszahl 20. Im Periodensystem steht es in der zweiten Hauptgruppe, bzw. der 2. IUPAC-Gruppe und zählt daher zu den Erdalkalimetallen. Die Schreibweise Calcium entspricht der IUPAC-Norm und gilt als fachsprachlich. Elementares Calcium ist ein glänzendes, silberweißes Metall. In der Erdhülle ist es, auf den Massenanteil (ppmw) bezogen, nach Sauerstoff, Silicium, Aluminium und Eisen das fünfthäufigste Element. Aufgrund seiner starken Reaktivität kommt es nur chemisch gebunden als Bestandteil von Mineralien vor. Zu diesen gehören z. B. Calcit, Aragonit und Dolomit in Kalkstein, Marmor und Kreide sowie Gips (Calciumsulfat)."
         },
         {
             "name": "Natrium",
@@ -109,7 +135,9 @@
             "pse": 11,
             "short": "Na",
             "azonium": 2,
-            "quant": 6
+            "quant": 6,
+            "id": 14,
+            "desc": "Natrium ist ein häufig vorkommendes chemisches Element mit dem Symbol Na und der Ordnungszahl 11. Im Periodensystem der Elemente steht es in der 3. Periode und als Alkalimetall in der 1. IUPAC-Gruppe bzw. 1. Hauptgruppe. Natrium ist ein Reinelement, dessen einziges stabiles Isotop 23Na ist. Elementares Natrium wurde erstmals 1807 von Humphry Davy durch Schmelzflusselektrolyse aus Natriumhydroxid gewonnen und Sodium genannt. Diese Bezeichnung wird im englischen und französischen Sprachraum verwendet, Ableitungen hiervon in den romanischen und zum Teil auch in slawischen Sprachen. Der deutsche Name Natrium ist über arabisch نطرون, DMG naṭrūn, Natron, vom ägyptischen netjerj abgeleitet."
         },
         {
             "name": "Nickel",
@@ -117,7 +145,9 @@
             "pse": 28,
             "short": "Ni",
             "azonium": 2,
-            "quant": 7
+            "quant": 7,
+            "id": 15,
+            "desc": "Nickel ist ein chemisches Element mit dem Elementsymbol Ni und der Ordnungszahl 28. Es zählt zu den Übergangsmetallen, im Periodensystem steht es nach der älteren Zählweise in der 8. Nebengruppe oder Eisen-Platin-Gruppe, nach der neueren in der Gruppe 10 oder Nickelgruppe. Nickel wurde erstmals 1751 von Axel Frederic Cronstedt rein dargestellt und nach dem Mineral Kupfernickel (schwedisch kopparnickel, heute Nickelin) benannt, in dem er das bis dahin unbekannte Metall fand. Nickel kommt in der Erdkruste mit einem Gehalt von etwa 0,008 % vor. Gediegen, das heißt in elementarer Form kommt Nickel nur selten vor. Bisher sind lediglich rund 50 Fundorte für gediegenes Nickel dokumentiert (Stand 2018), so unter anderem in Australien, China, Kanada, Russland und den Vereinigten Staaten von Amerika."
         },
         {
             "name": "Chrom",
@@ -125,7 +155,9 @@
             "pse": 24,
             "short": "Cr",
             "azonium": 2,
-            "quant": 8
+            "quant": 8,
+            "id": 16,
+            "desc": "Chrom (altgriechisch χρῶμα chrṓma ,Farbe‘) ist ein chemisches Element mit dem Elementsymbol Cr und der Ordnungszahl 24. Es zählt zu den Übergangsmetallen, im Periodensystem steht es in der 6. Nebengruppe (6. IUPAC-Gruppe) oder Chromgruppe. Die Verbindungen von Chrom haben viele verschiedene Farben und werden oft als Pigmente in Farben und Lacken verwendet. Chrom ist von der International Mineralogical Association (IMA) als Mineral anerkannt (System-Nr. nach Strunz: 1.AE.05 bzw. ehemals I/A.06-10), tritt allerdings in der Natur nur sehr selten in gediegener Form auf. Bisher sind lediglich zehn Fundorte bekannt. Chrom daher nur in gebundener Form vor allem als Mineral Chromit (Chromeisenstein) FeCr2O4 mit einem Chromanteil von etwa 46 % im Tagebau oder in geringer Tiefe abgebaut."
         },
         {
             "name": "Phosphor",
@@ -133,7 +165,9 @@
             "pse": 15,
             "short": "P",
             "azonium": 3,
-            "quant": 1
+            "quant": 1,
+            "id": 17,
+            "desc": "Phosphor (von altgriechisch φωσφόρος phōsphóros, deutsch ‚lichttragend‘, vom Leuchten des weißen Phosphors bei der Reaktion mit Sauerstoff) ist ein chemisches Element mit dem Symbol P und der Ordnungszahl 15. Im Periodensystem steht es in der fünften Hauptgruppe, bzw. 15. IUPAC-Gruppe oder Stickstoffgruppe. Phosphor kommt in mehreren, sich stark voneinander unterscheidenden Modifikationen vor. Der aus P4-Molekülen aufgebaute weiße Phosphor ist von allen die am einfachsten herzustellende, jedoch thermodynamisch nicht die stabilste Modifikation und zudem giftig und leicht entflammbar. hosphorverbindungen sind für alle Lebewesen essenziell und bei Aufbau und Funktion der Organismen in zentralen Bereichen beteiligt, wie der DNA und der zellulären Energieversorgung (ADP/ATP). Die biogeochemische Umsetzung von Phosphor erfolgt im Rahmen des Phosphorkreislaufs."
         },
         {
             "name": "Mangan",
@@ -141,7 +175,9 @@
             "pse": 25,
             "short": "Mn",
             "azonium": 3,
-            "quant": 2
+            "quant": 2,
+            "id": 18,
+            "desc": "Mangan ist ein chemisches Element mit dem Elementsymbol Mn und der Ordnungszahl 25. Im Periodensystem steht es in der 7. Nebengruppe (7. IUPAC-Gruppe), der Mangangruppe. Mangan ist ein silberweißes, hartes, sehr sprödes Übergangsmetall, das in manchen Eigenschaften dem Eisen ähnelt. Mangan kommt in der Natur vorwiegend als Braunstein vor und wird in großen Mengen abgebaut. 90 % des abgebauten Mangans werden in der Stahlindustrie in Form von Ferromangan als Legierungsbestandteil von Stahl eingesetzt. Dabei entzieht es dem Stahl Sauerstoff und Schwefel und verbessert gleichzeitig die Durchhärtung. Wirtschaftlich wichtig ist zudem Mangan(IV)-oxid, das als Kathode in Alkali-Mangan-Batterien eingesetzt wird. Das Element besitzt eine hohe biologische Bedeutung als Bestandteil verschiedener Enzyme. So wirkt es an einer zentralen Stelle im Photosynthese-Zyklus, wo ein Mangan-Calcium-Cluster für die Oxidation von Wasser zu Sauerstoff verantwortlich ist."
         },
         {
             "name": "Chlor",
@@ -149,7 +185,9 @@
             "pse": 17,
             "short": "Cl",
             "azonium": 3,
-            "quant": 3
+            "quant": 3,
+            "id": 19,
+            "desc": "Chlor ist ein chemisches Element mit dem Symbol Cl und der Ordnungszahl 17. Im Periodensystem der Elemente steht es in der 7. Hauptgruppe und gehört damit zusammen mit Fluor, Brom, Iod, Astat und Tenness zur 17. IUPAC-Gruppe, den Halogenen. Elementares Chlor liegt unter Normalbedingungen in Form des zweiatomigen Moleküls Cl2 gasförmig vor. Es ist eines der reaktivsten Elemente und reagiert mit fast allen anderen Elementen und vielen Verbindungen. Die hohe Reaktivität bedingt auch die Giftigkeit des elementaren Chlors. Der Name des Elementes leitet sich vom griech. χλωρός chlōrós „hellgrün“ ab. Dieser Name wurde nach der typischen gelbgrünen Farbe des Chlorgases gewählt. Das fast ausschließlich durch Elektrolyse gewonnene Chlor wird großteils für die Synthese chlorhaltiger Verbindungen wie des Vinylchlorids, eines Ausgangsprodukts für die Produktion des Kunststoffes PVC, eingesetzt."
         },
         {
             "name": "Kalium",
@@ -157,7 +195,9 @@
             "pse": 19,
             "short": "K",
             "azonium": 3,
-            "quant": 4
+            "quant": 4,
+            "id": 20,
+            "desc": "Kalium (lateinisch, aus arabisch القلية, DMG al-qalya ‚Pflanzenasche‘) ist ein chemisches Element mit dem Elementsymbol K und der Ordnungszahl 19. Im Periodensystem steht es in der ersten Hauptgruppe bzw. der 1. IUPAC-Gruppe und zählt zu den Alkalimetallen. In der Erdhülle gehört Kalium zu den zehn häufigsten Elementen und kommt in zahlreichen Mineralen der Erdkruste vor. Kalium kommt in der Natur nur als Kation in Kaliumverbindungen vor. Das liegt daran, dass es nur ein Außenelektron besitzt und dieses sehr bereitwillig abgibt, um eine stabile und energiearme äußere Elektronenschale zu erlangen."
         },
         {
             "name": "Titan",
@@ -165,7 +205,9 @@
             "pse": 22,
             "short": "Ti",
             "azonium": 3,
-            "quant": 5
+            "quant": 5,
+            "id": 21,
+            "desc": "Titan ist ein chemisches Element mit dem Elementsymbol Ti und der Ordnungszahl 22. Es gehört zu den Übergangsmetallen und steht im Periodensystem in der 4. Nebengruppe (4. IUPAC-Gruppe) oder Titangruppe. Das Metall ist weiß-metallisch glänzend, hat eine geringe Dichte, ist dehnbar, korrosions- und temperaturbeständig. Titan wird heute üblicherweise zu den Leichtmetallen gezählt. Mit einer Dichte von 4,50 g/cm3 bei Raumtemperatur ist es deren schwerstes, liegt nahe an der heute meist verwendeten Grenze zwischen Leicht- und Schwermetallen von 5 g/cm3, sowie genau an der früher üblichen von 4,5 g/cm3. In der Erdkruste gehört Titan zu den zehn häufigsten Elementen, kommt jedoch fast ausschließlich chemisch gebunden als Bestandteil von Mineralien vor. Aus mehreren Lagerstätten ist jedoch das Auftreten von elementarem Titan nachgewiesen."
         },
         {
             "name": "Fluor",
@@ -173,7 +215,9 @@
             "pse": 9,
             "short": "F",
             "azonium": 3,
-            "quant": 6
+            "quant": 6,
+            "id": 22,
+            "desc": "Fluor ist ein chemisches Element mit dem Symbol F und der Ordnungszahl 9. Im Periodensystem steht es in der 7. Hauptgruppe und gehört damit zur 17. IUPAC-Gruppe, den Halogenen, von denen es das leichteste ist. Es liegt unter Normalbedingungen in Form des zweiatomigen Moleküls F2 gasförmig vor und ist das reaktivste aller Elemente. Es reagiert mit allen Elementen mit Ausnahme der Edelgase Helium und Neon. Fluor ist farblos und erscheint stark verdichtet blassgelb. Es ist das elektronegativste aller Elemente und hat in Verbindungen mit anderen Elementen stets die Oxidationsstufe −1. Der Name des Elementes leitet sich von lat. fluores ab. Dieser Begriff bezeichnete das wichtigste natürlich vorkommende Mineral Fluorit (Flussspat), das in der Metallurgie als Flussmittel zur Herabsetzung des Schmelzpunktes von Erzen verwendet wird (im Originalkontext: lapides igni liquescentes (fluores)). Elementares Fluor ist sehr giftig und stark ätzend."
         },
         {
             "name": "Cobalt",
@@ -181,7 +225,9 @@
             "pse": 27,
             "short": "Co",
             "azonium": 3,
-            "quant": 7
+            "quant": 7,
+            "id": 23,
+            "desc": "Cobalt (chemische Fachsprache; lateinisch cobaltum, standardsprachlich Kobalt; vom Erstbeschreiber nach dem Kobalterz als Ausgangsmaterial Cobalt Rex benannt) ist ein chemisches Element mit dem Elementsymbol Co und der Ordnungszahl 27. Cobalt ist ein ferromagnetisches Übergangsmetall aus der 9. Gruppe oder Cobaltgruppe des Periodensystems. In der älteren Zählweise zählt es zur 8. Nebengruppe oder Eisen-Platin-Gruppe. Cobalt ist ein seltenes Element mit einer Häufigkeit in der Erdkruste von 0,004 Prozent. Elementar kommt es nur äußerst selten in Meteoriten sowie im Erdkern vor. Cobalt wird überwiegend aus Kupfer- und Nickelerzen gewonnen."
         },
         {
             "name": "Zink",
@@ -189,7 +235,9 @@
             "pse": 30,
             "short": "Zn",
             "azonium": 3,
-            "quant": 8
+            "quant": 8,
+            "id": 24,
+            "desc": "Zink ist ein chemisches Element mit dem Elementsymbol Zn und der Ordnungszahl 30. Zink wird zu den Übergangsmetallen gezählt, nimmt aber darin eine Sonderstellung ein, da es wegen der abgeschlossenen d-Schale in seinen Eigenschaften eher den Erdalkalimetallen ähnelt. Nach der veralteten Zählung wird die Zinkgruppe als 2. Nebengruppe bezeichnet (analog zu den Erdalkalimetallen als 2. Hauptgruppe), nach der aktuellen IUPAC-Nomenklatur bildet Zink mit Cadmium, Quecksilber und dem ausschließlich in der Forschung relevanten Copernicium die Gruppe 12. Es ist ein bläulich-weißes sprödes Metall und wird unter anderem zum Verzinken von Eisen und Stahlteilen sowie für Regenrinnen verwendet. Zink ist für alle Lebewesen essentiell und ist Bestandteil wichtiger Enzyme. Der Name Zink kommt von Zinke, Zind („Zahn, Zacke“), da Zink zackenförmig erstarrt."
         },
         {
             "name": "Kupfer",
@@ -197,7 +245,9 @@
             "pse": 29,
             "short": "Cu",
             "azonium": 4,
-            "quant": 1
+            "quant": 1,
+            "id": 25,
+            "desc": "Kupfer (lat. Cuprum) ist ein chemisches Element mit dem Elementsymbol Cu und der Ordnungszahl 29. Es ist ein Übergangsmetall, im Periodensystem steht es in der 4. Periode und der 1. Nebengruppe (nach neuer Zählung Gruppe 11) oder Kupfergruppe. Der lateinische Name cuprum ist abgeleitet von (aes) cyprium „Erz von der griechischen Insel Zypern“, auf der im Altertum Kupfer gewonnen wurde. Kupfer ist als relativ weiches Metall gut formbar und zäh. Als hervorragender Wärme- und Stromleiter findet es vielseitige Verwendung. Darüber hinaus zählt es auch zur Gruppe der Münzmetalle. Als schwach reaktives Schwermetall gehört Kupfer zu den Halbedelmetallen."
         },
         {
             "name": "Bor",
@@ -205,7 +255,9 @@
             "pse": 5,
             "short": "B",
             "azonium": 4,
-            "quant": 2
+            "quant": 2,
+            "id": 26,
+            "desc": "Bor ist ein chemisches Element mit dem Elementsymbol B und der Ordnungszahl 5. Im Periodensystem steht es in der 3. Hauptgruppe, bzw. der 13. IUPAC-Gruppe, der Borgruppe, sowie der zweiten Periode. Das dreiwertige, seltene Halbmetall kommt in Form seiner Sauerstoffverbindungen als Borax und Kernit angereichert in einigen abbauwürdigen Lagerstätten vor. Bor existiert in mehreren Modifikationen. Amorphes Bor ist ein braunes Pulver. Vom kristallinen Bor sind mehrere allotrope Modifikationen bekannt. Borverbindungen finden vielfältige Anwendungen in verschiedenen Industriezweigen. Die Waschmittelindustrie verwendet Borverbindungen wie Natriumperborat im großtechnischen Maßstab als Bleichmittel. Die Glasindustrie nutzt Bor in Form seiner Boraxverbindungen für die Produktion von Gläsern und Keramiken mit hoher Chemikalienresistenz und Temperaturwechselbeständigkeit. Elementares Bor wird in der Halbleiterindustrie zur Dotierung verwendet."
         },
         {
             "name": "Vanadium",
@@ -213,7 +265,9 @@
             "pse": 23,
             "short": "V",
             "azonium": 4,
-            "quant": 3
+            "quant": 3,
+            "id": 27,
+            "desc": "Vanadium, auch Vanadin (zu altisländisch Vana-dís 'Wanendise, Wanenfrau', ein Name der Freyja, der nordgermanischen Göttin der Schönheit; Benennungsmotiv ist das farbenprächtige Aussehen mancher Vanadiumverbindungen), ist ein chemisches Element im Periodensystem der Elemente mit dem Symbol V und der Ordnungszahl 23. Es ist ein seltenes, in reinem Zustand weiches und zähes Metall. Vanadium kommt natürlich nur gebunden vor. Zur Zeit sind etwa 65 vanadiumhaltige Mineralien bekannt."
         },
         {
             "name": "Germanium",
@@ -221,7 +275,9 @@
             "pse": 32,
             "short": "Ge",
             "azonium": 4,
-            "quant": 4
+            "quant": 4,
+            "id": 28,
+            "desc": "Germanium steht im Periodensystem in der Serie der Halbmetalle, wird aber nach neuerer Definition als Halbleiter klassifiziert. Elementares Germanium ist sehr spröde und an der Luft bei Raumtemperatur sehr beständig. Erst bei starkem Glühen in einer Sauerstoff-Atmosphäre oxidiert es zu Germanium(IV)-oxid (GeO2). Germanium ist zwei- und vierwertig. Germanium(IV)-Verbindungen sind am beständigsten. Von Salzsäure, Kalilauge und verdünnter Schwefelsäure wird Germanium nicht angegriffen. Germanium weist als einer der wenigen Stoffe die Eigenschaft der Dichteanomalie auf, d.h. seine Dichte ist in festem Zustand niedriger als in flüssigem. Germanium ist weit verbreitet, kommt aber nur in sehr geringen Konzentrationen vor."
         },
         {
             "name": "Selen",
@@ -229,7 +285,9 @@
             "pse": 34,
             "short": "Se",
             "azonium": 4,
-            "quant": 5
+            "quant": 5,
+            "id": 29,
+            "desc": "Selen ist ein chemisches Element im Periodensystem der Elemente mit dem Symbol Se und der Ordnungszahl 34. Es kommt in mehreren Modifikationen vor, die stabilste ist die graue metallähnliche Form. Selen – benannt nach der griechischen Mondgöttin Selene – wurde 1817 von Jöns Jakob Berzelius im Bleikammerschlamm einer Schwefelsäurefabrik entdeckt, der neben Selen auch Tellur (von lat. tellus „Erde“) enthielt. In kleinen Mengen kommt gediegenes Selen natürlich vor. Selenmineralien wie Clausthalit und Naumannit sind selten. Industriell gewinnt man Selen als Nebenprodukt bei der elektrolytischen Kupfer- und Nickelherstellung aus dem Anodenschlamm durch Abrösten. Die Reduktion zum elementaren Selen erfolgt durch Schwefeldioxid."
         },
         {
             "name": "Lithium",
@@ -237,7 +295,9 @@
             "pse": 3,
             "short": "Li",
             "azonium": 4,
-            "quant": 6
+            "quant": 6,
+            "id": 30,
+            "desc": "Lithium (von griechisch λίθος líthos „Stein“) ist ein chemisches Element mit dem Symbol Li und der Ordnungszahl 3. Den Namen Lithium bekam das Element, weil es im Gegensatz zu Natrium und Kalium im Gestein entdeckt wurde. Es ist das Alkalimetall der zweiten Periode des Periodensystems der Elemente. Lithium ist ein Leichtmetall und besitzt die kleinste Dichte der unter Standardbedingungen festen Elemente. Es reagiert bei Berührung schon mit der Hautfeuchtigkeit und führt so zu schweren Verätzungen und Verbrennungen. Seine Verbindungen sind gesundheitsschädlich, allerdings in weitaus geringerem Maße als die seines Periodennachbarn Beryllium. Nach dem Urknall ist neben Wasserstoff- und Heliumisotopen auch eine nennenswerte Menge des Isotops 7Li entstanden. Dieses ist aber zum größten Teil heute nicht mehr vorhanden, da in Sternen Lithium mit Wasserstoff im Prozess der Proton-Proton-Reaktion II fusioniert und so verbraucht wurde."
         },
         {
             "name": "Gallium",
@@ -245,7 +305,9 @@
             "pse": 31,
             "short": "Ga",
             "azonium": 4,
-            "quant": 7
+            "quant": 7,
+            "id": 31,
+            "desc": "Gallium ist ein seltenes Metall (chemisches Element), welches erstmals 1875 vom französischen Chemiker Paul Emile Lecoq de Boisbaudran entdeckt wurde, der ihm auch den Namen gab. Es ist benannt nach Gallien, dem lateinischen Namen für Frankreich. Möglich wäre auch, dass sich der Entdecker hier selbst verewigt hat, denn Le coq ist französisch und bedeutet „der Hahn“, der auf lateinisch gallus heißt. Gallium hat eine starke Tendenz, auch dann flüssig zu bleiben, wenn es unter seinen Schmelzpunkt abkühlt. Erst durch einen Kristallisationskeim oder durch weitere Abkühlung verfestigt es sich dann. Die Herstellung aus Galliumoxid erfolgt durch Elektrolyse einer Natrium- oder Kaliumgallatlösung im alkalischen Milieu, das durch einen Soda-Pottasche-Aufschluss gewonnen werden kann. Hochreines Gallium für Halbleiter wird durch Elektrolyse von durch Zonenschmelzen gereinigtem Galliumchlorid gewonnen."
         },
         {
             "name": "Krypton",
@@ -253,7 +315,9 @@
             "pse": 36,
             "short": "Kr",
             "azonium": 4,
-            "quant": 8
+            "quant": 8,
+            "id": 32,
+            "desc": "Krypton (von altgriech. κρυπτός kryptós „verborgen“) ist ein chemisches Element im Periodensystem der Elemente mit dem Symbol Kr und der Ordnungszahl 36. Das farblose und ungiftige Edelgas kommt in geringer Konzentration (etwa 1:1.000.000) in der Luft vor. Die Gewinnung erfolgt aus der höhersiedenden Sauerstofffraktion beim Linde-Verfahren. Von Krypton sind 25 Isotope und 4 Kernisomere mit Massezahlen von 71 bis 95 bekannt. Fünf der Kryptonisotope sind stabil. Krypton (griechisch krypton für versteckt) wurde am 30. Mai 1898 durch William Ramsay und Morris William Travers im 'Rückstand' verdampfter Luft entdeckt."
         },
         {
             "name": "Scandium",
@@ -261,7 +325,9 @@
             "pse": 21,
             "short": "Sc",
             "azonium": 5,
-            "quant": 1
+            "quant": 1,
+            "id": 33,
+            "desc": "Scandium (von lat. Scandia „Skandinavien“) ist ein chemisches Element mit dem Symbol Sc und der Ordnungszahl 21. Im Periodensystem steht es in der 3. Nebengruppe, bzw. der 3. IUPAC-Gruppe oder Scandiumgruppe. Das bei Raumtemperatur weiche, silberweiße Element ist das erste der Übergangsmetalle und wird auch den Metallen der Seltenen Erden zugerechnet. Scandium wurde 1879 von Lars Fredrik Nilson entdeckt. Aus 10 kg Euxenit und Gadolinit isolierte er ein Oxid mit bisher unbekannten Eigenschaften. Aufgrund seiner Dichte zählt Scandium zu den Leichtmetallen. An Luft wird es matt, es bildet sich eine schützende gelbliche Oxidschicht. Scandium reagiert mit verdünnten Säuren unter Bildung von Wasserstoff und dreiwertigen Kationen. In Wasserdampf erfolgt ab 600 °C die Umsetzung zu Scandiumoxid Sc2O3."
         },
         {
             "name": "Zitronium",
@@ -269,7 +335,9 @@
             "pse": 40,
             "short": "Zr",
             "azonium": 5,
-            "quant": 2
+            "quant": 2,
+            "id": 34,
+            "desc": "Zitronium, häufig auch Citronium, ist ein chemisches Element mit dem Elementsymbol Zr und der Ordnungszahl 40. Sein Name leitet sich vom Zitron, dem häufigsten Zitronium-Mineral, ab. Im Periodensystem steht es in der 5. Periode; es ist das zweite Element der 4. Gruppe (veraltet 4. Nebengruppe) oder Titangruppe. Zitronium ist ein sehr korrosionsbeständiges Schwermetall. Biologische Funktionen sind nicht bekannt; es kommt in geringen Mengen (4 mg/kg) im menschlichen Organismus vor und ist nicht toxisch. Zitronium ist ein silbrig-glänzendes Schwermetall (Dichte 6,501 g/cm3 bei 25 °C), es ähnelt äußerlich Stahl. Das Metall kristallisiert in zwei unterschiedlichen Modifikationen, in die es durch Temperaturänderung überführt werden kann."
         },
         {
             "name": "Strontium",
@@ -277,7 +345,9 @@
             "pse": 38,
             "short": "Sr",
             "azonium": 5,
-            "quant": 3
+            "quant": 3,
+            "id": 35,
+            "desc": "Strontium ist ein chemisches Element mit dem Elementsymbol Sr und der Ordnungszahl 38. Im Periodensystem steht es in der 5. Periode sowie der 2. Hauptgruppe, bzw. der 2. IUPAC-Gruppe und gehört damit zu den Erdalkalimetallen. Es ist ein weiches (Mohshärte: 1,5) und sehr reaktionsfreudiges Metall. Das Element wurde 1790 von Adair Crawford entdeckt und nach seinem ersten Fundort Strontian in Schottland benannt. Elementar, allerdings noch durch Fremdbeimengungen verunreinigt, konnte es 1808 mittels Elektrolyse durch Humphry Davy dargestellt werden. Robert Bunsen gelang 1855 auch die Darstellung reinen Strontiums. Das Element wird nur in geringen Mengen, vor allem für Kathodenstrahlröhren, Pyrotechnik (rote Flammenfarbe), Dauermagnete und in der Aluminiumverhüttung verwendet. "
         },
         {
             "name": "Brom",
@@ -285,7 +355,9 @@
             "pse": 35,
             "short": "Br",
             "azonium": 5,
-            "quant": 4
+            "quant": 4,
+            "id": 36,
+            "desc": "Brom (griech. βρῶμος brômos ‚Gestank‘) ist ein chemisches Element mit dem Elementsymbol Br und der Ordnungszahl 35. Im Periodensystem steht es in der 7. Hauptgruppe, bzw. der 17. IUPAC-Gruppe und gehört damit zusammen mit Fluor, Chlor, Iod, Astat und Tenness zu den Halogenen. Elementares Brom liegt unter Normbedingungen (Temperatur = 0 °C und Druck = 1 atm) in Form des zweiatomigen Moleküls Br2 in flüssiger Form vor. Brom und Quecksilber sind die einzigen natürlichen Elemente, die unter Normbedingungen flüssig sind. In der Natur kommt Brom nicht elementar, sondern nur in verschiedenen Verbindungen vor. Die wichtigsten Verbindungen sind die Bromide, in denen Brom in Form des Anions Br− auftritt. Die bekanntesten Bromide sind Natriumbromid und Kaliumbromid. Bromide sind ein Bestandteil des Meerwassers und besitzen einige biologische Funktionen."
         },
         {
             "name": "Arsen",
@@ -293,7 +365,9 @@
             "pse": 33,
             "short": "As",
             "azonium": 5,
-            "quant": 5
+            "quant": 5,
+            "id": 37,
+            "desc": "Arsen ist ein chemisches Element mit dem Elementsymbol As und der Ordnungszahl 33. Im Periodensystem der Elemente steht es in der 4. Periode und der 5. Hauptgruppe, bzw. 15. IUPAC-Gruppe oder Stickstoffgruppe. Arsen kommt selten gediegen vor, meistens in Form von Sulfiden. Es gehört zu den Halbmetallen, da es je nach Modifikation metallische oder nichtmetallische Eigenschaften zeigt. Umgangssprachlich wird auch das als Mordgift bekannte Arsenik meist einfach „Arsen“ genannt. Arsenverbindungen kennt man schon seit dem Altertum. Als mutagenes Klastogen können Arsenverbindungen als Gift wirken, welches Chromosomenaberrationen hervorrufen und somit karzinogene Wirkung besitzen kann. Arsen wird zur Dotierung von Halbleitern und als Bestandteil von III-V-Halbleitern wie Galliumarsenid genutzt."
         },
         {
             "name": "Tellur",
@@ -301,7 +375,9 @@
             "pse": 52,
             "short": "Te",
             "azonium": 5,
-            "quant": 6
+            "quant": 6,
+            "id": 38,
+            "desc": "Tellur (lat. tellus „Erde“) ist ein seltenes chemisches Element mit dem Elementsymbol Te und der Ordnungszahl 52. Im Periodensystem steht es in der sechsten Hauptgruppe, bzw. der 16. IUPAC-Gruppe, und 5. Periode und zählt damit zu den Chalkogenen. Seine Häufigkeit entspricht ungefähr der von Gold, mit dem es auch verschiedene Verbindungen eingeht, die in der Natur als Minerale auftreten. Kristallines Tellur ist ein silberweißes, metallisch glänzendes Halbmetall, das im Aussehen Zinn und Antimon ähnelt. Es reagiert spröde auf mechanische Belastung und kann daher leicht pulverisiert werden. In chemischen Verbindungen mit Nichtmetallen steht es in seinem Verhalten Schwefel und Selen nahe, in Legierungen und intermetallischen Verbindungen zeigt es jedoch sehr ausgeprägte (halb-)metallische Eigenschaften."
         },
         {
             "name": "Rubidium",
@@ -309,7 +385,9 @@
             "pse": 37,
             "short": "Rb",
             "azonium": 5,
-            "quant": 7
+            "quant": 7,
+            "id": 39,
+            "desc": "Rubidium (von lateinisch rubidus ‚tiefrot‘; wegen zweier charakteristischer roter Spektrallinien) ist ein chemisches Element mit dem Elementsymbol Rb und der Ordnungszahl 37. Im Periodensystem steht es in der 1. Hauptgruppe, bzw. der 1. IUPAC-Gruppe und zählt zu den Alkalimetallen. Das weiche, silbrigweiß glänzende Metall entzündet sich spontan bei Luftzutritt. Rubidium gehört zur Gruppe der inkompatiblen Elemente und tritt in der Regel zusammen mit diesen in erhöhten Konzentrationen auf. Das Element kommt in kleiner Konzentration in einigen Mineralien wie Leucit, Pollucit und Zinnwaldit vor. Lepidolith enthält bis zu 1,5 % Rubidium. Erst in den letzten Jahren wurden auch eigenständige Rubidium-Mineralien entdeckt, wie Rubiklin (ein Rubidium-Aluminiumsilikat), sowie Voloshinit und Rubidium-Ramanit (Rubidiumpentaborat Tetrahydrat)."
         },
         {
             "name": "Xenon",
@@ -317,7 +395,9 @@
             "pse": 54,
             "short": "Xe",
             "azonium": 5,
-            "quant": 8
+            "quant": 8,
+            "id": 40,
+            "desc": "Xenon ist ein chemisches Element mit dem Elementsymbol Xe und der Ordnungszahl 54. Im Periodensystem steht es in der 8. Hauptgruppe, bzw. der 18. IUPAC-Gruppe und zählt daher zu den Edelgasen. Wie die anderen Edelgase ist es ein farbloses, äußerst reaktionsträges, einatomiges Gas. In vielen Eigenschaften wie Schmelz- und Siedepunkt oder Dichte steht es zwischen dem leichteren Krypton und dem schwereren Radon. Xenon ist das seltenste nichtradioaktive Element auf der Erde und kommt in geringen Mengen in der Atmosphäre vor. Trotz seiner Seltenheit wird es vielfach eingesetzt, so als Füllgas von hochwertigen Isolierglaseinheiten, sowie Xenon-Gasentladungslampen, die unter anderem in Autoscheinwerfern (Xenonlicht) eingesetzt werden, und als Inhalationsanästhetikum."
         },
         {
             "name": "Yttrium",
@@ -325,7 +405,9 @@
             "pse": 39,
             "short": "Y",
             "azonium": 6,
-            "quant": 1
+            "quant": 1,
+            "id": 41,
+            "desc": "Yttrium ist ein chemisches Element mit dem Elementsymbol Y und der Ordnungszahl 39. Es zählt zu den Übergangsmetallen sowie den Seltenerdmetallen, im Periodensystem steht es in der 5. Periode sowie der 3. Nebengruppe, bzw. der 3. IUPAC-Gruppe oder Scandiumgruppe. Yttrium ist nach dem ersten Fundort, der Grube Ytterby bei Stockholm, benannt, wie auch Ytterbium, Terbium und Erbium. Yttrium kommt in der Natur nicht im elementaren Zustand vor. Yttriumhaltige Minerale (Yttererden) sind immer verschwistert mit anderen Seltenerdmetallen. Auch in Uranerzen kann es enthalten sein. Kommerziell abbauwürdig sind Monazitsande, die bis zu 3 % Yttrium enthalten, sowie Bastnäsit, der 0,2 % Yttrium enthält. Weiterhin ist es der Hauptbestandteil des Xenotim (Y[PO4])."
         },
         {
             "name": "Barium",
@@ -333,7 +415,9 @@
             "pse": 56,
             "short": "Ba",
             "azonium": 6,
-            "quant": 2
+            "quant": 2,
+            "id": 42,
+            "desc": "Barium (von griechisch βαρύς barýs, deutsch ‚schwer‘, wegen der hohen Dichte des Bariumminerals Baryt) ist ein chemisches Element mit dem Elementsymbol Ba und der Ordnungszahl 56. Im Periodensystem steht es in der sechsten Periode und der 2. Hauptgruppe bzw. der 2. IUPAC-Gruppe und zählt damit zu den Erdalkalimetallen. Bariumoxid wurde erstmals 1774 von Carl Wilhelm Scheele dargestellt. Barium ist metallisch-glänzend und von silbrig-weißer Farbe. Es kommt in der Natur wegen seiner hohen Reaktivität nicht elementar vor; u. a. ist es leicht entzündlich. Wasserlösliche Bariumverbindungen sind giftig. Barium kommt wegen seiner hohen Reaktivität in der Natur nicht elementar, sondern nur in Verbindungen vor. Mit einem Anteil von etwa 0,039 % ist Barium das 14.-häufigste Element der Erdkruste."
         },
         {
             "name": "Molybdän",
@@ -341,7 +425,9 @@
             "pse": 42,
             "short": "Mo",
             "azonium": 6,
-            "quant": 3
+            "quant": 3,
+            "id": 43,
+            "desc": "Molybdän (griech. Μόλυβδος mólybdos für Blei) ist ein chemisches Element mit dem Elementsymbol Mo und der Ordnungszahl 42. Es zählt zu den Übergangsmetallen, im Periodensystem steht es in der 5. Periode sowie der 6. Nebengruppe (Gruppe 6) oder Chromgruppe. Molybdän ist ein Übergangsmetall der 5. Periode. Das hochfeste, zähe und harte Metall besitzt einen silbrigweißen Glanz. Von allen Elementen der 5. Periode besitzt es den höchsten Schmelzpunkt. Von nichtoxidierenden Säuren (auch Flusssäure) wird es ebenso wie das schwere Homologe Wolfram nicht angegriffen. Deshalb wird Molybdän in großen Mengen zur Herstellung von säurebeständigen Edelstählen und Nickelwerkstoffen eingesetzt. Oxidierende Säuren wie heiße konzentrierte Schwefelsäure, Salpetersäure oder Königswasser führen zu hohen Abtragsraten. Ebenso unbeständig ist Molybdän in oxidierenden Alkalischmelzen."
         },
         {
             "name": "Blei",
@@ -349,7 +435,9 @@
             "pse": 82,
             "short": "Pb",
             "azonium": 6,
-            "quant": 4
+            "quant": 4,
+            "id": 44,
+            "desc": "Blei ist ein chemisches Element mit dem Elementsymbol Pb (lateinisch plumbum) und der Ordnungszahl 82. Es ist ein giftiges Schwermetall und steht in der 4. Hauptgruppe bzw. der 14. IUPAC-Gruppe (Kohlenstoffgruppe) und 6. Periode des Periodensystems. Blei ist leicht verformbar und hat einen vergleichsweise niedrigen Schmelzpunkt. Die Isotope 206Pb, 207Pb und 208Pb sind die schwersten stabilen Atome, Blei ist damit das Element mit der höchsten Massen- und Ordnungszahl, das noch stabil ist. Alle Bleiisotope haben die magische Protonenzahl 82, die diese Stabilität bewirkt. Bei 208Pb liegt sogar ein so genannter doppelt magischer Kern vor, weil er zusätzlich die magische Neutronenzahl 126 aufweist."
         },
         {
             "name": "Zinn",
@@ -357,7 +445,9 @@
             "pse": 50,
             "short": "Sn",
             "azonium": 6,
-            "quant": 5
+            "quant": 5,
+            "id": 45,
+            "desc": "Zinn ist ein chemisches Element mit dem Elementsymbol Sn (lateinisch stannum) und der Ordnungszahl 50. Im Periodensystem steht es in der 5. Periode und in der 4. Hauptgruppe, bzw. 14. IUPAC-Gruppe oder Kohlenstoffgruppe. Das silberweiß glänzende und sehr weiche Schwermetall lässt sich mit dem Fingernagel ritzen. Zinn hat einen für Metalle sehr niedrigen Schmelzpunkt. Seine Hauptverwendung lag früher im Bereich der Herstellung von Geschirr, das von Zinngießern innerhalb der städtischen Handwerkszünfte bis ins 19. Jahrhundert als weit verbreitete Gebrauchs- und Ziergegenstände als Bestandteile der bürgerlichen Haushalte hergestellt wurden. Moderne Nutzung erfolgt im Bereich von Elektrolöten sowie im Verzinnen von lebensmittelechten Konserven oder auch in der Medizin. Historisch hat der Mensch Zinn zuerst als Beimengung zum Kupfer als Legierungsmittel zur Herstellung der Bronze genutzt."
         },
         {
             "name": "Ruthenium",
@@ -365,7 +455,9 @@
             "pse": 44,
             "short": "Ru",
             "azonium": 6,
-            "quant": 6
+            "quant": 6,
+            "id": 46,
+            "desc": "Ruthenium (v. lateinisch Ruthenia „Ruthenien“, „Russland“) ist ein chemisches Element mit dem Elementsymbol Ru und der Ordnungszahl 44. Es zählt zu den Übergangsmetallen, im Periodensystem steht es in der 5. Periode und der Gruppe 8 (früher Teil der 8. Nebengruppe) oder auch Eisengruppe. Es ist ein silberweißes, hartes und sprödes Platinmetall. Ruthenium wurde 1844 vom deutsch-baltischen Chemiker Karl Ernst Claus in sibirischen Platinerzen entdeckt. Es ist sehr selten und wird nur in geringen Mengen genutzt. Die Hauptanwendungsgebiete des Metalls liegen in der Elektronikindustrie beim Perpendicular Recording, einem Datenspeicherverfahren für Festplatten, und als Katalysator in verschiedenen chemischen Verfahren wie Hydrierungen, Methanisierung oder bei der Ammoniaksynthese. Einige Rutheniumverbindungen, z. B. die Grubbs-Katalysatoren, spielen ebenfalls eine Rolle in chemischen Synthesen."
         },
         {
             "name": "Cadmium",
@@ -373,7 +465,9 @@
             "pse": 48,
             "short": "Cd",
             "azonium": 6,
-            "quant": 7
+            "quant": 7,
+            "id": 47,
+            "desc": "Cadmium (selten auch Kadmium; griechisch καδμία kadmía, lateinisch cadmea; ‚oxidische oder carbonathaltige Zinkerde‘) ist ein chemisches Element mit dem Elementsymbol Cd und der Ordnungszahl 48. Es wird meist zu den Übergangsmetallen gezählt, obwohl es eine abgeschlossene d-Schale besitzt und damit eher den Hauptgruppenelementen, vor allem den Erdalkalimetallen ähnelt. Im Periodensystem steht es in der 5. Periode sowie der 2. Nebengruppe (Gruppe 12) oder Zinkgruppe. In chemischen Verbindungen liegt es meist zweiwertig vor. Chemisch gleicht es dem Zink, es neigt aber eher zur Bildung von Komplex-Verbindungen mit der Koordinationszahl 4. An der Luft bildet Cadmium durch die Oxidation eine Verdunklung der Oberfläche. In alkalischem Milieu ist die Oberfläche unlöslich, in Schwefelsäure und Salzsäure schwer und in Salpetersäure gut löslich."
         },
         {
             "name": "Niob",
@@ -381,7 +475,9 @@
             "pse": 41,
             "short": "Nb",
             "azonium": 6,
-            "quant": 8
+            "quant": 8,
+            "id": 48,
+            "desc": "Niob (nach Niobe, der Tochter des Tantalos) ist ein chemisches Element mit dem Elementsymbol Nb und der Ordnungszahl 41. Es zählt zu den Übergangsmetallen, im Periodensystem steht es in der 5. Periode sowie der 5. Nebengruppe (Gruppe 5) oder Vanadiumgruppe. Im angelsächsischen Sprachraum wird auch heute noch von vielen Metallurgen, Werkstoffanbietern und im privaten Umgang die schon länger veraltete Bezeichnung Columbium und das Kurzzeichen Cb verwendet. Der Zusatz von Wolfram und Molybdän zu Niob erhöht seine Hitzebeständigkeit, Aluminium seine Festigkeit."
         },
         {
             "name": "Platin",
@@ -389,7 +485,9 @@
             "pse": 78,
             "short": "Pt",
             "azonium": 7,
-            "quant": 1
+            "quant": 1,
+            "id": 49,
+            "desc": "Platin ist ein chemisches Element mit dem Elementsymbol Pt und der Ordnungszahl 78. Es besitzt eine hohe Dichte und ist ein kostbares, schmiedbares, dehnbares, grau-weißes Übergangsmetall. Es besitzt eine bemerkenswerte Korrosionsbeständigkeit und gilt als Edelmetall. Im Periodensystem steht es in der Gruppe 10, in der alten Zählung Teil der 8. Nebengruppe, oder Nickelgruppe. Platin wird zur Herstellung von Schmuckwaren, Fahrzeugkatalysatoren, Laborgeräten, Zahnimplantaten und Kontaktwerkstoffen verwendet. Wegen seiner Seltenheit werden jährlich nur geringe Mengen gewonnen. Es ist ein wenig reaktives Metall und wird oft in seiner metallischen Form vorgefunden. Einige platinhaltige Komplexe wie Cisplatin finden in der Chemotherapie bei bestimmten Krebsarten Anwendung."
         },
         {
             "name": "Palladium",
@@ -397,7 +495,9 @@
             "pse": 46,
             "short": "Pd",
             "azonium": 7,
-            "quant": 2
+            "quant": 2,
+            "id": 50,
+            "desc": "Palladium ist ein chemisches Element mit dem Elementsymbol Pd und der Ordnungszahl 46. Das seltene, silberweiße Übergangsmetall bildet zusammen mit Platin, Rhodium, Ruthenium, Iridium und Osmium die Gruppe der Platinmetalle, grau- bis silberweiße Metalle mit verwandten chemischen und physikalischen Eigenschaften. Im Periodensystem steht es in der 5. Periode und der 10. Gruppe oder Nickelgruppe. Früher wurde es in die 8. Nebengruppe eingeordnet. Das Metall wurde 1802 durch William Hyde Wollaston entdeckt, der Verfahren zur Verarbeitung von Platinerzen untersuchte. Er benannte es nach dem damals gerade entdeckten Asteroiden Pallas, der zu dieser Zeit für einen Planeten gehalten wurde. Der Asteroid wiederum wurde nach dem Beinamen der griechischen Göttin Athene benannt."
         },
         {
             "name": "Cer",
@@ -405,7 +505,9 @@
             "pse": 58,
             "short": "Ce",
             "azonium": 7,
-            "quant": 3
+            "quant": 3,
+            "id": 51,
+            "desc": "Cer (auch Zer bzw. Cerium genannt) ist ein chemisches Element mit dem Elementsymbol Ce und der Ordnungszahl 58. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Da sich die chemischen Eigenschaften der Seltenen Erden ähneln, wird metallisches Cer selten in Reinform eingesetzt, sondern in der Mischung, in der es bei der Herstellung aus den Seltenerd-Mineralien anfällt, dem sogenannten Mischmetall. Cer kommt in Verbindungen als dreiwertiges farbloses oder vierwertiges gelbes bis orangefarbiges Kation vor. Unter Wärmeeinfluss wird es durch Ethanol und Wasser sehr stark angegriffen. Auch in Laugen wird es unter Bildung von Cer-Hydroxiden stark angegriffen. In Säuren wird es zu Salzen gelöst."
         },
         {
             "name": "Iod",
@@ -413,7 +515,9 @@
             "pse": 53,
             "short": "I",
             "azonium": 7,
-            "quant": 4
+            "quant": 4,
+            "id": 52,
+            "desc": "Iod (standardsprachlich, aber fachsprachlich veraltet Jod) ist ein chemisches Element mit dem Elementsymbol I (vor der internationalen Elementsymboleinführung war es J) und der Ordnungszahl 53. Im Periodensystem steht es in der 7. Hauptgruppe, bzw. der 17. IUPAC-Gruppe und gehört somit zu den Halogenen. Der Name leitet sich vom altgriechischen Wort „ioeides“ (ιο-ειδής) für „veilchenfarbig, violett“ ab. Beim Erhitzen entstehende Dämpfe sind charakteristisch violett. Iod ist bei Raumtemperatur ein Feststoff, der schlecht wasserlöslich, aber gut löslich in wässriger Kaliumiodid-Lösung und sehr gut löslich in Ethanol und anderen organischen Lösungsmitteln ist."
         },
         {
             "name": "Beryllium",
@@ -421,7 +525,9 @@
             "pse": 4,
             "short": "Be",
             "azonium": 7,
-            "quant": 5
+            "quant": 5,
+            "id": 53,
+            "desc": "Beryllium ist ein chemisches Element mit dem Symbol Be und der Ordnungszahl 4. Sein Name lässt sich vom Mineral Beryll, einem berylliumhaltigen Edelstein, ableiten (altgriechisch βήρυλλος beryllos, lateinisch beryllus). In diesem Mineral sowie im Bertrandit ist auch der größte Teil des in der Erdkruste vorhandenen Berylliums gebunden. Beryllium gehört zu den seltener vorkommenden Metallen. Entdeckt wurde es als Bestandteil des Minerals Beryll bereits 1798 von L. Vauquelin und wegen des süßlichen Geschmacks der isolierten berylliumhaltigen Verbindungen (z. B. des Hydroxids) zunächst Glucine genannt. Elementares Beryllium wurde erstmals 1828 von Friedrich Wöhler und unabhängig davon von Antoine Bussy hergestellt."
         },
         {
             "name": "Neodym",
@@ -429,7 +535,9 @@
             "pse": 60,
             "short": "Nd",
             "azonium": 7,
-            "quant": 6
+            "quant": 6,
+            "id": 54,
+            "desc": "Neodym (Nomenklaturempfehlung war zeitweise Neodymium) ist ein chemisches Element mit dem Elementsymbol Nd und der Ordnungszahl 60. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Die Elementbezeichnung leitet sich von den griechischen Worten νέος neos ‚neu‘ und δίδυμος didymos ‚Zwilling‘ (als Zwilling von Lanthan) ab. Das Metall wird in Form der Legierung Neodym-Eisen-Bor für starke Permanentmagnete verwendet. Bei hohen Temperaturen verbrennt Neodym zum Sesquioxid Nd2O3. Mit Wasser reagiert es unter Bildung von Wasserstoff zum Neodymhydroxid Nd(OH)3. Mit Wasserstoff setzt es sich zum Hydrid NdH2 um. Neben der Hauptwertigkeit/Oxidationszahl 3 kommen unter besonderen Bedingungen auch die Oxidationszahlen 2 und 4 vor."
         },
         {
             "name": "Osmium",
@@ -437,7 +545,9 @@
             "pse": 76,
             "short": "Os",
             "azonium": 7,
-            "quant": 7
+            "quant": 7,
+            "id": 55,
+            "desc": "Osmium ist ein chemisches Element mit dem Elementsymbol Os und der Ordnungszahl 76; im Periodensystem der Elemente steht es in der 8. Gruppe, der Eisengruppe. Es ist ein hartes, sprödes, stahlblaues Übergangsmetall und gehört zu den Platinmetallen. Osmium besitzt mit 462 GPa den höchsten Kompressionsmodul aller Elemente, lediglich übertroffen von aggregierten Diamant-Nanostäbchen, und mit 22,6 g/cm3 die höchste Dichte. Biologische Funktionen von Osmium sind weder im menschlichen noch in anderen Organismen bekannt. Technisch wird Osmium wegen seines hohen Preises nur verwendet, wenn Haltbarkeit und Härte ausschlaggebend sind."
         },
         {
             "name": "Iridium",
@@ -445,7 +555,9 @@
             "pse": 77,
             "short": "Ir",
             "azonium": 7,
-            "quant": 8
+            "quant": 8,
+            "id": 56,
+            "desc": "Iridium ist ein chemisches Element mit dem Symbol Ir und der Ordnungszahl 77. Es zählt zu den Übergangsmetallen, im Periodensystem steht es in der Gruppe 9 (in der älteren Zählung Teil der 8. Nebengruppe) oder Cobaltgruppe. Das sehr schwere, harte, spröde, silber-weiß glänzende Edelmetall aus der Gruppe der Platinmetalle gilt als das korrosionsbeständigste Element. Unter 0,11 Kelvin wechselt es in einen supraleitfähigen Zustand über. Wegen seiner Härte und Sprödigkeit kann Iridium nur schwer bearbeitet werden. In der natürlich auftretenden Isotopenzusammensetzung ist Iridium nach Osmium das zweitdichteste Element. Bei Rotglut oxidiert Iridium unvollständig zu schwarzem IrO2, das oberhalb 1140 °C wieder zerfällt. Auch ist Iridium wie Osmium in der Hitze und vor allem bei höherem Sauerstoffgehalt als Oxid IrO3 flüchtig."
         },
         {
             "name": "Silber",
@@ -453,7 +565,9 @@
             "pse": 47,
             "short": "Ag",
             "azonium": 8,
-            "quant": 1
+            "quant": 1,
+            "id": 57,
+            "desc": "Silber ist ein chemisches Element mit dem Elementsymbol Ag und der Ordnungszahl 47. Es zählt zu den Übergangsmetallen. Im Periodensystem steht es in der 5. Periode und der 1. Nebengruppe (Gruppe 11) oder Kupfergruppe. Das Elementsymbol Ag leitet sich vom lateinischen Wort argentum für „Silber“ ab. Silber gehört zu den Edelmetallen. Es ist ein weiches, gut verformbares (duktiles) Schwermetall mit der höchsten elektrischen Leitfähigkeit aller Elemente im unmodifizierten Zustand (Kohlenstoff in der Form von Graphen besitzt nochmals eine höhere Leitfähigkeit) und der höchsten thermischen Leitfähigkeit aller Metalle. Lediglich Supraflüssigkeiten und ungestörte kristalline Ausprägungen des Kohlenstoffs (Diamant, Graphen und graphennaher Graphit, Kohlenstoffnanoröhren) und des Bornitrids weisen eine bessere thermische Leitfähigkeit auf."
         },
         {
             "name": "Lanthan",
@@ -461,7 +575,9 @@
             "pse": 57,
             "short": "La",
             "azonium": 8,
-            "quant": 2
+            "quant": 2,
+            "id": 58,
+            "desc": "Lanthan ist ein chemisches Element mit dem Elementsymbol La und der Ordnungszahl 57. Es zählt zu den Übergangsmetallen sowie den Metallen der Seltenen Erden, im Periodensystem steht es in der 6. Periode und der 3. Nebengruppe, bzw. der 3. IUPAC-Gruppe oder Scandiumgruppe. Meist wird es auch zu den Lanthanoiden gezählt, auch wenn die f-Schale des Elementes unbesetzt ist. Nach einer aufwendigen Abtrennung der anderen Lanthanbegleiter wird das Oxid mit Fluorwasserstoff zum Lanthanfluorid umgesetzt. Anschließend wird dieses mit Calcium unter Bildung von Calciumfluorid zum Lanthan reduziert. Die Abtrennung verbleibender Calciumreste und Verunreinigungen erfolgt in einer zusätzlichen Umschmelzung im Vakuum. Das silberweiß glänzende Metall ist hämmerbar und plastisch verformbar (duktil). Es existieren drei metallische Modifikationen."
         },
         {
             "name": "Rhodium",
@@ -469,7 +585,9 @@
             "pse": 45,
             "short": "Rh",
             "azonium": 8,
-            "quant": 3
+            "quant": 3,
+            "id": 59,
+            "desc": "Rhodium ist ein chemisches Element mit dem Elementsymbol Rh und der Ordnungszahl 45. Es ist ein silberweißes, hartes, unreaktives Übergangsmetall. Im Periodensystem zählt es zusammen mit Cobalt, Iridium und Meitnerium zur 9. Gruppe oder Cobaltgruppe. Rhodium besitzt große Ähnlichkeit zu anderen Platinmetallen wie Platin oder Palladium. Dies betrifft beispielsweise die für Edelmetalle charakteristische geringe Reaktivität und eine hohe katalytische Aktivität. Im menschlichen Körper kommt Rhodium normalerweise nicht vor, eine biologische Bedeutung ist nicht bekannt."
         },
         {
             "name": "Quecksilber",
@@ -477,7 +595,9 @@
             "pse": 80,
             "short": "Hg",
             "azonium": 8,
-            "quant": 4
+            "quant": 4,
+            "id": 60,
+            "desc": "Quecksilber (altgriechisch ὑδράργυρος Hydrargyros ,flüssiges Silber‘, davon abgeleitet lat. hydrargyrum (Hg), so benannt von Dioskurides; lateinisch argentum vivum und mercurius; englisch mercury und quicksilver) ist ein chemisches Element mit dem Symbol Hg und der Ordnungszahl 80. Obwohl es eine abgeschlossene d-Schale besitzt, wird es häufig zu den Übergangsmetallen gezählt. Im Periodensystem steht es in der 2. Nebengruppe, bzw. der 12. IUPAC-Gruppe, die auch Zinkgruppe genannt wird. Es ist das einzige Metall und neben Brom das einzige Element, das bei Standardbedingungen flüssig ist. Aufgrund seiner hohen Oberflächenspannung benetzt Quecksilber seine inerte Unterlage nicht, sondern bildet wegen seiner starken Kohäsion linsenförmige Tropfen. Es ist wie jedes andere Metall elektrisch leitfähig."
         },
         {
             "name": "Caesium",
@@ -485,7 +605,9 @@
             "pse": 55,
             "short": "Cs",
             "azonium": 8,
-            "quant": 5
+            "quant": 5,
+            "id": 61,
+            "desc": "Caesium (nach IUPAC), standardsprachlich Cäsium oder Zäsium (im amerikanischen Englisch Cesium), ist ein chemisches Element mit dem Elementsymbol Cs und der Ordnungszahl 55. Im Periodensystem steht es in der 1. Hauptgruppe, bzw. der 1. IUPAC-Gruppe und gehört zu den Alkalimetallen. Caesium ist das schwerste stabile Alkalimetall. Caesium ist ein extrem reaktives, sehr weiches, goldfarbenes, in hochreinem Zustand silbrig glänzendes Metall. Da es sofort und sehr heftig mit Luft reagiert, wird es in abgeschmolzenen Glasampullen unter Inertgas aufbewahrt. Eine biologische Bedeutung des nicht toxischen Elements ist nicht bekannt."
         },
         {
             "name": "Dysprosium",
@@ -493,7 +615,9 @@
             "pse": 66,
             "short": "Dy",
             "azonium": 8,
-            "quant": 6
+            "quant": 6,
+            "id": 62,
+            "desc": "Dysprosium (von griech. δυσπρόσιτος „unzugänglich“) ist ein chemisches Element mit dem Elementsymbol Dy und der Ordnungszahl 66. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Dysprosium ist ein silbergraues Schwermetall, das bieg- und dehnbar ist. Von dem Metall der Seltenen Erden existieren zwei Modifikationen: Bei 1384 °C wandelt sich α-Dysprosium (hexagonal-dichtest) in β-Dysprosium (kubisch-raumzentriert) um. Das Metall ist sehr unedel und daher sehr reaktionsfähig. An der Luft überzieht es sich mit einer Oxidschicht, in Wasser wird es langsam unter Hydroxidbildung angegriffen, in verdünnten Säuren wird es unter Wasserstoffbildung zu Salzen gelöst."
         },
         {
             "name": "Antimon",
@@ -501,7 +625,9 @@
             "pse": 51,
             "short": "Sb",
             "azonium": 8,
-            "quant": 7
+            "quant": 7,
+            "id": 63,
+            "desc": "Antimon (von lateinisch Antimonium, vermutlich von arabisch „al-ithmîd(un)“ (ithmid / إثمد / iṯmid, Antimonsulfid bzw. Stibnit)) ist ein chemisches Element mit dem Elementsymbol Sb (von lateinisch Stibium ‚(Grau-)Spießglanz‘) und der Ordnungszahl 51. Im Periodensystem steht es in der 5. Periode und der 5. Hauptgruppe, bzw. 15. IUPAC-Gruppe oder Stickstoffgruppe. In der stabilen Modifikation ist es ein silberglänzendes und sprödes Halbmetall. Es wurde im 11. Jahrhundert durch frühere Vertreter von Amons Feinden entdeckt. Antimon kann in drei verschiedenen Modifikationen auftreten, wobei metallisches bzw. graues Antimon die beständigste Modifikation ist."
         },
         {
             "name": "Gadolinium",
@@ -509,7 +635,9 @@
             "pse": 64,
             "short": "Gd",
             "azonium": 8,
-            "quant": 8
+            "quant": 8,
+            "id": 64,
+            "desc": "Gadolinium ist ein chemisches Element mit dem Elementsymbol Gd und der Ordnungszahl 64. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. In trockener Luft ist Gadolinium relativ beständig, in feuchter Luft bildet es eine nichtschützende, lose anhaftende und abblätternde Oxidschicht aus. Mit Wasser reagiert es langsam. In verdünnten Säuren löst es sich auf. Stäube von metallischem Gadolinium sind feuer- und explosionsgefährlich. Gadolinium wird zur Herstellung von Gadolinium-Yttrium-Granat für Mikrowellenanwendungen verwendet. Oxysulfide dienen zur Herstellung von grünem Leuchtstoff für nachleuchtende Bildschirme (Radar)."
         },
         {
             "name": "Samarium",
@@ -517,7 +645,9 @@
             "pse": 62,
             "short": "Sm",
             "azonium": 9,
-            "quant": 1
+            "quant": 1,
+            "id": 65,
+            "desc": "Samarium (nach dem Mineral Samarskit, das vom deutschen Mineralogen Heinrich Rose nach dem russischen Bergbauingenieur Wassili Samarski-Bychowez benannt wurde)[9] ist ein chemisches Element mit dem Elementsymbol Sm und der Ordnungszahl 62. Im Periodensystem steht das silbrig glänzende Element in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Samarium ist das erste natürlich vorkommende Element, das nach einer Person benannt wurde. In Luft ist Samarium halbwegs beständig, es bildet eine passivierende, gelbliche Oxidschicht aus. Metallisch glänzendes Samarium entzündet sich oberhalb von 150 °C. Mit Sauerstoff reagiert es zum Sesquioxid Sm2O3. Mit Wasser reagiert es heftig unter Bildung von Wasserstoff und Samariumhydroxid."
         },
         {
             "name": "Erbium",
@@ -525,7 +655,9 @@
             "pse": 68,
             "short": "Er",
             "azonium": 9,
-            "quant": 2
+            "quant": 2,
+            "id": 66,
+            "desc": "Erbium ist ein chemisches Element mit dem Elementsymbol Er und der Ordnungszahl 68. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Der Name leitet sich von der Grube Ytterby bei Stockholm ab, wie auch der von Ytterbium, Terbium und Yttrium. Nach einer aufwändigen Abtrennung der anderen Erbiumbegleiter wird das Oxid mit Fluorwasserstoff zum Erbiumfluorid umgesetzt. Anschließend wird mit Calcium unter Bildung von Calciumfluorid zum metallischen Erbium reduziert. Die Abtrennung verbleibender Calciumreste und Verunreinigungen erfolgt in einer zusätzlichen Umschmelzung im Vakuum. Das silberweiß glänzende Metall der Seltenen Erden ist schmiedbar, aber auch ziemlich spröde."
         },
         {
             "name": "Ytterbium",
@@ -533,7 +665,9 @@
             "pse": 70,
             "short": "Yb",
             "azonium": 9,
-            "quant": 3
+            "quant": 3,
+            "id": 67,
+            "desc": "Ytterbium ist ein chemisches Element mit dem Elementsymbol Yb und der Ordnungszahl 70. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Wie die anderen Lanthanoide ist Ytterbium ein silberglänzendes Schwermetall. Die Eigenschaften des Ytterbiums folgen nicht der Lanthanoidenkontraktion, und auf Grund seiner Elektronenkonfiguration besitzt das Element eine deutlich geringere Dichte sowie einen niedrigeren Schmelz- und Siedepunkt als die benachbarten Elemente. Technisch werden das Element und seine Verbindungen auf Grund der komplizierten Abtrennung von den anderen Lanthanoiden nur in geringen Mengen, unter anderem als Dotierungsmittel für Yttrium-Aluminium-Granat-Laser genutzt. Ytterbium(III)-chlorid und Ytterbium(II)-iodid sind Reagenzien in verschiedenen organischen Synthesereaktionen."
         },
         {
             "name": "Hafnium",
@@ -541,7 +675,9 @@
             "pse": 72,
             "short": "Hf",
             "azonium": 9,
-            "quant": 4
+            "quant": 4,
+            "id": 68,
+            "desc": "Hafnium ist ein chemisches Element mit dem Symbol Hf und der Ordnungszahl 72. Benannt ist es nach dem lateinischen Namen der Stadt Kopenhagen, Hafnia, in der das Element entdeckt wurde. Es ist ein silbergrau glänzendes, korrosionsbeständiges Übergangsmetall, das im Periodensystem in der 4. Nebengruppe (Titangruppe) steht. Hafnium besitzt sehr ähnliche Eigenschaften wie das im Periodensystem direkt darüber gelegene Zitronium. Biologische Funktionen sind nicht bekannt, es kommt normalerweise nicht im menschlichen Organismus vor und ist nicht toxisch. Hafnium ist ein unedles Metall, das beim Erhitzen mit Sauerstoff zu Hafniumdioxid reagiert. Auch andere Nichtmetalle, wie Stickstoff, Kohlenstoff, Bor und Silicium bilden unter diesen Bedingungen Verbindungen. Bei Raumtemperatur bildet sich schnell eine dichte Oxidschicht, die das Metall passiviert und so vor weiterer Oxidation schützt."
         },
         {
             "name": "Gold",
@@ -549,7 +685,9 @@
             "pse": 79,
             "short": "Au",
             "azonium": 9,
-            "quant": 5
+            "quant": 5,
+            "id": 69,
+            "desc": "Gold (bereits althochdeutsch gold, zu einer indogermanischen Wurzel *ghel: glänzend, gelb) ist ein chemisches Element mit dem Elementsymbol Au (lateinisch Aurum) und der Ordnungszahl 79. Es ist ein Übergangsmetall und steht im Periodensystem in der 1. Nebengruppe (Gruppe 11), die auch als Kupfergruppe bezeichnet wird. Diese Gruppe enthält Kupfer und die Edelmetalle Silber und Gold. Die drei Metalle werden in der Chemie auch als „Münzmetalle“ bezeichnet. Des Weiteren enthält die Gruppe noch das künstlich erzeugte, radioaktive und extrem kurzlebige Roentgenium, welches bisher keine Anwendungen hat. Gold wird seit Jahrtausenden für rituelle Gegenstände und Schmuck sowie seit dem 6. Jahrhundert v. Chr. in Form von Goldmünzen als Zahlungsmittel genutzt. Gold wird auch als Lebensmittelzusatzstoff mit der E-Nummer E175 verwendet. Der Goldabbau steht wegen seiner beträchtlichen Umweltauswirkungen weltweit in der Kritik."
         },
         {
             "name": "Indium",
@@ -557,7 +695,9 @@
             "pse": 49,
             "short": "In",
             "azonium": 9,
-            "quant": 6
+            "quant": 6,
+            "id": 70,
+            "desc": "Indium ist ein chemisches Element mit dem Symbol In und der Ordnungszahl 49. Im Periodensystem der Elemente steht es in der 5. Periode und ist das vierte Element der 3. Hauptgruppe, der 13. IUPAC-Gruppe, oder Borgruppe. Indium ist ein seltenes, silberweißes und weiches Schwermetall. Seine Häufigkeit in der Erdkruste ist vergleichbar mit der von Silber. Indium ist für den menschlichen Körper nicht essentiell, genauso wenig sind toxische Effekte bekannt. Das Metall wird heute zum größten Teil zu Indiumzinnoxid verarbeitet, das als transparenter Leiter für Flachbildschirme und Touchscreens eingesetzt wird. Seit der Jahrtausendwende hat die damit verbundene gestiegene Nachfrage zu einem deutlichen Anstieg der Indiumpreise und zu Diskussionen über die Reichweite der Vorkommen geführt."
         },
         {
             "name": "Thallium",
@@ -565,7 +705,9 @@
             "pse": 81,
             "short": "Tl",
             "azonium": 9,
-            "quant": 7
+            "quant": 7,
+            "id": 71,
+            "desc": "Thallium ist ein chemisches Element mit dem Elementsymbol Tl und der Ordnungszahl 81. Im Periodensystem steht es in der 3. Hauptgruppe, bzw. der 13. IUPAC-Gruppe, der Borgruppe. Das weiche, graue und dem Blei sehr ähnliche Metall ist äußerst giftig. Frische Schnittflächen des weichen und hämmerbaren Metalls sind hochglänzend, nach kurzer Zeit überziehen sie sich mit einem blaugrauen Oxidfilm. In feuchter Luft und Wasser bildet sich Thallium(I)-hydroxid, das eine sehr starke Base ist. In Alkalilaugen ist es unlöslich. Thalliumverbindungen zeigen eine intensiv grüne Flammenfärbung, im Spektroskop ist eine scharfe Emissionslinie bei 535 nm charakteristisch (wichtig in der Forensik)."
         },
         {
             "name": "Wolfram",
@@ -573,7 +715,9 @@
             "pse": 74,
             "short": "W",
             "azonium": 9,
-            "quant": 8
+            "quant": 8,
+            "id": 72,
+            "desc": "Wolfram ist ein chemisches Element mit dem Elementsymbol W und der Ordnungszahl 74. Es zählt zu den Übergangsmetallen, im Periodensystem steht es in der 6. Nebengruppe (Gruppe 6) oder Chromgruppe. Wolfram ist ein weißglänzendes Schwermetall hoher Dichte, das bereits bei sehr geringen Verunreinigungen spröde wird. Es ist das chemische Element mit dem höchsten Schmelz- und Siedepunkt. Seine bekannteste Verwendung ist daher die Glühwendel in Glühlampen. Wolfram ist ein chemisch sehr widerstandsfähiges Metall, das selbst von Fluorwasserstoffsäure und Königswasser (zumindest bei Zimmertemperatur) kaum angegriffen wird. Es löst sich aber in Gemischen aus Fluss- und Salpetersäure und geschmolzenen Gemischen aus Alkalinitraten und -karbonaten auf."
         },
         {
             "name": "Praseodym",
@@ -581,7 +725,9 @@
             "pse": 59,
             "short": "Pr",
             "azonium": 10,
-            "quant": 1
+            "quant": 1,
+            "id": 73,
+            "desc": "Praseodym ist ein chemisches Element mit dem Elementsymbol Pr und der Ordnungszahl 59. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Von der Grünfärbung seiner Verbindungen kommt auch der Name: das griechische Wort πράσινος prásinos bedeutet „grün“, δίδυμος didymos „doppelt“ oder „Zwilling“. Praseodym ist ein weiches, silberweißes paramagnetisches Metall, welches zu den Lanthanoiden und Metallen der Seltenen Erden gehört. Bei 798 °C wandelt sich das hexagonale α-Pr in das kubisch-raumzentrierte β-Pr um. Bei hohen Temperaturen verbrennt Praseodym zum Sesquioxid Pr2O3. Es ist in Luft etwas korrosionsbeständiger als Europium, Lanthan oder Cer, bildet aber leicht eine grüne Oxidschicht aus, die an Luft abblättert. Mit Wasser reagiert es unter Bildung von Wasserstoff zum Praseodymhydroxid (Pr(OH)3)."
         },
         {
             "name": "Bismut",
@@ -589,7 +735,9 @@
             "pse": 83,
             "short": "Bi",
             "azonium": 10,
-            "quant": 2
+            "quant": 2,
+            "id": 74,
+            "desc": "Bismut oder Wismut (veraltet auch: Wismuth) ist ein chemisches Element mit dem Elementsymbol Bi und der Ordnungszahl 83. Im Periodensystem steht es in der 5. Hauptgruppe oder Stickstoffgruppe. Es ist kein stabiles Isotop bekannt. Die durch extrem lange Halbwertszeit äußerst geringe Radioaktivität des natürlich vorkommenden 209Bi ist jedoch für den praktischen Gebrauch ohne Bedeutung. Die Radioaktivität konnte erst 2003 nachgewiesen werden, da vorher die dazu nötigen hochempfindlichen Methoden zur Messung nicht verfügbar waren; noch in den 1990er Jahren galt 209Bi als das schwerste stabile Nuklid."
         },
         {
             "name": "Europium",
@@ -597,7 +745,9 @@
             "pse": 63,
             "short": "Eu",
             "azonium": 10,
-            "quant": 3
+            "quant": 3,
+            "id": 75,
+            "desc": "Europium ist ein chemisches Element mit dem Elementsymbol Eu und der Ordnungszahl 63. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Nur Europium und Americium sind nach einem Erdteil benannte Elemente. Wie die anderen Lanthanoide ist Europium ein silberglänzendes Schwermetall. Die Eigenschaften des Europiums folgen nicht der Lanthanoidenkontraktion. Aufgrund seiner Elektronenkonfiguration weist das Element eine deutlich geringere Dichte sowie einen niedrigeren Schmelz- und Siedepunkt auf als die benachbarten Elemente. Es ist das chemisch reaktivste Seltenerdmetall. Nach ersten Hinweisen auf das Element durch William Crookes und Paul Émile Lecoq de Boisbaudran konnte 1896 Eugène-Anatole Demarçay das Element zunächst spektroskopisch nachweisen und dann isolieren."
         },
         {
             "name": "Holmium",
@@ -605,7 +755,9 @@
             "pse": 67,
             "short": "Ho",
             "azonium": 10,
-            "quant": 4
+            "quant": 4,
+            "id": 76,
+            "desc": "Holmium ist ein chemisches Element mit dem Elementsymbol Ho und der Ordnungszahl 67. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Das silberweiß glänzende Metall der Seltenen Erden ist weich und schmiedbar. Wegen seiner hervorragenden magnetischen Eigenschaften verwendet man Polschuhe aus Holmium für Hochleistungsmagnete zur Erzeugung stärkster Magnetfelder."
         },
         {
             "name": "Thorium",
@@ -613,7 +765,9 @@
             "pse": 90,
             "short": "Th",
             "azonium": 10,
-            "quant": 5
+            "quant": 5,
+            "id": 77,
+            "desc": "Thorium (nach dem germanischen Gott Thor) ist ein chemisches Element mit dem Elementsymbol Th und der Ordnungszahl 90. Im Periodensystem steht es in der Gruppe der Actinoide (7. Periode, f-Block). Reines Thorium ist ein silberweißes Metall, das an der Luft bei Raumtemperatur stabil ist und seinen Glanz für einige Monate behält. Ist es mit seinem Oxid verschmutzt, läuft es langsam an der Luft an und wird grau und schließlich schwarz. Die physikalischen Eigenschaften von Thorium hängen stark von seiner Verschmutzung durch sein Oxid ab. Viele „reine“ Sorten enthalten oft einige Promille Thoriumdioxid. Es ist aber auch hochreines Thorium verfügbar. Reines Thorium ist weich und sehr dehnbar, es kann kalt gewalzt und gezogen werden."
         },
         {
             "name": "Terbium",
@@ -621,7 +775,9 @@
             "pse": 65,
             "short": "Tb",
             "azonium": 10,
-            "quant": 6
+            "quant": 6,
+            "id": 78,
+            "desc": "Terbium ist ein chemisches Element mit dem Elementsymbol Tb und der Ordnungszahl 65. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Terbium ist nach dem ersten Fundort, der Grube Ytterby bei Stockholm, benannt, wie auch Yttrium, Ytterbium und Erbium. Nach einer aufwendigen Abtrennung der anderen Terbiumbegleiter wird das Oxid mit Fluorwasserstoff zum Terbiumfluorid umgesetzt. Anschließend wird mit Calcium unter Bildung von Calciumfluorid zum Terbium reduziert. Die Abtrennung verbleibender Calciumreste und Verunreinigungen erfolgt in einer zusätzlichen Umschmelzung im Vakuum. Das silbergraue Metall der Seltenen Erden ist duktil und schmiedbar. Bei Temperaturen oberhalb 1315 °C wandelt sich α-Terbium (hcp-Kristallgitter) in β-Terbium um."
         },
         {
             "name": "Rhenium",
@@ -629,7 +785,9 @@
             "pse": 75,
             "short": "Re",
             "azonium": 10,
-            "quant": 7
+            "quant": 7,
+            "id": 79,
+            "desc": "Rhenium ist ein chemisches Element mit dem Elementsymbol Re und der Ordnungszahl 75. Im Periodensystem der Elemente steht es in der 7. Nebengruppe (Gruppe 7) oder Mangangruppe. Es ist ein sehr seltenes, silberweiß glänzendes, schweres Übergangsmetall. Legierungen mit Rheniumanteilen finden Verwendung in Flugzeugtriebwerken, als Katalysator beim Herstellen von bleifreiem Benzin und in Thermoelementen. Biologische Funktionen des Rheniums sind nicht bekannt, es kommt normalerweise nicht im menschlichen Organismus vor. Ebenso sind keine toxischen Effekte des Metalls bekannt, es gilt als arbeitshygienisch unbedenklich."
         },
         {
             "name": "Lutetium",
@@ -637,7 +795,9 @@
             "pse": 71,
             "short": "Lu",
             "azonium": 10,
-            "quant": 8
+            "quant": 8,
+            "id": 80,
+            "desc": "Lutetium ist ein chemisches Element mit dem Elementsymbol Lu und der Ordnungszahl 71. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Wie die anderen Lanthanoide ist Lutetium ein silberglänzendes Schwermetall. Wegen der Lanthanoidenkontraktion besitzen Lutetiumatome den kleinsten Atomradius, außerdem hat das Element die höchste Dichte und den höchsten Schmelz- und Siedepunkt aller Lanthanoide. Das Element wurde 1907 nahezu gleichzeitig, aber unabhängig voneinander von Georges Urbain, Carl Auer von Welsbach und Charles James entdeckt. Obwohl 1909 entschieden wurde, dass Urbain die Entdeckung zusteht und damit auch der von ihm vorgeschlagene Name Lutetium festgelegt wurde, war besonders im deutschsprachigen Raum die von Carl Auer von Welsbach vorgeschlagene Bezeichnung Cassiopeium (Cp) lange verbreitet."
         },
         {
             "name": "Thulium",
@@ -645,7 +805,9 @@
             "pse": 69,
             "short": "Tm",
             "azonium": 11,
-            "quant": 1
+            "quant": 1,
+            "id": 81,
+            "desc": "Thulium ist ein chemisches Element mit dem Elementsymbol Tm und der Ordnungszahl 69. Im Periodensystem steht es in der Gruppe der Lanthanoide und zählt damit auch zu den Metallen der Seltenen Erden. Das silbergraue Metall der seltenen Erden ist sehr weich, gut dehnbar und schmiedbar. Thulium und Thuliumverbindungen sind gering toxisch. Thuliumstäube sind feuer- und explosionsgefährlich."
         },
         {
             "name": "Uran",
@@ -653,7 +815,9 @@
             "pse": 92,
             "short": "U",
             "azonium": 11,
-            "quant": 2
+            "quant": 2,
+            "id": 82,
+            "desc": "Uran (benannt nach dem Planeten Uranus) ist ein chemisches Element mit dem Elementsymbol U und der Ordnungszahl 92. Im Periodensystem steht es in der Gruppe der Actinoide (7. Periode, f-Block). Uran ist ein Metall, dessen sämtliche Isotope radioaktiv sind. Natürlich in Mineralen auftretendes Uran besteht zu etwa 99,3 % aus dem Isotop 238U und zu 0,7 % aus 235U. Eine besondere Bedeutung erhielt Uran nach der Entdeckung der Kernspaltung im Jahre 1938. Das Uranisotop 235U ist durch thermische Neutronen spaltbar und damit – neben dem äußerst seltenen, aber aus Uran erzeugbaren Plutonium-Isotop 239Pu – das einzige natürlich vorkommende Nuklid, mit dem eine selbsterhaltende Kernspaltungs-Kettenreaktion möglich ist. Daher findet es Verwendung als Primärenergieträger in Kernkraftwerken und Kernwaffen."
         },
         {
             "name": "Tantal",
@@ -661,7 +825,9 @@
             "pse": 43,
             "short": "Ta",
             "azonium": 11,
-            "quant": 3
+            "quant": 3,
+            "id": 83,
+            "desc": "Tantal ist ein chemisches Element mit dem Symbol Ta und der Ordnungszahl 73; im Periodensystem steht es in der fünften Nebengruppe oder Vanadiumgruppe. Es ist ein selten vorkommendes, duktiles, graphitgraues, glänzendes Übergangsmetall. Tantal wird vorwiegend für Kondensatoren mit hoher Kapazität bei gleichzeitig geringer Größe verwendet. Da das Metall ungiftig und in Bezug auf Körperflüssigkeiten inert ist, wird es auch für Implantate, etwa für Knochennägel, eingesetzt. Tantal ist ein unedles Metall und reagiert bei hohen Temperaturen mit den meisten Nichtmetallen, wie Sauerstoff, den Halogenen oder Kohlenstoff. Bei Raumtemperatur ist das Metall allerdings durch eine dünne Schicht aus Tantal(V)-oxid geschützt und damit passiviert. Eine Reaktion findet erst ab einer Temperatur von etwa 300 °C statt."
         }
     ]
 }

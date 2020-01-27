@@ -57,6 +57,10 @@
             "set": "downhp"
         },
         {
+            "get": ["elinfo", "element", "eli"],
+            "set": "elementinfo"
+        },
+        {
             "get": ["battle", "duel", "attack"],
             "set": "fight"
         },
