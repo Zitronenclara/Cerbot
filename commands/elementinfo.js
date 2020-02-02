@@ -10,7 +10,7 @@ module.exports = {
     name: 'elementinfo',
     description: 'Gibt dir bestimmte Informationen über ein Element',
     category: 'Space',
-    usage: '``c!elementinfo [elementname]``',
+    usage: '``c!elementinfo [elementname]``, ``c!elementinfo [elementid]``',
     execute(arguments, receivedMessage) {
         if (arguments.length == 0 || !arguments) {
             receivedMessage.reply("du musst mir schon sagen, über welches Element du Informationen erhalten willst.")

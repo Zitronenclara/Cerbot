@@ -101,6 +101,10 @@
             "set": "marryinfo"
         },
         {
+            "get": ["matinfo", "materiali", "mati"],
+            "set": "materialinfo"
+        },
+        {
             "get": ["md", "miningd", "mined", "minedrone", "mdrone"],
             "set": "miningdrone"
         },

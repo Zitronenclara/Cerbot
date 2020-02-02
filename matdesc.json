@@ -1,69 +1,69 @@
 {
     "mats": [{
             "name": "Methazonium",
-            "desc": "",
-            "id": 1,
-            "raf": ""
+            "desc": "Das erste Material, welches man mithilfe von Reaktionen im Heisenberg-Kompensator herstellen konnte. Sein Aufbau hat die Grundlage für die weiterentwickelten Formen der Heisenberg-Materialien geschaffen. Methazonium kann aus dem 8 häufigsten Elementen im Universum gefertigt werden und wird zum Großteil in neuen Schiffen und Schiffsbauteilen verbaut.",
+            "id": 1
+
         },
         {
             "name": "Ethazonium",
-            "desc": "",
-            "id": 2,
-            "raf": ""
+            "desc": "Nachdem man den Herstellungsprozess von Methazonium voll ausgebaut hatte, wollte man versuchen die strukturelle Anordnung der Elementarteilchen zu verändern, um so eventuell ein neues und besseres Heisenberg-Material zu erhalten. Dies gelang relativ schnell und man nannte das neu entstandene Material Ethazonium. Es ist weitaus robuster, braucht aber seltenere Elemente um raffiniert zu werden.",
+            "id": 2
+
         },
         {
             "name": "Propazonium",
-            "desc": "",
-            "id": 3,
-            "raf": ""
+            "desc": "test",
+            "id": 3
+
         },
         {
             "name": "Butazonium",
-            "desc": "",
-            "id": 4,
-            "raf": ""
+            "desc": "test",
+            "id": 4
+
         },
         {
             "name": "Pentazonium",
-            "desc": "",
-            "id": 5,
-            "raf": ""
+            "desc": "test",
+            "id": 5
+
         },
         {
             "name": "Hexazonium",
-            "desc": "",
-            "id": 6,
-            "raf": ""
+            "desc": "test",
+            "id": 6
+
         },
         {
             "name": "Heptazonium",
-            "desc": "",
-            "id": 7,
-            "raf": ""
+            "desc": "test",
+            "id": 7
+
         },
         {
             "name": "Octazonium",
-            "desc": "",
-            "id": 8,
-            "raf": ""
+            "desc": "test",
+            "id": 8
+
         },
         {
             "name": "Nonazonium",
-            "desc": "",
-            "id": 9,
-            "raf": ""
+            "desc": "test",
+            "id": 9
+
         },
         {
             "name": "Decazonium",
-            "desc": "",
-            "id": 10,
-            "raf": ""
+            "desc": "test",
+            "id": 10
+
         },
         {
             "name": "Ultrazonium",
-            "desc": "",
-            "id": 11,
-            "raf": ""
+            "desc": "test",
+            "id": 11
+
         }
     ]
 }
